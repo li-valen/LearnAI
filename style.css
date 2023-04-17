@@ -34,7 +34,20 @@ a{
     margin: auto;
 }
 
+.navbar{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
 
 @media(max-width:1600px){
     .container{
