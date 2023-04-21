@@ -24,7 +24,7 @@
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: var(--primary-color); /* hamburger backround color */
+    background: none; /* hamburger backround color */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
     height: 2px;
     background-color: #fff;
     display: flex;
-    align-items: cneter;
+    align-items: center;
     justify-content: center;
     transition: all 0.4s;
 }
@@ -106,7 +106,8 @@
 }
 
 .menu-wrap .menu > div {
-    background: var(--overlay-color);
+    background: none;
+    backdrop-filter: blur(40px);
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
