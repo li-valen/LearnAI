@@ -22,3 +22,15 @@ body {
     padding: 0 3rem;
 
 }
+
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase:before {
+    content: '';
+    background: url();
+}
