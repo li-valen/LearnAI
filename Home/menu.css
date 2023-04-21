@@ -79,17 +79,18 @@
 /* Show menu */
 .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
-
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
+    transform-origin: center; /* Transform start */
     transition-duration: var(--menu-speed);
 }
 
 .menu-wrap .toggler:checked ~ .menu > div >div {
     opacity: 1;
     transition: opacity 0.4s ease;
+    -moz-transition: ease-out 0.4s
 }
 
 .menu-wrap .menu {
@@ -135,8 +136,69 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
-
+    background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    rgb(255, 255, 255) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
+
+.menu-wrap .menu > div > div > ul > li > a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 0;
+    height: 3px;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+    background-position: 0;  
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover:before {
+    width: 100%;
+}
+
+
+
+/* a {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
+} */ 
