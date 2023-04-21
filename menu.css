@@ -76,13 +76,16 @@
     transform: rotate(225deg);
 }
 
+/* Show menu */
+
+
 .menu-wrap .menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /*visibility: hidden; */
+    visibility: hidden;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -98,11 +101,28 @@
     flex: none;
     align-items: center;
     justify-content: center;
-    /*transform: scale(0); */
+    transform: scale(0); 
     transition: all 0.4s ease;
 }
 
 .menu-wrap .menu > div > div {
     text-align: center;
-    
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li{
+    list-style: none; /* gets rid of bullet points */
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+
 }
