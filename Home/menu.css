@@ -136,69 +136,52 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
-    background-image: linear-gradient(
-    to right,
-    #54b3d6,
-    #54b3d6 50%,
-    rgb(255, 255, 255) 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
 }
 
-.menu-wrap .menu > div > div > ul > li > a:before {
+.menu-wrap .menu > div > div > ul > li > a::before{
     content: '';
-    background: #54b3d6;
-    display: block;
     position: absolute;
-    bottom: -3px;
-    right: 0;
-    width: 0;
-    height: 3px;
-}
-
-.menu-wrap .menu > div > div > ul > li > a:hover {
-    background-position: 0;  
-}
-
-.menu-wrap .menu > div > div > ul > li > a:hover:before {
     width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;   
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 
 
-/* a {
-  background-image: linear-gradient(
-    to right,
-    #54b3d6,
-    #54b3d6 50%,
-    #000 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+/*
+a {
+  position: relative;
 }
 
-a:before {
-  content: '';
-  background: #54b3d6;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-}
-
-a:hover {
- background-position: 0;
-}
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
 
 a:hover::before {
-  width: 100%;
-} */ 
+  transform-origin: left;
+  transform: scaleX(1);
+} */
