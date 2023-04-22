@@ -42,7 +42,7 @@
     transition: all 0.4s;
 }
 
-/* Top land bottom ine */
+/* Top and bottom line */
 .menu-wrap .hamburger > div::before, 
 .menu-wrap .hamburger > div::after {
     content: '';
@@ -83,7 +83,7 @@
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transform-origin: left; /* Transform start */
+    transform-origin: 0% 0%; /* Transform start */
     transition-duration: var(--menu-speed);
 }
 
@@ -118,7 +118,7 @@
     align-items: center;
     justify-content: center;
     transform: scale(0); 
-    transform-origin: left;
+    transform-origin: 0% 0%;
     transition: all 0.4s ease-out;
 }
 
@@ -154,7 +154,7 @@
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .3s ease-out;   
+    transition: transform 0.4s ease-out;   
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover::before{

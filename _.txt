@@ -7,3 +7,7 @@ cool button css: https://codepen.io/RazorXio/pen/gMaoOW
 Parallax scroll animation
 
 Cool website intros
+
+We need to make an intro to our webpage
+
+We also need to fix the transition in the menu button
