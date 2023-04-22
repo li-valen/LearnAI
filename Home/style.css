@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgba(0, 0, 0, 0.75);
-    --menu-speed: 0.75s;
+    --menu-speed: 0.65s;
 }
 
 * {
@@ -30,15 +30,14 @@ body {
 
 .showcase:before {
     content: '';
-    background: url("/Users/rish/Desktop/WebsiteComp/images/Moon Rotation Loop - Free Stock footage.mp4") no-repeat;
-    background-position: center;
-    overflow: hidden;
+    background: url("/Users/rish/Desktop/WebsiteComp/images/Moon Rotation Loop - Free Stock footage.mp4") no-repeat center
+    center/cover;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .showcase .showcase-inner {
@@ -68,7 +67,7 @@ body {
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
     text-decoration: none;
-    box-shadow: inset 0 0 0 0 #ff0000;
+    box-shadow: inset 0 0 0 0 #454545;
     -webkit-transition: ease-out 0.7s;
     -moz-transition: ease-out 0.7s;
     transition: ease-out 0.7s;
@@ -81,7 +80,14 @@ body {
 
 
 .back-video {
-    position: relative;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;   
+}
+
+/* position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -89,4 +95,4 @@ body {
     justify-content: center;
     text-align: center;
     z-index: -1;
-}
+} */

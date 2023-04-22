@@ -83,14 +83,15 @@
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transform-origin: center; /* Transform start */
+    transform-origin: left; /* Transform start */
     transition-duration: var(--menu-speed);
 }
 
 .menu-wrap .toggler:checked ~ .menu > div >div {
     opacity: 1;
     transition: opacity 0.4s ease;
-    -moz-transition: ease-out 0.4s
+    -moz-transition: ease 0.4s
+    
 }
 
 .menu-wrap .menu {
@@ -107,8 +108,8 @@
 }
 
 .menu-wrap .menu > div {
-    background: none;
-    backdrop-filter: blur(40px);
+    background: black; /* we can have black or blurred*/
+    /*backdrop-filter: blur(20px);*/
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
@@ -117,7 +118,8 @@
     align-items: center;
     justify-content: center;
     transform: scale(0); 
-    transition: all 0.4s ease;
+    transform-origin: left;
+    transition: all 0.4s ease-out;
 }
 
 .menu-wrap .menu > div > div {
@@ -125,7 +127,7 @@
     max-width: 90vw;
     max-height: 100vh;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease-out;
 }
 
 .menu-wrap .menu > div > div > ul > li{
@@ -152,7 +154,7 @@
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .3s ease-in-out;   
+    transition: transform .3s ease-out;   
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover::before{
