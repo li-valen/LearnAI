@@ -9,5 +9,5 @@ Parallax scroll animation
 Cool website intros
 
 We need to make an intro to our webpage
-
+Add intro to website
 We also need to fix the transition in the menu button
