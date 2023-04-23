@@ -12,6 +12,10 @@
 body {
     font-family: 'GFS Didot', serif;
     line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
 }
 
 .container {
