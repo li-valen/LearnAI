@@ -149,12 +149,12 @@ body {
 } */
 
 /* Loading animation */
-.center{
+/*.center{
     /*display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;*/
+    min-height: 100vh;*/ /*
     position: relative;
     top: 0;
     left: 0;
@@ -216,5 +216,9 @@ span{
     50%{
         color: black;
     }
-}
+} 
+
+*/
+
+
 
