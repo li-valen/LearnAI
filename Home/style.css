@@ -221,7 +221,8 @@ span{
 */
 
 #preloader {
-    background: black;
+    background: black url(/Users/rish/Desktop/WebsiteComp/images/preloader-gif.gif) no-repeat center center;
+    background-size: 15%;
     height: 100vh;
     width: 100%;
     position: fixed;
