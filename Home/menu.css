@@ -83,7 +83,7 @@
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transform-origin: 0% 0%; /* Transform start */
+    transform-origin: 30% 40%; /* Transform start */
     transition-duration: var(--menu-speed);
 }
 
