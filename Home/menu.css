@@ -118,9 +118,9 @@
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    /* transform: scale(0); */
+    transform: translateX(-50%) translateY(-150%);
     transform-origin: left;
-    transition: opacity 0.2s ease-out; /* find out a good transition */
+    transition: opacity 0.5s ease-out; /* find out a good transition */
 }
 
 .menu-wrap .menu > div > div {
