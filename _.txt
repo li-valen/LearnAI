@@ -4,7 +4,7 @@ nav-bar - https://www.youtube.com/watch?v=GdrbE-s5DgQ&t=29s, https://www.youtube
 text animations: https://css-tricks.com/css-link-hover-effects/
 cool button css: https://codepen.io/RazorXio/pen/gMaoOW
 
-Parallax scroll animation
+Parallax scroll animation - https://www.youtube.com/watch?v=alGnk3iMaYE
 
 Cool website intros
 
@@ -17,3 +17,9 @@ We also need to fix the transition in the menu button
 website preloader - https://www.youtube.com/watch?v=Yf5d_Zx3AaI, https://www.youtube.com/watch?v=ttWXapXj4cg&list=PL5e68lK9hEzeeXtsQCQYd9SAzj6u6wZpi, https://www.youtube.com/watch?v=ZcXJCBe1UZU 2181
 
 text like apple - https://www.youtube.com/watch?v=VRb4_kBUOr8
+
+scroll affect - https://www.youtube.com/watch?v=T33NN_pPeNI&t=10s
+
+cool sliding animation (MUST USE) - https://www.youtube.com/watch?v=PkADl0HubMY
+
+(MUST WATCH TUTORIALS) - https://www.youtube.com/playlist?list=PLD9xos4mnoHSIDnJjGmhRrxRmHGS8nF91 (hyperplaxed code https://codepen.io/Hyperplexed/pens/showcase)
