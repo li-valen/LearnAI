@@ -11,6 +11,7 @@
     <title>About</title>
 </head>
 <body>
+    <div id = "preloader"></div>
 
         <!--Menu and front page-->
         <div class="menu-wrap">
@@ -30,5 +31,11 @@
             </div>
         </div>
     
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+        loader.style.display = "none"
+        })
+    </script>
 </body>
 </html>
