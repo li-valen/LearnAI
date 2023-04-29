@@ -22,4 +22,9 @@ body {
   object-fit: cover;
   object-position: 100% center;
   }
+
+#image-track > .image:hover {
+  opacity: 0.2;
+  transition: opacity 0.5s;
+}
   
