@@ -23,3 +23,6 @@ scroll affect - https://www.youtube.com/watch?v=T33NN_pPeNI&t=10s
 cool sliding animation (MUST USE) - https://www.youtube.com/watch?v=PkADl0HubMY
 
 (MUST WATCH TUTORIALS) - https://www.youtube.com/playlist?list=PLD9xos4mnoHSIDnJjGmhRrxRmHGS8nF91 (hyperplaxed code https://codepen.io/Hyperplexed/pens/showcase)
+
+Landing Pages - https://www.youtube.com/watch?v=61gDEGKYYm0&list=PLGOUqNBNghxPEXujN3s_ozQvCuiLkJuFj&index=2
+Apple Scrolling - https://www.youtube.com/watch?v=wLUJ9VNzZXo
