@@ -28,5 +28,17 @@ body {
   transition: opacity 0.5s;
 }
 
+h1 {
+  position:relative;
+  left: 22.5%;
+  top: 22.5%;
+  width: 40vmin;
+  height: 56vmin;
+}
 
+p{
+  position: relative;
+  width: 20vmin;
+  left: 22.5%;
+}
   
