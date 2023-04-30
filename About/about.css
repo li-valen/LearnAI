@@ -28,7 +28,9 @@ body {
   transition: opacity 0.5s;
 }
 
-#image-track > .image:ho
+#image-track > .image:after:hover{
+  
+}
 
 .bottom-left {
   position: absolute;
