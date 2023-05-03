@@ -44,3 +44,5 @@ window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
 // Start of scrolling affect
+
+// going to start tmr or friday 
