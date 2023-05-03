@@ -41,3 +41,6 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+
+// Start of scrolling affect
