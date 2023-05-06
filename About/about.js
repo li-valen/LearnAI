@@ -43,6 +43,22 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]); */
 
 
-// Start of scrolling affect
+// SCROLLING AFFECT 
+
+const intro = document.querySelector('.intro');
+const video = intro.querySelector('video');
+const text = intro.querySelector('h1');
+
+
+// Scroll Magic
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({
+  duration: 1000,
+  triggerElement: intro,
+  trigerHook: 0
+})
+  .addIndicators()
+  .addTo(controller);
 
 
