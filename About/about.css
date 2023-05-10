@@ -25,3 +25,14 @@ body {
   transform: translate(-50%, -50%);
   font-size: 80px;
 }
+
+section{
+  height: 100vh;
+  color: black;
+}
+
+section h1{
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
+}
