@@ -45,12 +45,12 @@ window.ontouchmove = e => handleOnMove(e.touches[0]); */
 
 // SCROLLING AFFECT 
 
-const intro = document.querySelector('.intro');
-const video = intro.querySelector('video');
-const text = intro.querySelector('h1');
-
-const section = document.querySelector('section');
-const end = section.querySelector('h1');
+const intro = document.querySelector(".intro");
+const video = intro.querySelector("video");
+const text = intro.querySelector("h1");
+//END SECTION
+const section = document.querySelector("section");
+const end = section.querySelector("h1");
 
 // Scroll Magic
 const controller = new ScrollMagic.Controller();
