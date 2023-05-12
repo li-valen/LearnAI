@@ -63,4 +63,6 @@ const scene = new ScrollMagic.Scene({
   .addIndicators()
   .addTo(controller);
 
+  // will fix the code
+
 
