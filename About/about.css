@@ -27,6 +27,15 @@ body {
   color: white;
 }
 
+.intro h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+}
+
 section {
   height: 100vh;
   color: rgb(255, 255, 255);
@@ -37,3 +46,4 @@ section h1 {
   text-align: center;
   font-size: 80px;
 }
+
