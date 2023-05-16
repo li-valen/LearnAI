@@ -76,6 +76,11 @@ let scene2 = new ScrollMagic.Scene({
   .setTween(textAnim)
   .addTo(controller);
 
+//Text Animation 2
+const textAnim2 = TweenMax.fromTo(text, 3, {opacity: 1}, {opacity: 0});
+
+
+
 //Video Animation
 let accelamount = 0.1;
 let scrollpos = 0;
