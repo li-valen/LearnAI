@@ -64,3 +64,14 @@ let scene = new ScrollMagic.Scene({
   .addIndicators()
   .setPin(intro)
   .addTo(controller);
+
+//Text Animation
+const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+
+let scene2 = new ScrollMagic.Scene({
+  duration: 3000,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setTween(textAnim)
+  .addTo(controller);
