@@ -80,7 +80,15 @@ let scene2 = new ScrollMagic.Scene({
   .addTo(controller);
 
 //Text Animation 2
-const textAnim2 = TweenMax.fromTo(text, 3, {opacity: 1}, {opacity: 0});
+const textAnim2 = TweenMax.fromTo(text, 3, {opacity: 0}, {opacity: 1});
+
+let scene3 = new ScrollMagic.Scene({
+  duration: 1100,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setTween(textAnim2)
+  .addTo(controller);
 
 
 
