@@ -57,11 +57,11 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 9000,
+  duration: 3500,
   triggerElement: intro,
   triggerHook: 0
 })
-  .addIndicators()
+  //.addIndicators()
   .setPin(intro)
   .addTo(controller);
 
@@ -69,7 +69,7 @@ let scene = new ScrollMagic.Scene({
 const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-  duration: 3000,
+  duration: 1100,
   triggerElement: intro,
   triggerHook: 0
 })
