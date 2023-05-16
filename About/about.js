@@ -79,8 +79,11 @@ let scene2 = new ScrollMagic.Scene({
   .setTween(textAnim)
   .addTo(controller);
 
+
+
+
 //Text Animation 2
-const textAnim2 = TweenMax.fromTo(text, 3, {opacity: 0}, {opacity: 1});
+const textAnim2 = TweenMax.fromTo(text2, 3, {opacity: 0}, {opacity: 1});
 
 let scene3 = new ScrollMagic.Scene({
   duration: 1100,
@@ -100,6 +103,7 @@ let delay = 0;
 scene.on("update", e => {
   scrollpos = e.scrollPos / 1000;
 });
+
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
