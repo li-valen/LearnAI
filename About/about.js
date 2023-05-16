@@ -44,10 +44,13 @@ window.ontouchmove = e => handleOnMove(e.touches[0]); */
 
 
 // SCROLLING AFFECT 
-
+// Intro 
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
+const text2 = intro.querySelector("h2");
+const text3 = intro.querySelector("h3");
+
 //END SECTION
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
