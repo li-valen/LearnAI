@@ -52,17 +52,15 @@ const text = intro.querySelector("h1");
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
 
-// Scroll Magic
+//SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
-  duration: 1000,
+//Scenes
+let scene = new ScrollMagic.Scene({
+  duration: 9000,
   triggerElement: intro,
-  trigerHook: 0
+  triggerHook: 0
 })
   .addIndicators()
+  .setPin(intro)
   .addTo(controller);
-
-  // will fix the code
-
-
