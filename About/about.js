@@ -97,7 +97,13 @@ let scene3 = new ScrollMagic.Scene({
 // Text Animation 3
 const textAnim3 = TweenMax.fromTo(text3, 3, {opacity: 0}, {opacity: 1});
 
-
+let scene4 = new ScrollMagic.Scene({
+  duration: 1100,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setTween(textAnim3)
+  .addTo(controller);
 
 
 //Video Animation
