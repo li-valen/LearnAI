@@ -84,8 +84,10 @@ let scene2 = new ScrollMagic.Scene({
 
 //Text Animation 2
 const textAnim2 = TweenMax.fromTo(text2, 3, {opacity: 0}, {opacity: 1});
+const textAnim2FadeOut = TweenMax.fromTo(text2, 3, {opacity: 1}, {opacity: 0});
 
 let scene3 = new ScrollMagic.Scene({
+  offset: 100,
   duration: 1100,
   triggerElement: intro,
   triggerHook: 0
@@ -93,11 +95,22 @@ let scene3 = new ScrollMagic.Scene({
   .setTween(textAnim2)
   .addTo(controller);
 
+let scene3Out = new ScrollMagic.Scene({
+  offset: 100,
+  duration: 1100,
+  triggerElement: intro,
+  triggerHook: 0
+  })
+  .setTween(textAnim2FadeOut)
+  .addTo(controller);
+
+
 
 // Text Animation 3
 const textAnim3 = TweenMax.fromTo(text3, 3, {opacity: 0}, {opacity: 1});
 
 let scene4 = new ScrollMagic.Scene({
+  offset: 500,
   duration: 1100,
   triggerElement: intro,
   triggerHook: 0
