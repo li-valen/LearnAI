@@ -94,6 +94,11 @@ let scene3 = new ScrollMagic.Scene({
   .addTo(controller);
 
 
+// Text Animation 3
+const textAnim3 = TweenMax.fromTo(text3, 3, {opacity: 0}, {opacity: 1});
+
+
+
 
 //Video Animation
 let accelamount = 0.1;
