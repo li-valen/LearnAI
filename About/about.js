@@ -76,7 +76,7 @@ let scene2 = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0
 })
-  //.setTween(gsap.to('.container img', {duration: 1, y: '-20vh', ease: 'power3.in'}))
+  //.setTween(gsap.to(intro, {duration: 1, y: '-20vh', ease: 'power3.in'}))
   .setTween(textAnim)
   .addTo(controller);
 
@@ -93,7 +93,7 @@ let scene3 = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0
 })
-  .setTween(TweenMax.to(intro, 1, {y: '-20vh', delay: 2}))
+  //.setTween(TweenMax.to(intro, 1, {y: '-20vh', delay: 2}))
   .setTween(textAnim2)
   .addTo(controller);
 
@@ -103,6 +103,7 @@ let scene3Out = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0
   })
+  //.setTween(TweenMax.to(intro, 1, {y: '-20vh', delay: 2}))
   //.setTween(gsap.to(intro, {duration: 1, y: '-20vh', ease: 'power3.in'}))
   .setTween(textAnim2FadeOut)
   .addTo(controller);
