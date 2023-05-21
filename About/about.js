@@ -141,3 +141,18 @@ setInterval(() => {
 }, 33.3);
 
 // Timeline-max
+
+var tl = new TimelineMax().add([
+  TweenMax.to('.hero-unit .scene:first-of-type', 1, {opacity: 1}),
+  TweenMax.to('.hero-unit .scene:first-of-type', 1, {opacity: 0, delay: 1}),
+  TweenMax.to('.hero-unit .scene:nth-of-type(2)', 1, {opacity:1, delay: 2}),
+  TweenMax.to('.hero-unit .scene:nth-of-type(2)', 1, {opacity:0, delay: 3}),
+  TweenMax.to('.hero-unit .scene:nth-of-type(3)', 1, {opacity:1, delay: 4}),
+  TweenMax.to('.hero-unit .scene:nth-of-type(3)', 1, {opacity:0, delay: 5})
+]);
+
+var pin = new ScrollScene({
+triggerElement: '.hero-unit',
+triggerHook: 0,
+duration: 2000
+}).setPin('.hero-unit').setTween(tl).addTo(controller); 
