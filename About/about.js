@@ -132,6 +132,7 @@ scene.on("update", e => {
   scrollpos = e.scrollPos / 1000;
 });
 
+// MIGHT DELETE THE AMAZING AND GO STRAIGHT TO THE REVOLUTIONARY 
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
