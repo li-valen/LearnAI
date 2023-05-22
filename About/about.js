@@ -97,30 +97,6 @@ let scene3 = new ScrollMagic.Scene({
   .setTween(textAnim2)
   .addTo(controller);
 
-let scene3Out = new ScrollMagic.Scene({
-  offset: 100,
-  duration: 1100,
-  triggerElement: intro,
-  triggerHook: 0
-  })
-  //.setTween(TweenMax.to(intro, 1, {y: '-20vh', delay: 2}))
-  //.setTween(gsap.to(intro, {duration: 1, y: '-20vh', ease: 'power3.in'}))
-  .setTween(textAnim2FadeOut)
-  .addTo(controller);
-
-
-
-// Text Animation 3
-const textAnim3 = TweenMax.fromTo(text3, 3, {opacity: 0}, {opacity: 1});
-
-let scene4 = new ScrollMagic.Scene({
-  offset: 500,
-  duration: 1100,
-  triggerElement: intro,
-  triggerHook: 0
-})
-  .setTween(textAnim3)
-  .addTo(controller);
 
 
 //Video Animation
