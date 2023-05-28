@@ -115,4 +115,3 @@ setInterval(() => {
   video.currentTime = delay;
 }, 33.3);
 
-// Need to find another 

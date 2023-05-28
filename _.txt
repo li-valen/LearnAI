@@ -16,7 +16,7 @@ We also need to fix the transition in the menu button
 
 website preloader - https://www.youtube.com/watch?v=Yf5d_Zx3AaI, https://www.youtube.com/watch?v=ttWXapXj4cg&list=PL5e68lK9hEzeeXtsQCQYd9SAzj6u6wZpi, https://www.youtube.com/watch?v=ZcXJCBe1UZU 2181
 
-text like apple - https://www.youtube.com/watch?v=VRb4_kBUOr8
+text like apple - https://www.youtube.com/watch?v=VRb4_kBUOr8, https://www.youtube.com/watch?v=IsZgOh7-VRA&list=PLwJhhWUZudKoU1Gf81u9zAnX-ATYhw3U3
 
 scroll affect - https://www.youtube.com/watch?v=T33NN_pPeNI&t=10s
 
@@ -26,3 +26,6 @@ cool sliding animation (MUST USE) - https://www.youtube.com/watch?v=PkADl0HubMY
 
 Landing Pages - https://www.youtube.com/watch?v=61gDEGKYYm0&list=PLGOUqNBNghxPEXujN3s_ozQvCuiLkJuFj&index=2
 Apple Scrolling - https://www.youtube.com/watch?v=wLUJ9VNzZXo
+
+
+Scroll Affect - https://www.youtube.com/watch?v=wuUSVEcK-kM&pp=ygUZY29vbCBzY3JvbGxpbmcgZWZmZWN0IGNzcw%3D%3D
