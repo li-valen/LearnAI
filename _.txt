@@ -29,3 +29,5 @@ Apple Scrolling - https://www.youtube.com/watch?v=wLUJ9VNzZXo
 
 
 Scroll Affect - https://www.youtube.com/watch?v=wuUSVEcK-kM&pp=ygUZY29vbCBzY3JvbGxpbmcgZWZmZWN0IGNzcw%3D%3D
+
+// Need to find hover affect
