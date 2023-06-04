@@ -32,4 +32,4 @@ Scroll Affect - https://www.youtube.com/watch?v=wuUSVEcK-kM&pp=ygUZY29vbCBzY3Jvb
 
 // Need to find hover affect
 
-// Section page
+// Section page with scroll affects
