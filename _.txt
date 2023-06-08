@@ -35,3 +35,5 @@ Scroll Affect - https://www.youtube.com/watch?v=wuUSVEcK-kM&pp=ygUZY29vbCBzY3Jvb
 // Section page with scroll affects
 
 // commit
+
+(Scroll affect) - https://www.youtube.com/watch?v=LFY3e53wBPw
