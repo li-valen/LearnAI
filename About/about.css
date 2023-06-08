@@ -89,3 +89,16 @@ section {
   align-items: center;
   clip-path: circle(300px at center center);
 }
+
+.container {
+  position: relative;
+  margin-top: 200vh;
+  background: black;
+  padding: 100px;
+  color: #fff;
+}
+
+.container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
