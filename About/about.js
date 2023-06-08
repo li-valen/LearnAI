@@ -42,7 +42,7 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]); */
 
-
+/*
 // SCROLLING AFFECT 
 // Intro 
 const intro = document.querySelector(".intro");
@@ -115,3 +115,6 @@ setInterval(() => {
   video.currentTime = delay;
 }, 33.3);
 
+*/
+
+// Scroll Two
