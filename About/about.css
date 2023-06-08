@@ -89,7 +89,7 @@ section {
   align-items: center;
   clip-path: circle(300px at center center);
 }
-
+/* NEED TO FIX PARAGRAPH POSITION*/
 .innerText {
   position: fixed;
   top: 50%;
