@@ -90,6 +90,16 @@ section {
   clip-path: circle(300px at center center);
 }
 
+.innerText {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 10vw;
+  color: rgb(0, 0, 0);
+}
+
 .container {
   position: relative;
   margin-top: 200vh;
