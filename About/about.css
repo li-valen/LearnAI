@@ -98,6 +98,8 @@ section {
   z-index: 1;
   font-size: 10vw;
   color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
 }
 
 .container {
