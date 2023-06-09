@@ -108,7 +108,7 @@ section {
   width: 100%;
 }
 
-.container {
+.container { /* Change where paragraph goes*/
   position: relative;
   margin-top: 200vh;
   background: black;
