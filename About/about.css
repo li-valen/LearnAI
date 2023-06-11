@@ -134,13 +134,6 @@ section {
 .container_for_about { 
   position: relative;
   margin-top: 200vh;
-  background: black;
-  padding: 100px;
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
-
-.container_for_about h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
