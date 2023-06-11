@@ -101,10 +101,8 @@ h3 {
   position: inherit;
 }
 
-.sec2 video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.text2 {
+  
 }
 /* NEED TO FIX PARAGRAPH POSITION*/
 .innerText {
