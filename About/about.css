@@ -78,28 +78,33 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -90%);
   margin-top: -100px;
   color: rgb(255, 255, 255);
   font-size: 4em;
 }
 
-section {
+.sec1 {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: white;
+  background: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   clip-path: circle(100px at center center);
 }
 
-.text22 {
+.sec2 {
   position: inherit;
-  color:rgb(0, 0, 0);
+}
+
+.sec2 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /* NEED TO FIX PARAGRAPH POSITION*/
 .innerText {
@@ -110,7 +115,7 @@ section {
   white-space: nowrap;
   z-index: 1;
   font-size: 10vw;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   width: 100%;
 }
@@ -134,6 +139,6 @@ section {
 .container_for_about { 
   position: relative;
   margin-top: 200vh;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  mask-clip: padding-box;
 }
