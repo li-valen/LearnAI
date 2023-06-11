@@ -131,7 +131,7 @@ section {
 
 
 
-.container_for_about { /* Change where paragraph goes*/
+.container_for_about { 
   position: relative;
   margin-top: 200vh;
   background: black;
