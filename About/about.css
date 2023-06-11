@@ -70,7 +70,8 @@ section h1 {
 
 body {
   background: black;
-
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -94,6 +95,11 @@ section {
   justify-content: center;
   align-items: center;
   clip-path: circle(100px at center center);
+}
+
+.text22 {
+  position: inherit;
+  color:rgb(0, 0, 0);
 }
 /* NEED TO FIX PARAGRAPH POSITION*/
 .innerText {
