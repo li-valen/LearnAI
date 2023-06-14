@@ -26,7 +26,7 @@ body {
 }
 
 .showcase {
-    background: url(/Users/rish/Desktop/WebsiteComp/images/202306141807.mp4);
+    background-color: var(--primary-color);
     color: #fff;
     height: 100vh;
     position: relative;
@@ -228,7 +228,6 @@ span{
     position: fixed;
     z-index: 100;
 }
-
 
 
 
