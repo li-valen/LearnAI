@@ -91,7 +91,7 @@ body {
 
 .btn:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #fffb00, #002bff, #fffb00);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -221,7 +221,7 @@ span{
 */
 
 #preloader {
-    background: rgb(0, 0, 0) url(/Users/rish/Desktop/WebsiteComp/images/loader3.gif) no-repeat center center;
+    background: rgb(255, 255, 255) url(/Users/rish/Desktop/WebsiteComp/images/preloader-gif7.gif) no-repeat center center;
     background-size: 40%;
     height: 100vh;
     width: 100%;
