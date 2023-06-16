@@ -9,6 +9,46 @@
     padding: 0;
 }
 
+
+/* Splash Screen*/
+
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4{
+    position: absolute;
+    left: 10px;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Splash Screen End*/
+
 body {
     font-family: 'GFS Didot', serif;
     line-height: 1.4;
