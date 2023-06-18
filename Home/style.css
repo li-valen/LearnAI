@@ -12,75 +12,66 @@
 
 /* Splash Screen*/
 
-header{
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 80px;
-}
-
-header h4{
-    position: absolute;
-    left: 10%;
-    bottom: 1rem;
-    font-size: 1.6rem;
-}
-
-.intro {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+.splash {
+    background: black;
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #161616;
-    transition: 1s;
+    transition: 4s;
 }
 
-.logo-header {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
+.splash-content {
+    color: white;
+    transform: translateY(11em);
 }
 
-.logo {
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
+.splash.display-none{
     opacity: 0;
-
+    z-index: 0;
+    transform: translateY(-100%);
+    transition: 1.5s;
 }
 
-.logo.active{
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
+.splash.post_animated {
+    display: none;
 }
 
-.logo.fade{
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
+#content1 {
+    animation: come-in-first 2s ease-in;
 }
 
+#content2 {
+    animation: come-in-second 3s ease-in;
+}
 
+#content3 {
+    transform: translate(4px, 11em);
+    animation: come-in-third 4s ease-in;
+}
 
+@keyframes come-in-first {
+    0% {
+        transform: translateY(13em);
+        opacity: 0;
+    }
+}
 
+@keyframes come-in-second {
+    0%, 50% {
+        transform: translateY(11.5em);
+        opacity: 0;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@keyframes come-in-third {
+    0%, 60% {
+        transform: translate(4px, 11.5em);
+        opacity: 0;
+    }
+}
 
 /*Splash Screen End*/
 /*
