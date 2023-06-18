@@ -12,67 +12,6 @@
 
 /* Splash Screen*/
 
-.splash {
-    background: black;
-    z-index: 2;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    transition: 4s;
-}
-
-.splash-content {
-    color: white;
-    transform: translateY(11em);
-}
-
-.splash.display-none{
-    opacity: 0;
-    z-index: 0;
-    transform: translateY(-100%);
-    transition: 1.5s;
-}
-
-.splash.post_animated {
-    display: none;
-}
-
-#content1 {
-    animation: come-in-first 2s ease-in;
-}
-
-#content2 {
-    animation: come-in-second 3s ease-in;
-}
-
-#content3 {
-    transform: translate(4px, 11em);
-    animation: come-in-third 4s ease-in;
-}
-
-@keyframes come-in-first {
-    0% {
-        transform: translateY(13em);
-        opacity: 0;
-    }
-}
-
-@keyframes come-in-second {
-    0%, 50% {
-        transform: translateY(11.5em);
-        opacity: 0;
-    }
-}
-
-@keyframes come-in-third {
-    0%, 60% {
-        transform: translate(4px, 11.5em);
-        opacity: 0;
-    }
-}
-
 /*Splash Screen End*/
 
 body {
