@@ -1,6 +1,15 @@
-Pages - Home, Learn, Music, Artists
+Pages - Home, Learn, Artists, Identify
 
 
-Home - (Big Text) Discover the Music In Philly
-        (Small Text describing the music in philly) 
-        Background should have
+Home  - (Big Text) Discover the Music In Philly
+        (Small Text describing the music in philly) (text should have links and the links of musics should glow and yellow and blue)
+        Background should have video of orchestra and jazz and rap
+        Learn Button
+        Picture scroll linking to the various musical things going vertically
+    
+Learn - (Big Text) Having Various musical things in philly and small text describing them.
+        There needs to be  a card of the left or right and text describing on the left or right, anytime the musical name comes up the blue and yellow glows
+        (Audio) Playing from each picture
+
+
+
