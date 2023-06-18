@@ -16,7 +16,7 @@ header{
     position: relative;
     left: 0;
     top: 0;
-    width: 1005;
+    width: 100%;
     height: 80px;
 }
 
@@ -35,7 +35,7 @@ header h4{
     width: 100%;
     height: 100vh;
     background-color: #161616;
-    transition: 10s;
+    transition: 1s;
 }
 
 .logo-header {
@@ -57,6 +57,12 @@ header h4{
 .logo.active{
     bottom: 0;
     opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
     transition: ease-in-out 0.5s;
 }
 
