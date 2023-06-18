@@ -1,0 +1,6 @@
+Pages - Home, Learn, Music, Artists
+
+
+Home - (Big Text) Discover the Music In Philly
+        (Small Text describing the music in philly) 
+        Background should have
