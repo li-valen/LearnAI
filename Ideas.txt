@@ -1,4 +1,4 @@
-Pages - Home, Learn, Artists, Identify
+Pages - Home, Learn, Artists, Compose
 
 
 Home  - (Big Text) Discover the Music In Philly
@@ -12,4 +12,11 @@ Learn - (Big Text) Having Various musical things in philly and small text descri
         (Audio) Playing from each picture
 
 
+Artists - (Big Text) Unique artists names and their bio should be in small text, anytime the artists name is said the text is glowing (Cool Scrolling Affect)
+          
+Compose - (Text describing composing) 
+          Then composing thing that happens
 
+
+          
+          
