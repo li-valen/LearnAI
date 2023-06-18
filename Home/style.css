@@ -74,13 +74,13 @@
 }
 
 /*Splash Screen End*/
-/*
+
 body {
     font-family: 'GFS Didot', serif;
     line-height: 1.4;
     margin: 0;
     padding: 0;
-    background: black; /* you can add backround image here
+    background: black;  
     color: white;
 }
 
@@ -115,7 +115,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%; /* where the text is on the page 
+    height: 100%;  
 }
 
 .showcase h1 {
@@ -126,7 +126,7 @@ body {
     font-size: 1.3rem;
 }
 
-/* button responsivness beginning /*going to add new button
+
 
 .btn {
     margin: 0;
@@ -285,7 +285,7 @@ span{
 } 
 
 */
-/*
+
 #preloader {
     background: rgb(255, 255, 255) url(/Users/rish/Desktop/WebsiteComp/images/preloader-gif7.gif) no-repeat center center;
     background-size: 40%;
@@ -303,4 +303,3 @@ span{
     bottom: 0;
     z-index: -1;
 }
-*/
