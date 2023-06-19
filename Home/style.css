@@ -55,7 +55,7 @@ body {
     text-align: left;
     align-items: start;
     justify-content: center;
-    top: 390px; /*Edit Text Position*/
+    top: 360px; /*Edit Text Position*/
     left: 30px;  
 }
 
@@ -69,7 +69,7 @@ body {
 
 
 .container-name {
-    top: 390px; /*Edit Text Position*/
+    top: 100px; /*Edit Text Position*/
     left: 100px;  
     align-items: start;
     display: flex;
