@@ -118,3 +118,125 @@ body {
     min-height: 100vh;
     z-index: -1;
 }
+
+/* Carosel Code */
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: 
+#1e9afe;
+    background-image: linear-gradient(45deg, #1e9afe, #60dfcd);
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    opacity: 0;
+    filter: drop-shadow(0 2px 2px 
+#777777);
+    will-change: transform, opacity;
+    animation: carouselAnim 5s linear infinite;
+}
+
+.carousel-item:nth-child(1) {
+    animation-delay: calc(1s * -1);
+}
+
+.carousel-item:nth-child(2) {
+    animation-delay: calc(1s * 0);
+}
+
+.carousel-item:nth-child(3) {
+    animation-delay: calc(1s * 1);
+}
+
+.carousel-item:nth-child(4) {
+    animation-delay: calc(1s * 2);
+}
+
+.carousel-item:last-child {
+    animation-delay: calc(-1s * 2);
+}
+
+.carousel-item-head {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    background-color: 
+#dadada;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    border-radius: 50%;
+    padding: 14px;
+    margin-right: -45px;
+    flex-shrink: 0;
+}
+
+.carousel-item-body {
+    width: 100%;
+    background-color: 
+#ffffff;
+    border-radius: 8px;
+    padding: 16px 20px 16px 70px;
+}
+
+.title {
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+@keyframes carouselAnim {
+    0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    3%, 20% {
+        transform: translateY(100%) scale(0.75);
+        opacity: 0.33;
+        visibility: visible;
+    }
+
+    23%, 40% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    43%, 60% {
+        transform: translateY(-100%) scale(0.75);
+        opacity: 0.33;
+        visibility: visible;
+    }
+
+    63% {
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/* Carosel Ends*/
