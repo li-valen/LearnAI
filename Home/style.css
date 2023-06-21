@@ -168,6 +168,7 @@ body {
     animation-delay: calc(1s * 2);
 }
 
+
 .carousel-item:last-child {
     animation-delay: calc(-1s * 2);
 }
@@ -189,6 +190,7 @@ body {
 
 .carousel-item-body {
     width: 100%;
+    display: flex;
     background-color: #000000; /* Background color of coursel itself*/
     border-radius: 8px;
     padding: 16px 20px 16px 70px;
