@@ -124,8 +124,8 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: #26ff00;
-    background-image: linear-gradient(180deg, #00ff7b, #22d811);
+    background-color: #1e9afe;
+    background-image: linear-gradient(45deg, #1e9afe, #60dfcd);
     justify-content: center;
 }
 
@@ -138,11 +138,11 @@ body {
     justify-content: center;
 }
 
-.carousel-item {
+/*.carousel-item {
     position: absolute;
     width: 100%;
     display: flex;
-    top: -700px; /*Edit Carousel Position*/
+    top: -410px; /*Edit Carousel Position
     left: 450px; 
     align-items: center;
     padding: 0 12px;
@@ -150,7 +150,20 @@ body {
     filter: drop-shadow(0 2px 2px #f6ff00);
     will-change: transform, opacity;
     animation: carouselAnim 5s linear infinite;
+}*/
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    opacity: 0;
+    filter: drop-shadow(0 2px 2px #777777);
+    will-change: transform, opacity;
+    animation: carouselAnim 5s linear infinite;
 }
+
 
 .carousel-item:nth-child(1) {
     animation-delay: calc(1s * -1);
@@ -173,15 +186,10 @@ body {
     animation-delay: calc(-1s * 2);
 }
 
-img{
-    max-width:100%;
-}
 
-.carousel-item-body-one {
-    height: 500px;
-    width: 2000px;
-    display: flex;
-    background: url(/Users/rish/Desktop/WebsiteComp/images/philly-orch-image-1.jpeg);
+.carousel-item-body {
+    width: 100%;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 16px 20px 16px 70px;
 }
