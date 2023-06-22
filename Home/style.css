@@ -153,7 +153,6 @@ body {
 }
 
 .carousel-item:nth-child(1) {
-    background: url(philly-orch-image-1.jpeg);
     animation-delay: calc(1s * -1);
 }
 
@@ -174,7 +173,9 @@ body {
     animation-delay: calc(-1s * 2);
 }
 
-
+img{
+    max-width:100%;
+}
 
 .carousel-item-body-one {
     height: 500px;
