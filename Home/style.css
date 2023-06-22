@@ -153,6 +153,7 @@ body {
 }
 
 .carousel-item:nth-child(1) {
+    background: url(philly-orch-image-1.jpeg);
     animation-delay: calc(1s * -1);
 }
 
@@ -175,11 +176,11 @@ body {
 
 
 
-.carousel-item-body {
+.carousel-item-body-one {
     height: 500px;
     width: 2000px;
     display: flex;
-    background-color: #000000; /* Background color of coursel itself*/
+    background: url(/Users/rish/Desktop/WebsiteComp/images/philly-orch-image-1.jpeg);
     border-radius: 8px;
     padding: 16px 20px 16px 70px;
 }
