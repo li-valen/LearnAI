@@ -172,7 +172,7 @@ body {
     animation-delay: calc(-1s * 2);
 }
 
-.carousel-item-head {
+/*.carousel-item-head {
     position: relative;
     height: 90px;
     width: 90px;
@@ -185,7 +185,7 @@ body {
     padding: 14px;
     margin-right: -45px;
     flex-shrink: 0;
-}
+}*/
 
 .carousel-item-body {
     width: 100%;
