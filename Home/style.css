@@ -141,6 +141,8 @@ body {
 .carousel-item {
     position: absolute;
     width: 100%;
+    top: -410px; /*Edit Carousel Position*/
+    left: 450px; 
     display: flex;
     align-items: center;
     padding: 0 12px;
