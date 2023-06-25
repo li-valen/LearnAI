@@ -152,6 +152,7 @@ body {
     animation: carouselAnim 5s linear infinite;
 }
 
+
 .carousel-item:nth-child(1) {
     animation-delay: calc(1s * -1);
 }
@@ -190,7 +191,7 @@ body {
 .carousel-item-body {
     width: 100%;
     border-radius: 8px;
-    padding: 16px 20px 16px 70px;
+    padding: 10px;
 }
 
 .title {
@@ -201,41 +202,40 @@ body {
 
 @keyframes carouselAnim {
     0% {
-        transform: translateY(100%) scale(0.5);
-        opacity: 0;
+        transform: translateY(100%);
+        opacity: 1;
         visibility: hidden;
     }
 
     3%, 20% {
-        transform: translateY(100%) scale(0.75);
-        opacity: 0.33;
+        transform: translateY(100%);
+        opacity: 1;
         visibility: visible;
     }
 
     23%, 40% {
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
 
     43%, 60% {
-        transform: translateY(-100%) scale(0.75);
-        opacity: 0.33;
-        visibility: visible;
-        align-items: center;
-        justify-content: center;
+        transform: translateY(-100%);
+        opacity: 1;
+
     }
 
     63% {
-        transform: translateY(-100%) scale(0.5);
-        opacity: 0;
+        transform: translateY(-100%);
+        opacity: 1;
         visibility: visible;
     }
 
     100% {
-        transform: translateY(-100%) scale(0.5);
-        opacity: 0;
+        transform: translateY(-100%);
+        opacity: 1;
         visibility: hidden;
     }
 }
+ 
 /* Carosel Ends*/
