@@ -148,7 +148,7 @@ body {
     padding: 0 12px;
     opacity: 0;
     filter: drop-shadow(0 2px 2px #777777);
-    will-change: transform, opacity;
+    /*will-change: transform, opacity;*/
     animation: carouselAnim 5s linear infinite;
 }
 
@@ -190,7 +190,7 @@ body {
 .carousel-item-body {
     width: 100%;
     border-radius: 8px;
-    padding: 16px 20px 16px 70px;
+
 }
 
 .title {
@@ -222,6 +222,8 @@ body {
         transform: translateY(-100%) scale(0.75);
         opacity: 0.33;
         visibility: visible;
+        align-items: center;
+        justify-content: center;
     }
 
     63% {
