@@ -15,8 +15,16 @@ body {
     min-height: 200vh;
 }
 
+/* Menu */
 .js-title {
     font-size: 100px;
+}
+
+#logo {
+    display: inline-block;
+    margin: 15px; 
+    height: 60px;
+    width: auto; /* correct proportions to specified height */
 }
 
 .js-home-button {
