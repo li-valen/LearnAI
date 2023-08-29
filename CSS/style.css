@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #C0C0C0;
+    display: flex;
+    min-height: 200vh;
+}
+
+.js-title {
+    font-size: 100px;
+}
+
+.js-home-button {
+    cursor: pointer;
+    background-color: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.js-discover-button {
+    cursor: pointer;
+    background-color: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.js-interact-button {
+    cursor: pointer;
+    background-color: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+.js-deep-dive-button {
+    cursor: pointer;
+    background-color: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+/* Paragraph */ 
+p {
+    font-size: 20px;
+}
