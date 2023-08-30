@@ -89,6 +89,8 @@ p {
 /*Arrow*/
 .js-down-arrow-element {
     size-adjust: 20px;
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
 }
