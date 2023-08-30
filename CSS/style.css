@@ -11,13 +11,13 @@ html {
 
 body {
     background-color: #C0C0C0;
-    display: flex;
-    min-height: 200vh;
 }
 
 /* Menu */
 .js-title {
     font-size: 100px;
+    text-align: center;
+    transform: translateY(60px);
 }
 
 #logo {
@@ -27,28 +27,30 @@ body {
     width: auto; /* correct proportions to specified height */
 }
 
+.home-page-buttons {
+    text-align: center;
+    padding-left: 10em;
+    transform: translateY(-35em);
+}
+
 .js-home-button {
     cursor: pointer;
     background-color: none;
     background: none;
     border: none;
+    text-decoration: none;
     font-size: 30px;
+    padding-right: 5em;
 }
 
 .js-discover-button {
     cursor: pointer;
     background-color: none;
     background: none;
+    outline: none;
     border: none;
     font-size: 30px;
-}
-
-.js-interact-button {
-    cursor: pointer;
-    background-color: none;
-    background: none;
-    border: none;
-    font-size: 30px;
+    padding-right: 5em;
 }
 
 .js-deep-dive-button {
@@ -57,9 +59,36 @@ body {
     background: none;
     border: none;
     font-size: 30px;
+    padding-right: 5em;
 }
+
+.js-interact-button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding-right: 5em;
+}
+
 
 /* Paragraph */ 
 p {
     font-size: 20px;
+    max-width: 20em;
+    display: flex;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    transform: translateY(-7em);
+}
+
+/*Arrow*/
+.js-down-arrow-element {
+    size-adjust: 20px;
+    display: flex;
+    justify-content: center;
 }
