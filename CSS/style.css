@@ -86,11 +86,23 @@ p {
     transform: translateY(-7em);
 }
 
-/*Arrow*/
-.js-down-arrow-element {
-    size-adjust: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+/*Arrow*/ /*
+.arrow-down-animation-element {
+    text-align: center;
+    font-size: 4em;
+    animation: bounce-arrow-animation 3s infinite ease-in-out;
+}
+
+@keyframes bounce-arrow-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(45%);
+    }
+}*/
+
+.arrow-down-animation-element {
+    font-size: 5em;
+    text-align: center;
 }
