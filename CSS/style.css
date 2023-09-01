@@ -123,3 +123,21 @@ p {
     width: auto;
     padding-left: 15em;
 }
+
+.section-one-paragraph-elements {
+    transform: translate(20%, -67%);
+}
+
+#section-one-paragraph-element-a {
+    text-align: justify;
+    font-size: 30px;
+}
+
+#section-one-paragraph-element-b {
+    text-align: justify;
+    font-size: 30px;
+}
+
+.section-two-element {
+    min-height: 10vh;
+}
