@@ -139,5 +139,38 @@ p {
 }
 
 .section-two-element {
-    min-height: 10vh;
+    min-height: 60vh;
+}
+
+#section-two-black-rectangle-element {
+    height: 15em;
+    width: 70em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-90%);
+}
+
+#section-two-above-button-text-element {
+    z-index:  1;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    transform: translateY(-14em);
+}
+
+.js-discover-button-two-element {
+    z-index: -1;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: #8C56FF;
+    transform: translateY(-13.3em);
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
 }
