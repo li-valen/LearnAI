@@ -106,3 +106,20 @@ p {
     font-size: 5em;
     text-align: center;
 }
+
+.section-one-element {
+    min-height: 100vh;
+}
+
+#section-one-header-element {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#section-one-image-element {
+    height: 30em;
+    width: auto;
+    padding-left: 15em;
+}
