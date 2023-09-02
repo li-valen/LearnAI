@@ -86,22 +86,6 @@ p {
     transform: translateY(-7em);
 }
 
-/*Arrow*/ /*
-.arrow-down-animation-element {
-    text-align: center;
-    font-size: 4em;
-    animation: bounce-arrow-animation 3s infinite ease-in-out;
-}
-
-@keyframes bounce-arrow-animation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(45%);
-    }
-}*/
-
 .arrow-down-animation-element {
     font-size: 5em;
     text-align: center;
