@@ -1,6 +1,32 @@
 .js-title-discover {
     font-size: 100px;
     text-align: center;
-    transform: translateY(-2.5em);
+    transform: translateY(-1.5em);
 }
 
+#back-arrow-element {
+    transform: translateY(-28em); /* button needs to remember the previous page it was on*/
+}
+
+#foward-arrow-element {
+    transform: translate(91em,-28em);
+}
+
+.ai-image-one {
+    flex-shrink: 0;
+    transform: translateY(14em);
+    height: 30em;
+    width: auto;
+    padding-left: 4em;
+}
+
+p {
+    font-size: 20px;
+    max-width: 20em;
+    display: flex;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+}
