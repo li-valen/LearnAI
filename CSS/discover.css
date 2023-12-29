@@ -9,7 +9,7 @@
 }
 
 #foward-arrow-element {
-    transform: translate(91em,-28em);
+    transform: translate(90em,-28em);
 }
 
 .ai-image-one {
@@ -20,8 +20,17 @@
     padding-left: 4em;
 }
 
-p {
-    font-size: 20px;
+#quote {
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    transform: translateY(-6em);
+
+    
+}
+
+#part-one-first-paragraph{
+    font-size: 30px;
     max-width: 20em;
     display: flex;
     text-align: center;
@@ -29,4 +38,17 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-overflow: ellipsis;
+    transform: translate(80%, -160%);
+}
+
+#part-two-first-paragraph {
+    font-size: 30px;
+    max-width: 20em;
+    display: flex;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    transform: translate(80%, -110%);
 }

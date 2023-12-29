@@ -17,7 +17,7 @@ body {
 .js-title {
     font-size: 100px;
     text-align: center;
-    transform: translateY(60px);
+    transform: translateY(30px);
 }
 
 #logo {
@@ -83,11 +83,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-overflow: ellipsis;
-    transform: translate(3em, -7em);
+    transform: translate(0em, -8em);
 }
 
 .arrow-down-animation-element {
     font-size: 5em;
+    transform: translateY(-1em);
     text-align: center;
 }
 
