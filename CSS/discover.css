@@ -25,8 +25,6 @@
     text-align: center;
     display: block;
     transform: translateY(-6em);
-
-    
 }
 
 #part-one-first-paragraph{
@@ -38,7 +36,7 @@
     margin-left: auto;
     margin-right: auto;
     text-overflow: ellipsis;
-    transform: translate(80%, -160%);
+    transform: translate(80%, -230%);
 }
 
 #part-two-first-paragraph {
@@ -46,9 +44,85 @@
     max-width: 20em;
     display: flex;
     text-align: center;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     text-overflow: ellipsis;
-    transform: translate(80%, -110%);
+    transform: translate(80%, -193%);
+}
+
+.title-card-one {
+    font-size: 50px;
+    text-align: right;
+    transform: translate(-3em, -7em);
+}
+
+.ai-image-two {
+    height: 30em;
+    width: auto;
+    transform: translateX(56em);
+}
+
+.title-card-two {
+    font-size: 50px;
+    text-align: left;
+    transform: translate(6em, -11.3em);
+}
+
+#part-one-second-paragraph {
+    font-size: 30px;
+    max-width: 25em;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    transform: translate(-13.2em, -20.5em);
+}
+
+#part-two-second-paragraph {
+    font-size: 30px;
+    max-width: 25em;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    transform: translate(-13.2em, -21em);
+}
+
+.ai-image-three {
+    flex-shrink: 0;
+    transform: translateY(11em);
+    height: 30em;
+    width: auto;
+    padding-left: 4em;
+}
+
+.title-card-three {
+    font-size: 50px;
+    text-align: right;
+    transform: translate(-5em, -8em);
+}
+
+#part-one-third-paragraph {
+    font-size: 30px;
+    max-width: 25em;
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    transform: translate(12.8em, -14em);
+}
+
+#part-two-third-paragraph {
+    font-size: 30px;
+    max-width: 25em;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    transform: translate(12.8em, -13em);
 }
