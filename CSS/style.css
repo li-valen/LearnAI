@@ -10,7 +10,7 @@ html {
 
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .background-image {
@@ -24,30 +24,20 @@ body {
     font-size: 50px;
     color: white;
     padding-left: 6rem;
-    transform: translateY(-5em);
+    transform: translateY(-5.5em);
 }
 
 h1 {
     transform: translateY(-50%);
 }
-/*
-.home-page-discover-button{
-    padding-left: 6.5em;
-    transform: translateX(-50%);
-}
 
-.js-discover-button {
+/* Second Title */
+.second-title {
     color: white;
-    cursor: pointer;
-    background-color: #8C56FF;
-    border: 3px;
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 60px;
-    align-self: left;
+    font-size: 25px;
+    padding-left: 6rem;
+    transform: translateY(-16.2em);
 }
-
-*/
 
 
 /* Paragraph */ 
@@ -58,6 +48,69 @@ p {
     display: flex;
     text-align: left;
     padding-left: 6rem;
-    transform: translateY(-18em);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transform: translateY(-21.4em);
 }
+
+/* Button */
+.discover-button {
+    padding-left: 6rem;
+    transform: translateY(35px);
+
+}
+
+/* CSS */
+.js-discover-button {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .js-discover-button:focus {
+    color: #171e29;
+  }
+  
+  .js-discover-button:hover {
+    border-color: #390089;
+    color: #390089;
+    fill: #390089;
+  }
+  
+  .js-discover-button:active {
+    border-color: #390089;
+    color: #390089;
+    fill: #390089;
+  }
+  
+  @media (min-width: 768px) {
+    .js-discover-button {
+      min-width: 170px;
+    }
+  }
+  
+
+
+
 
