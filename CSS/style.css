@@ -25,10 +25,12 @@ body {
     color: white;
     padding-left: 6rem;
     transform: translateY(-5.5em);
+    z-index: 100;
 }
 
 h1 {
     transform: translateY(-50%);
+    z-index: 100;
 }
 
 /* Second Title */
@@ -37,6 +39,7 @@ h1 {
     font-size: 25px;
     padding-left: 6rem;
     transform: translateY(-16.2em);
+    z-index: 100;
 }
 
 
@@ -93,15 +96,15 @@ p {
   }
   
   .js-discover-button:hover {
-    border-color: #390089;
-    color: #390089;
-    fill: #390089;
+    border-color: #6a00ff;
+    color: #6a00ff;
+    fill: #6a00ff;
   }
   
   .js-discover-button:active {
-    border-color: #390089;
-    color: #390089;
-    fill: #390089;
+    border-color: #6a00ff;
+    color: #6a00ff;
+    fill: #6a00ff;
   }
   
   @media (min-width: 768px) {
