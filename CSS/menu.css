@@ -2,13 +2,24 @@
   /**
     Hamburger
   **/
+
+  #toggle {
+    display: none;
+  }
+  
   .hamburger {
     position: absolute;
-    top: 12em;
+    cursor: pointer;
+    
+    top: 3em;
     right: 5%;
     width: 2em;
     height: 45px;
     z-index: 5;
+  }
+
+  .label {
+    display: none;
   }
   
   .hamburger div {
@@ -26,7 +37,6 @@
   **/
   .nav {
     position: fixed;
-    cursor: pointer;
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -35,6 +45,7 @@
     transition: all 0.3s ease-in-out;
     transform: scale(0);
   }
+
   .nav-wrapper {
     position: relative;
     overflow: hidden;
@@ -42,13 +53,14 @@
     height: 100%;
   }
   nav {
-    text-align: left;
-    margin-left: 25%;
+    text-align: center;
+    transform: translateY(65%);
+    cursor: pointer;
   }
   nav a {
     position: relative;
     text-decoration: none;
-    color: #6ecddd;
+    color: #ffffff;
     font-size: 2em;
     display: inline-block;
     margin-top: 1.25em;
@@ -60,16 +72,18 @@
     height: 0;
     position: absolute;
     width: 0.25em;
-    background-color: white;
+    background-color: #6a00ff;
     left: -0.5em;
     transition: all 0.2s ease-in-out;
   }
   nav a:hover {
-    color: white;
+    color:#6a00ff;
   }
   nav a:hover:before {
     height: 100%;
   }
+
+  
   
   /**
   Animations
