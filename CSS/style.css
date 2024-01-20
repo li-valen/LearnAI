@@ -4,8 +4,8 @@
 
 
 html {
-    overflow-y: hidden;
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
 

@@ -1,3 +1,10 @@
+html {
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+
+
 .background-image {
     text-align: center;
     top: 50%;
@@ -16,106 +23,29 @@
     transform: translateY(-20px);
 }
 
-#scroll {
-    
-}
-
-#part-one-first-paragraph{
-    font-size: 30px;
-    max-width: 20em;
-    display: flex;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(80%, -230%);
-}
-
-#part-two-first-paragraph {
-    font-size: 30px;
-    max-width: 20em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(80%, -193%);
-}
-
-.title-card-one {
+.title-one {
+    color: white;
     font-size: 50px;
-    text-align: right;
-    transform: translate(-3em, -7em);
+    text-align: center;
 }
 
-.ai-image-two {
-    height: 30em;
-    width: auto;
-    transform: translateX(56em);
-}
-
-.title-card-two {
+.title-two {
+    color: white;
     font-size: 50px;
-    text-align: left;
-    transform: translate(6em, -11.3em);
-}
-
-#part-one-second-paragraph {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(-13.2em, -20.5em);
 }
 
-#part-two-second-paragraph {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(-13.2em, -21em);
-}
-
-.ai-image-three {
-    flex-shrink: 0;
-    transform: translateY(11em);
-    height: 30em;
-    width: auto;
-    padding-left: 4em;
-}
-
-.title-card-three {
+.title-three {
+    color: white;
     font-size: 50px;
-    text-align: right;
-    transform: translate(-5em, -8em);
+    text-align: center;
 }
 
-#part-one-third-paragraph {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
-    padding-top: 10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(12.8em, -14em);
-}
 
-#part-two-third-paragraph {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(12.8em, -13em);
+.scrollable-info .section-one {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    height: 100px;
+    width: 500px;
+    overflow-x: scroll;  
 }
