@@ -3,7 +3,9 @@ html {
     overflow-x: scroll;
 }
 
-
+body {
+    white-space: nowrap;
+}
 
 .background-image {
     text-align: center;
@@ -23,29 +25,29 @@ html {
     transform: translateY(-20px);
 }
 
-.title-one {
-    color: white;
-    font-size: 50px;
+section {
+    display: inline-block; /* Display sections in a row */
+    width: 100vw; /* Set the width of each section to the viewport width */
+    height: 100vh; /* Set the height of each section to the viewport height */
     text-align: center;
-}
+    padding: 20px;
+  }
 
-.title-two {
+  section:nth-child(1) {
+    background-color: #2C6CFC;
+  }
+
+
+  section:nth-child(2) {
+    background-color: #272b33;
+  }
+
+
+  section:nth-child(3) {
+    background-color: #656e83;
+  }
+
+
+p {
     color: white;
-    font-size: 50px;
-    text-align: center;
-}
-
-.title-three {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-}
-
-
-.scrollable-info .section-one {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid black;
-    height: 100px;
-    width: 500px;
-    overflow-x: scroll;  
 }
