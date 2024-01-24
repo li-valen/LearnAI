@@ -1,53 +1,46 @@
-html {
-    overflow-y: scroll;
-    overflow-x: scroll;
-}
-
 body {
-    white-space: nowrap;
+ /* Prevents text from wrapping */
+  background-color: black;
+  overflow-x: none;
+  overflow-y: auto;
+  margin: 0; /* Remove default margin */
+  display: flex;
 }
 
 .background-image {
-    text-align: center;
-    top: 50%;
-    transform: translateY(20%);
+  text-align: center;
+  background-color: black;
+  transform: translateY(5em);
 }
 
-.js-title-discover {
-    font-size: 50px;
-    color: white;
-    padding-left: 6rem;
-    transform: translateY(-6.5em);
-    z-index: 100;
+.title {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5em);
 }
 
-.quote_ {
-    transform: translateY(-20px);
+#quote {
+  text-align: center;
+  color: white;
+  max-width: 20em;
+  font-size: 30px;
+}
+
+.quote_class {
+  margin-left: 32%;
+  transform: translateY(-35em);
 }
 
 section {
-    display: inline-block; /* Display sections in a row */
-    width: 100vw; /* Set the width of each section to the viewport width */
-    height: 100vh; /* Set the height of each section to the viewport height */
-    text-align: center;
-    padding: 20px;
-  }
-
-  section:nth-child(1) {
-    background-color: #2C6CFC;
-  }
-
-
-  section:nth-child(2) {
-    background-color: #272b33;
-  }
-
-
-  section:nth-child(3) {
-    background-color: #656e83;
-  }
-
-
-p {
-    color: white;
+  display: inline-block; /* Display sections in a row */
+  min-width: 100vw; /* Set the width of each section to the viewport width */
+  height: 100vh; /* Set the height of each section to the viewport height */
+  text-align: center;
+  padding: 20px;
 }
+
+/* Optional: Style each section differently */
+section:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
