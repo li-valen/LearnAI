@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Scrolling with Vertical Scroll Trigger</title>
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden; /* Disable horizontal scrolling */
+      white-space: nowrap; /* Prevents text from wrapping */
+    }
+
+    .container {
+      white-space: nowrap; /* Prevents text from wrapping */
+      font-size: 0; /* Remove the default spacing between inline-block elements */
+    }
+
+    .section {
+      display: inline-block;
+      min-width: 100vw;
+      min-height: 100vh;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 20px;
+      border-right: 2px solid #000; /* Optional: add a border between sections */
+    }
+
+    /* Optional: Style each section differently */
+    .section:nth-child(even) {
+      background-color: #150e0e;
+    }
+
+    h2 {
+      font-size: 2em; /* Example font size for h2 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h2>Section 1</h2>
+      <p>Content for section 1 goes here.</p>
+    </div>
+    
+    <div class="section">
+      <h2>Section 2</h2>
+      <p>Content for section 2 goes here.</p>
+    </div>
+    
+    <div class="section">
+      <h2>Section 3</h2>
+      <p>Content for section 3 goes here.</p>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+  </div>
+
+  <script>
+    const container = document.querySelector('.container');
+    let currentSection = 0;
+
+    window.addEventListener('wheel', (event) => {
+      if (event.deltaY > 0) {
+        // Scrolling down
+        currentSection++;
+      } else {
+        // Scrolling up
+        currentSection--;
+      }
+
+      // Ensure the currentSection stays within bounds
+      currentSection = Math.max(0, Math.min(container.children.length - 1, currentSection));
+
+      // Scroll horizontally to the current section
+      container.style.transform = `translateX(-${currentSection * 100}vw)`;
+    });
+  </script>
+</body>
+</html>
