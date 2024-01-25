@@ -1,9 +1,8 @@
 body {
  /* Prevents text from wrapping */
   background-color: black;
-  overflow-x: none;
-  overflow-y: auto;
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  overflow-y: auto; /* Enable vertical scrolling */ 
   display: flex;
 }
 
@@ -27,7 +26,7 @@ body {
 }
 
 .quote_class {
-  margin-left: 32%;
+  margin-left: 32.5%;
   transform: translateY(-35em);
 }
 
