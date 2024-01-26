@@ -1,21 +1,18 @@
 body {
  /* Prevents text from wrapping */
-  background-color: black;
-  margin: 0;
-  overflow-y: auto; /* Enable vertical scrolling */ 
-  display: flex;
+  background-color: rgb(0, 0, 0); 
 }
 
 .background-image {
   text-align: center;
-  background-color: black;
-  transform: translateY(5em);
+  background-color: rgb(255, 255, 255);
+  transform: translateY(17em);
 }
 
 .title {
   font-size: 90px;
   color: rgb(255, 255, 255);
-  transform: translateY(-5em);
+  transform: translateY(-3em);
 }
 
 #quote {
@@ -26,20 +23,54 @@ body {
 }
 
 .quote_class {
-  margin-left: 32.5%;
-  transform: translateY(-35em);
+  transform: translateY(-25em);
 }
 
 section {
-  display: inline-block; /* Display sections in a row */
-  min-width: 100vw; /* Set the width of each section to the viewport width */
+  display: grid;/* Set the width of each section to the viewport width */
   height: 100vh; /* Set the height of each section to the viewport height */
   text-align: center;
+  place-items: center;
+  align-content: center;
   padding: 20px;
 }
 
 /* Optional: Style each section differently */
-section:nth-child(even) {
-  background-color: #f0f0f0;
+section:nth-child(1) {
+  background-color: #000000;
 }
 
+section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+section:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefer-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+logos {
+  display: flex;
+}
+
+.logo:nth-child(1) {
+  transition-delay: 200ms;
+}
