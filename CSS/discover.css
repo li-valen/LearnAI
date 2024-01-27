@@ -1,5 +1,5 @@
 body {
- /* Prevents text from wrapping */
+ display: grid;
   background-color: rgb(0, 0, 0); 
 }
 
@@ -74,3 +74,70 @@ logos {
 .logo:nth-child(1) {
   transition-delay: 200ms;
 }
+
+.logo:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.img {
+
+}
+
+.what-image {
+  width: 100%;
+  height: auto;
+  transform: translate(-20em, 9em);
+}
+
+#what-title {
+  font-size: 50px;
+  transform: translate(7em, 2em);
+}
+
+#what-paragraph-1 {
+  max-width: 20em;
+  font-size: 30px;
+  text-align: left;
+  transform: translate(13em, -8em);
+}
+
+#what-paragraph-2 {
+  text-align: left;
+  max-width: 20em;
+  font-size: 30px;
+  transform: translate(13em, -8em);
+}
+
+
+.benefits-image {
+  width: 100%;
+  height: auto;
+  transform: translate(20em, 11em);
+}
+
+
+#benefits-title {
+  font-size: 50px;
+  transform: translate(-9em,3em);
+}
+
+#benefits-paragraph-1 {
+  max-width: 20em;
+  font-size: 30px;
+  text-align: left;
+  transform: translate(-13em, -6em);
+}
+
+#benefits-paragraph-2 {
+  max-width: 20em;
+  font-size: 30px;
+  text-align: left;
+  transform: translate(-13em, -6em);
+}
+
+
+
