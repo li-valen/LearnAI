@@ -139,5 +139,33 @@ logos {
   transform: translate(-13em, -6em);
 }
 
+.drawbacks-image {
+  width: 100%;
+  height: auto;
+  transform: translate(-20em, 9em);
+}
+
+#drawbacks-title {
+  font-size: 50px;
+  transform: translate(7em, 2em);
+}
+
+#drawbacks-paragraph-1 {
+  max-width: 20em;
+  font-size: 30px;
+  text-align: left;
+  transform: translate(13em, -8em);
+}
+
+#drawbacks-paragraph-2 {
+  text-align: left;
+  max-width: 20em;
+  font-size: 30px;
+  transform: translate(13em, -8em);
+}
+
+
+
+
 
 
