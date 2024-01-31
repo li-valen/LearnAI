@@ -1,3 +1,7 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
  display: grid;
  background-color: rgb(0, 0, 0);
@@ -35,6 +39,7 @@ section {
   place-items: center;
   align-content: center;
   padding: 20px;
+  scroll-snap-align: start;
 }
 
 /* Optional: Style each section differently */
