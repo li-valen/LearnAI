@@ -1,150 +1,26 @@
+.body {
+    overflow: auto;
+}
+
+
+
 .js-title-deep-dive {
     font-size: 100px;
+    color: white;
     text-align: center;
-    transform: translateY(-1.5em);
 }
 
-#back-arrow-element {
-    transform: translateY(-28em); /* button needs to remember the previous page it was on*/
-}
-
-#foward-arrow-element {
-    transform: translate(90em,-28em);
-}
-
-.ai-deep-dive-image-one {
-    flex-shrink: 0;
-    transform: translateY(14em);
-    height: 30em;
-    width: auto;
-    padding-left: 4em;
-}
-
-#quote {
-    font-size: 40px;
+#quote{
     text-align: center;
-    display: block;
-    transform: translateY(-6em);
 }
 
-#part-one-first-paragraph-deep-dive{
-    font-size: 30px;
-    max-width: 20em;
-    display: flex;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(67%, -230%);
+._quote {
+    display: grid;
+    align-self: center;
+    z-index: 100;
 }
 
-#part-two-first-paragraph-deep-dive {
-    font-size: 30px;
-    max-width: 20em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(67%, -195%);
-}
-
-.title-card-one-deep-dive {
-    font-size: 50px;
-    text-align: right;
-    transform: translate(-1.7em, -7em);
-}
-
-.ai-deep-dive-image-two {
-    height: 30em;
-    width: auto;
-    transform: translate(52em, -11em);
-}
-
-.title-card-two-deep-dive {
-    font-size: 50px;
-    text-align: left;
-    transform: translate(5.5em, -16.3em);
-}
-
-#part-one-second-paragraph-deep-dive {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(-13.9em, -29.5em);
-}
-
-#part-two-second-paragraph-deep-dive {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(-13.9em, -30.3em);
-}
-
-#part-three-second-paragraph-deep-dive {
-    font-size: 30px;
-    max-width: 25em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(-13.9em, -31em);
-}
-
-.ai-deep-dive-image-three {
-    flex-shrink: 0;
-    transform: translateY(-10.5em);
-    height: 30em;
-    width: auto;
-    padding-left: 4em;
-}
-
-.title-card-three {
-    font-size: 50px;
-    text-align: right;
-    transform: translate(-3.5em, -15em);
-}
-
-#part-one-third-paragraph {
-    font-size: 30px;
-    max-width: 22em;
-    display: flex;
-    padding-top: 10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(15.8em, -27.5em);
-}
-
-#part-two-third-paragraph {
-    font-size: 30px;
-    max-width: 20em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(15.8em, -28em);
-}
-
-#part-three-third-paragraph {
-    font-size: 30px;
-    max-width: 20em;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    transform: translate(15.8em, -28.2em);
+#what-actually-title{
+    font-size: 100px;
+    color: white;
 }
