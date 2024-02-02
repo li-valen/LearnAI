@@ -1,26 +1,140 @@
-.body {
-    overflow: auto;
-}
-
-
-
-.js-title-deep-dive {
-    font-size: 100px;
-    color: white;
+html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  body {
+   display: grid;
+   background-color: rgb(0, 0, 0);
+  
+  }
+  
+  .background-image {
     text-align: center;
-}
-
-#quote{
+    background-color: rgb(0, 0, 0);
+    transform: translateY(17em);
+  }
+  
+  .title {
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    transform: translateY(-3em);
+  }
+  
+  
+  #quote {
     text-align: center;
-}
-
-._quote {
-    display: grid;
-    align-self: center;
-    z-index: 100;
-}
-
-#what-actually-title{
-    font-size: 100px;
     color: white;
-}
+    max-width: 20em;
+    font-size: 30px;
+  }
+  
+  .quote_class {
+    transform: translateY(-25em);
+  }
+  
+  section {
+    display: grid;/* Set the width of each section to the viewport width */
+    height: 100vh; /* Set the height of each section to the viewport height */
+    text-align: center;
+    place-items: center;
+    align-content: center;
+    padding: 20px;
+    scroll-snap-align: start;
+  }
+  
+  /* Optional: Style each section differently */
+  
+  section:nth-child(even) {
+    background-color: #348afe;
+  }
+  
+  section:nth-child(odd) {
+    background-color: #000000;
+  }
+  
+  .what-image {
+    width: 100%;
+    height: auto;
+    transform: translate(-20em, 9em);
+  }
+  
+  #what-title {
+    font-size: 50px;
+    transform: translate(7em, 2em);
+  }
+  
+  #what-paragraph-1 {
+    max-width: 20em;
+    font-size: 30px;
+    text-align: left;
+    transform: translate(13em, -8em);
+  }
+  
+  #what-paragraph-2 {
+    text-align: left;
+    max-width: 20em;
+    font-size: 30px;
+    transform: translate(13em, -8em);
+  }
+  
+  
+  .benefits-image {
+    width: 100%;
+    height: auto;
+    transform: translate(20em, 11em);
+  }
+  
+  
+  #benefits-title {
+    color: white;
+    font-size: 50px;
+    transform: translate(-9em,3em);
+  }
+  
+  #benefits-paragraph-1 {
+    color: white;
+    max-width: 20em;
+    font-size: 30px;
+    text-align: left;
+    transform: translate(-13em, -6em);
+  }
+  
+  #benefits-paragraph-2 {
+    color: white;
+    max-width: 20em;
+    font-size: 30px;
+    text-align: left;
+    transform: translate(-13em, -6em);
+  }
+  
+  .drawbacks-image {
+    width: 100%;
+    height: auto;
+    transform: translate(-20em, 9em);
+  }
+  
+  #drawbacks-title {
+    font-size: 50px;
+    transform: translate(7em, 2em);
+  }
+  
+  #drawbacks-paragraph-1 {
+    max-width: 20em;
+    font-size: 30px;
+    text-align: left;
+    transform: translate(13em, -8em);
+  }
+  
+  #drawbacks-paragraph-2 {
+    text-align: left;
+    max-width: 20em;
+    font-size: 30px;
+    transform: translate(13em, -8em);
+  }
+  
+  
+  
+  
+  
+  
+  
