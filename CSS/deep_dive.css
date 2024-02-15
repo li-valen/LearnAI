@@ -110,26 +110,27 @@ html {
   .drawbacks-image {
     width: 100%;
     height: auto;
-    transform: translate(-20em, 9em);
+    transform: translate(-20em, 13em);
   }
   
   #drawbacks-title {
-    font-size: 50px;
-    transform: translate(7em, 2em);
+    font-size: 40px;
+    text-align: center;
+    transform: translate(11em, 5em);
   }
   
   #drawbacks-paragraph-1 {
     max-width: 20em;
     font-size: 30px;
     text-align: left;
-    transform: translate(13em, -8em);
+    transform: translate(17em, -8em);
   }
   
   #drawbacks-paragraph-2 {
     text-align: left;
     max-width: 20em;
     font-size: 30px;
-    transform: translate(13em, -8em);
+    transform: translate(17em, -8em);
   }
   
   
