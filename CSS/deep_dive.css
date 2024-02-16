@@ -78,20 +78,20 @@ html {
   }
   
   
-  .benefits-image {
+  .how-image {
     width: 100%;
     height: auto;
     transform: translate(20em, 11em);
   }
   
   
-  #benefits-title {
+  #how-title {
     color: white;
     font-size: 50px;
     transform: translate(-9em,3em);
   }
   
-  #benefits-paragraph-1 {
+  #how-paragraph-1 {
     color: white;
     max-width: 20em;
     font-size: 30px;
@@ -99,7 +99,7 @@ html {
     transform: translate(-13em, -6em);
   }
   
-  #benefits-paragraph-2 {
+  #how-paragraph-2 {
     color: white;
     max-width: 20em;
     font-size: 30px;
@@ -107,26 +107,26 @@ html {
     transform: translate(-13em, -6em);
   }
   
-  .drawbacks-image {
+  .type-image {
     width: 100%;
     height: auto;
     transform: translate(-20em, 13em);
   }
   
-  #drawbacks-title {
+  #type-title {
     font-size: 40px;
     text-align: center;
     transform: translate(11em, 5em);
   }
   
-  #drawbacks-paragraph-1 {
+  #type-paragraph-1 {
     max-width: 20em;
     font-size: 30px;
     text-align: left;
     transform: translate(17em, -8em);
   }
   
-  #drawbacks-paragraph-2 {
+  #type-paragraph-2 {
     text-align: left;
     max-width: 20em;
     font-size: 30px;
