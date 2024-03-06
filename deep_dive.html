@@ -3,131 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/discover.css">
+  <link rel="stylesheet" href="CSS/deep_dive.css">
   <link rel="stylesheet" href="CSS/menu.css">
-
   <title>Deep Dive</title>
 </head>
+
 <body>
-  <div class="section-one">
-    <section class="hidden">
-      <div class="background-image">
-        <img src="Images/brain-transparent-background-19.png">
-      </div>
-      
-      <div class="title">
-        <h1>Deep Dive</h1>
-      </div>
-  
-      
-      
-      <div class="quote_class">
-        <p id="quote">"AI is not a silver bullet; it is a tool that, when combined with human creativity and ingenuity, has the potential to solve some of the world's most pressing problems." - Fei-Fei Li
-        </p>
-      </div>
-  
-      <input id="toggle" type="checkbox"></input>
-  
-          <label for="toggle" class="hamburger">
-              <div class="top-bun"></div>
-              <div class="meat"></div>
-              <div class="bottom-bun"></div>
-          </label>
-  
-          <div class="nav">
-              <div class="nav-wrapper">
-                  <nav>
-                      <a href="index.html">HOME</a><br>
-                      <a href="discover.html">DISCOVER</a><br>
-                      <a href="deep_dive.html">DEEP DIVE</a><br>
-                      <a href="interact.html">INTERACT</a>
-                  </nav>
-              </div>
+  <div class="preloader"></div>
+
+  <div class="menu-btn">
+      <span>Menu</span>
+      <div class="outer-menu-icon">
+          <div class="inner-menu-icon">
           </div>
-      
-    </section>
+      </div>
   </div>
 
-      
-
-    
+  <div class="menu">
+      <div class="menu-main-sec">
+              <nav class="nav-links">
+                  <ul class="primary-nav-links">
+                      <li class="navigation-item">
+                          <a href="index.html">Home</a>
+                      </li>
+                      <li class="navigation-item">
+                          <a href="learn.html">Learn</a>
+                      </li>
+                      <li class="navigation-item">
+                          <a href="asl.html">Sign Language</a>
+                      </li>
+                      <li class="navigation-item">
+                          <a href="fingerspelling.html">Fingerspelling</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div>
   
+  <section id="hero">
+            
+    <div class="hero-main-content">
+        <h1 class="intro-anim">Deep Dive</h1>
+        <p class="hero-main-text intro-anim">AI is not a silver bullet; it is a tool that, when combined with human creativity and ingenuity, has the potential to solve some of the world's most pressing problems." - Fei-Fei Li
+        </p>
+        <p class="hero-secondary-text intro-anim">Scroll down to learn more!</p>
+        <div class="down-arrow intro-anim"></div>
+    </div>
+</section>
 
-      <section class="hidden">
+<section id="sec1">
+    <div class="sec1-content">
+        <h1>What actually is AI?</h1>
+        <p>AI is trying to mimic the way humans think and act, but with a computer. The AI is a series of neural networks (which are like the neurons in our brains) and complex statistical computations that allow it to understand what we say and see. </p>
+    </div>
+</section>
 
-        <div class="logos">
-          <div class="logo hidden">
-            <h1 id="what-title">What actually is AI?</h1> <!--Actually is different-->
-          </div>
-          
-          
-          <div class="logo hidden">
-            <p id="what-actually-paragraph-1">AI is trying to mimic the way humans think and act, but with a computer. The AI is a series of neural networks (which are like the neurons in our brains) and complex statistical computations that allow it to understand what we say and see. </p>
+<section id="sec2">
+    <h1>Everything AI does is based on numbers. It converts images, videos, audios into numbers. And this allows the AI to see things the way us humans see things. AI models go through thousands of trial and error rounds before being able to predict on new images and videos.</h1>
+</section>
 
-            <p id="what-actually-paragraph-2">Everything AI does is based on numbers. It converts images, videos, audios into numbers. And this allows the AI to see things the way us humans see things. AI models go through thousands of trial and error rounds before being able to predict on new images and videos.</p>
-          </div>
-          
-        </div>
+<div class="horizontal-scroll-wrapper">
+    <div class="horizontal-scroll-container">
+        <section id="sec3">
+            <div class="horizontal-content">
+                <h1>How is AI made?</h1>
+                <p>The AI that you and I use such as Siri and google assistant and a lot of other AI’s like ChatGPT or Googles Bart are all large models. These models are millions of connections that build the models memory and its ability to think of new things.</p>
+            </div>        
+        </section>
+
+        <section id="sec4">
+            <div class="horizontal-content">
+                <p class="anim">These models are like the neurons in our brains, they allow the model to build strong neural connections. These models are trained in a series of trial and error simulations called
+                  epochs.
+                  </p>
+            </div>
+        </section>
         
+        <section id="sec5">
+            <div class="horizontal-content">
+                <p class="anim">Each epoch represent are number of trial and error simulations where the model is trying to learn about the dat you are feeding to it. If its images, it breaks down the images to numbers and then learns and predicts what it is.</p>
+            </div>
+        </section>
+
+        <section id="sec5">
+          <div class="horizontal-content">
+              <p class="anim">While AI presents numerous benefits, it also comes with several drawbacks and challenges that require careful consideration.</p>
+          </div>
       </section>
 
-    
-
-      <section class="hidden">
-        
-        <div class="logos">
-
-          <div class="logo hidden">
-            <h1 id="how-made-title">How is AI made?</h1>
-          </div>
-
-
-          <div class="logo hidden">
-            <p id="how-made-paragraph-1">The AI that you and I use such as Siri and google assistant and a lot of other AI’s like ChatGPT or Googles Bart are all large models. These models are millions of connections that build the models memory and its ability to think of new things.  </p>
-
-            <p id="how-made-paragraph-2">
-              These models are like the neurons in our brains, they allow the model to build strong neural connections. These models are trained in a series of trial and error simulations called 
-epochs. 
-            </p>
-
-            <p id="how-made-paragraph-3">
-              Each epoch represent are number of trial and error simulations where the model is trying to learn about the dat you are feeding to it. If its images, it breaks down the images to numbers and then learns and predicts what it is.  </p>
-          </div>
-          
-        </div>
-        
-      </section>
-
-
-      <section class="hidden">
-        <div class="logos">
-
-          <div class="logo hidden">
-            <h1 id="drawbacks-title">Drawbacks</h1>
-          </div>
-         
-
-          <div class="logo hidden">
-            <img class="drawbacks-image" src="Images/ai-image-one.jpeg">
-          </div>
-  
-          <div class="logo hidden">
-            <p id="drawbacks-paragraph-1">While AI presents numerous benefits, it also comes with several drawbacks and challenges that require careful consideration.
-            </p>
-
-            <p id="drawbacks-paragraph-2">AI's drawbacks include potential job displacement, algorithmic biases, privacy concerns due to data collection, and ethical dilemmas surrounding accountability. Addressing these challenges is vital for ensuring responsible AI development and safeguarding human well-being.</p>
-          </div>
-          
-
-        </div>
-        
-      </section>
-  
+    </div>
+</div>
 
   <!-- Add more sections as needed -->
 
 </body>
 
 
-<script src="Scripts/discover.js"></script>
+<script src="Scripts/deep_dive.js"></script>
 </html>
