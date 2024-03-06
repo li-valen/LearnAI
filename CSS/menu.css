@@ -10,7 +10,7 @@
   .hamburger {
     position: absolute;
     cursor: pointer;
-    
+    z-index: 100;
     top: 3em;
     right: 5%;
     width: 2em;
