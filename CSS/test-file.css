@@ -1,0 +1,27 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--black);
+    color: var(----black);
+  }
+  .cardStacking {
+    overflow: hidden;
+    padding: 60px 0;
+  
+    .stackCard {
+      border-radius: 30px;
+      position: relative;
+      width: 100%;
+      min-height: 450px;
+      padding: 60px 35px;
+      transform-origin: 50% -160%;
+    }
+  }
+  
+  .spacer{
+    height: 1000px;
+  }
