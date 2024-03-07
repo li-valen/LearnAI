@@ -3,6 +3,7 @@ Get menu down for every page
 Get general color scheme and theme
 
 Deep Dive
--
-
+-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.techdogs.com%2Ftd-articles%2Fmiscellaneous%2Fvirtual-intelligence-a-deep-dive-into-the-promise-of-ai-simulators&psig=AOvVaw38nHDhUFmpbF-y9q2LkhZZ&ust=1709909974724000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPiy55a14oQDFQAAAAAdAAAAABAE
+-Front Page make it move with cursor
 brain rotating
+

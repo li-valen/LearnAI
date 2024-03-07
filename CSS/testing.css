@@ -36,11 +36,6 @@
   display: block;
 }
 
-.colorWhite .bar1,
-.colorWhite .bar2,
-.colorWhite .bar3 {
-  background-color: #ffffff;
-}
 
 .change .bar1 {
   filter: brightness(30);
@@ -62,12 +57,12 @@ aside {
   z-index: 122;
   top: 0;
   left: 0;
-  background: #010001;
+  background: #5e2b5e;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100%;
-  text-align: left;
+  text-align: center;
   display: table;
   color: #444743;
   -webkit-touch-callout: none;
@@ -83,17 +78,18 @@ aside {
 }
 
 aside .secContent {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 aside .secMainNavi {
   width: 35%;
   padding-top: 30px;
-
   float: left;
 }
 
@@ -120,7 +116,7 @@ aside .secMainNavi li a {
 
 aside .secMainNavi li a:hover {
   text-decoration: none;
-  color: #afc1b2;
+  color: #ad06e5;
 }
 
 a {
@@ -134,4 +130,14 @@ li {
   padding: 0 0 0 0px;
   list-style: none;
   display: block;
+}
+
+#background-image {
+  height: 100vh;
+  background-image: url(../Images/Website-1800-x-940.png);
+  opacity: 0.6;
+  overflow: hidden;
+  background-size: 110%, 110%;
+  top: 0px;
+  left: 0px;
 }
