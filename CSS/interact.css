@@ -1,5 +1,6 @@
 html {
     background-color: white;
+    overflow-y: hidden;
 }
 
 .interact-section-title {
@@ -13,13 +14,52 @@ h1 {
     justify-content: center; 
     align-items: center; 
     height: 100vh; 
-    margin: 0;  
+    margin: 0; 
+    transform: translateY(-50px);
+    font-size: 100px;
 }
+
+
 
 h2 {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 100vh; 
-    margin: 0;  
+    transform: translateY(-13em);
+    font-size: 30px;
 }
+
+#try-it-out {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: black;
+    transform: translateY(-23.4em);
+}
+
+button:nth-child(0) {
+    padding: 14px 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 90px;
+    transform: translateY(-22em); 
+}
+
+.button-container button {
+    /* Add styling to buttons as needed */
+    padding: 10px 20px;
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+

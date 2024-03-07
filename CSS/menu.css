@@ -1,108 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
-  /**
-    Hamburger
-  **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  #toggle {
-    display: none;
-  }
-  
-  .hamburger {
-    position: absolute;
-    cursor: pointer;
-    z-index: 100;
-    top: 3em;
-    right: 5%;
-    width: 2em;
-    height: 45px;
-    z-index: 5;
-  }
+/* Hamburger menu*/
+#btnMenu {
+  z-index: 333;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 50px;
+  left: auto;
+  right: 35px;
+  transform: none;
+}
 
-  .label {
-    display: none;
-  }
-  
-  .hamburger div {
-    position: relative;
-    width: 3em;
-    height: 7px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    margin-top: 8px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /**
-  Nav Styles
-  **/
-  .nav {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    top: -100%; left: 0; right: 0; bottom: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    transform: scale(0);
-  }
+#btnMenu .bar1,
+#btnMenu .bar2 {
+  background-color: #000000;
+  transition: 0.5s;
+  transform-origin: 0 0;
+  width: 22px;
+  height: 2px;
+  margin-right: 0px;
+  margin-bottom: 7px;
+  display: block;
+}
 
-  .nav-wrapper {
-    position: relative;
-    overflow: hidden;
-    overflow-y: auto;
-    height: 100%;
-  }
-  nav {
-    text-align: center;
-    transform: translateY(65%);
-    cursor: pointer;
-  }
-  nav a {
-    position: relative;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 2em;
-    display: inline-block;
-    margin-top: 1.25em;
-    transition: color 0.2s ease-in-out;
-    letter-spacing: 1px;
-  }
-  nav a:before {
-    content: '';
-    height: 0;
-    position: absolute;
-    width: 0.25em;
-    background-color: #6a00ff;
-    left: -0.5em;
-    transition: all 0.2s ease-in-out;
-  }
-  nav a:hover {
-    color:#6a00ff;
-  }
-  nav a:hover:before {
-    height: 100%;
-  }
+.colorWhite .bar1,
+.colorWhite .bar2,
+.colorWhite .bar3 {
+  background-color: #ffffff;
+}
 
-  
-  
-  /**
-  Animations
-  **/
-  #toggle:checked + .hamburger .top-bun {
-    transform: rotate(-45deg);
-    margin-top: 25px;
-  }
-  #toggle:checked + .hamburger .bottom-bun {
-    opacity: 0;
-    transform: rotate(45deg);
-  }
-  #toggle:checked + .hamburger .meat {
-    transform: rotate(45deg);
-    margin-top: -7px;
-  }
-  
-  #toggle:checked + .hamburger + .nav {
-    top: 0em;
-    transform: scale(1);
-  }
-  
+.change .bar1 {
+  filter: brightness(30);
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.change .bar2 {
+  -webkit-filter: brightness(30);
+  filter: brightness(30);
+  transform-origin: 0 0;
+  -webkit-transform: rotate(45deg) translate(-10px, -15px);
+  transform: rotate(45deg) translate(-10px, -15px);
+}
+
+aside {
+  position: fixed;
+  z-index: 122;
+  top: 0;
+  left: 0;
+  background: #010001;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  display: table;
+  color: #444743;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav-hide {
+  display: none;
+}
+
+aside .secContent {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+}
+
+aside .secMainNavi {
+  width: 35%;
+  padding-top: 30px;
+
+  float: left;
+}
+
+aside .secMainNavi li {
+  margin: 0 0 25px -20px;
+  font-size: 25px;
+  opacity: 0;
+  transition-delay: 0.5s;
+}
+
+aside .secMainNavi .naviSlideIn {
+  margin-left: 0px;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.3s;
+}
+
+aside .secMainNavi li a {
+  width: 100%;
+  padding: 0 0 3px 0px;
+  color: #ffffff;
+  display: block;
+}
+
+aside .secMainNavi li a:hover {
+  text-decoration: none;
+  color: #afc1b2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0 0 0 0px;
+  padding: 0 0 0 0px;
+  list-style: none;
+  display: block;
+}

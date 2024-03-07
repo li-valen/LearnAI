@@ -10,6 +10,20 @@
 
 </head>
 <body>
+  <div id="btnMenu">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  </div>
+  <aside class="nav-hide">
+    <div class="secContent">
+      <ul class="secMainNavi">
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" style="text-decoration: line-through">Deep Dive</a></li>
+          <li><a href="interact.html">Interact</a></li>
+      </ul>
+    </div>
+  </aside>
 
 <!--
   <input id="toggle" type="checkbox"></input>
@@ -41,6 +55,9 @@
     <div id="quote">
       <h2>"Artificial intelligence is the future, and the future is here now." - Dave Waters</h2>
     </div>
+    <div>
+      <p id="try-it-out">Try it out for yourself!</p>
+    </div>
   </div>
 </section>
   
@@ -54,13 +71,23 @@
 </section>
 -->
 
+
+<div class="button-container">
+  <button id="imageDetectionButton" onclick="imageDetectionButton_()">Image Detection</button>
+  <button>Stock Prediction</button>
+  <button>Object Detection</button>
+</div>
+
   
-          
+<div>
+  <i class="fa-solid fa-brain-circuit"></i>
+</div>
 
 
 
     
 </body>
-
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="Scripts/general.js"></script>
 <script src="Scripts/interact.js"></script>
 </html>
