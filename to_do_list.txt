@@ -1,1 +1,3 @@
-- media queries
+When you hover over menu items make it bold and other not bold
+Get menu down for every page
+Get general color scheme and theme
