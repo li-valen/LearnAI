@@ -7,3 +7,4 @@ Deep Dive
 -Front Page make it move with cursor
 brain rotating
 
+  background-image: url(../Images/Website-1800-x-940-Photoroom-Photoroom-Photoroom.png);
