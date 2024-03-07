@@ -1,6 +1,5 @@
 html {
     background-color: white;
-    overflow-y: hidden;
 }
 
 .interact-section-title {
@@ -63,3 +62,7 @@ button:nth-child(0) {
     border-radius: 5px;
 }
 
+
+h1 {
+    color: black;
+}
