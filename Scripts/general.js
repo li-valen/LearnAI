@@ -7,15 +7,12 @@ var initMouseX;
 var initMouseY;
 var scrollY;
 
-window.addEventListener('scroll', function(e) {
-  scrollY = window.scrollY;
-  console.log(scrollY);
- });
+
 
 $("body").mousemove(function (a) {
   var mouseX = (a.pageX * -1) / 20;
   var mouseY = (a.pageY * -1) / 25;
-  //console.log(mouseY);
+  var top = footer.getBoundingClientRect().top; //genius
   if(initMouse){
     initMouseX = mouseX;
     initMouseY = mouseY;
@@ -23,23 +20,12 @@ $("body").mousemove(function (a) {
   }
   $("#background-image1").css(
       "background-position",
-      (mouseX - initMouseX) + "px " + ((mouseY- (scrollY/20)) - initMouseY) + "px"
+      (mouseX - initMouseX) + "px " + (mouseY-((top-1546)/25)-initMouseY) + "px"
     );
-    $("#background-image2").css(
+  $("#background-image2").css(
       "background-position",
-      (mouseX - initMouseX) + "px " + ((mouseY-(scrollY/20)) - initMouseY) + "px"
+      (mouseX - initMouseX) + "px " + (mouseY-((top-1546)/25)-initMouseY) + "px"
     );
-  
-    if (scrollY == 1966) {
-      $("#background-image2").css(
-        "background-position",
-        (mouseX - initMouseX) + "px " + ((mouseY-5) - initMouseY) + "px"
-      );
-    }
-
-    console.log(mouseY);
-  
-
 });
 
 function checkOverlay() {
@@ -47,6 +33,7 @@ function checkOverlay() {
   if ( top < firstBottom) {
     first.style.height = firstHeight - firstBottom + top + 'px';
   }
+  console.log(firstBottom);
 }
 
 $(function () {
