@@ -134,10 +134,10 @@ li {
 
 #background-image {
   height: 100vh;
-  background-image: url(Images/Website-1800-x-940.png);
-  opacity: 0.6;
+  background-image: url(../Images/Website-1800-x-940.png);
+  opacity: 1;
   overflow: hidden;
-  background-size: 110%, 110%;
+  background-size: 120%, 120%;
   top: 0px;
   left: 0px;
 }
