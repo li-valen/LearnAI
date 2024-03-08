@@ -1,6 +1,5 @@
 html {
     background-color: white;
-    overflow-y: hidden;
 }
 
 .interact-section-title {
@@ -68,7 +67,7 @@ button:nth-child(0) {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-22em); /*remeber to translate*/
+    transform: translateY(20em); /*remeber to translate*/
     padding: 10px 20px;
     background-color: #ffffff;
     border: none;
@@ -100,11 +99,23 @@ h1 {
     color: white;
     text-align: center;
     transform: translateY(-3em);
-    vertical-align: top;
+    vertical-align: bottom;
+}
+
+#test{
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    transform: translateY(-22em);
 }
 
 .hide {
     display: none;
+}
+
+#imageClassify {
+    transform: translateY(-35em);
+    padding-left: 40px;
 }
 
 
