@@ -5,27 +5,28 @@ var firstHeight = firstBottom - first.getBoundingClientRect().top;
 var initMouse = true;
 var initMouseX;
 var initMouseY;
+var initTop;
 var scrollY;
 
 $("body").mousemove(function (a) {
   var mouseX = (a.pageX * -1) / 20;
   var mouseY = (a.pageY * -1) / 25;
   var top = footer.getBoundingClientRect().top; //genius
+
   if(initMouse){
     initMouseX = mouseX;
     initMouseY = mouseY;
+    initTop = top;
     initMouse = false;
   }
   $("#background-image1").css(
       "background-position",
-      (mouseX - initMouseX) + "px " + (mouseY-((top-746)/25.0567261)-initMouseY) + "px"
+      (mouseX - initMouseX) + "px " + (mouseY-((top-initTop)/25.0567261)-initMouseY) + "px"
     );
   $("#background-image2").css(
       "background-position",
-      (mouseX - initMouseX) + "px " + (mouseY-((top-746)/25.0567261)-initMouseY) + "px"
+      (mouseX - initMouseX) + "px " + (mouseY-((top-initTop)/25.0567261)-initMouseY) + "px"
     );
-
-    console.log(top);
 });
 
 function checkOverlay() {
