@@ -7,8 +7,6 @@ var initMouseX;
 var initMouseY;
 var scrollY;
 
-
-
 $("body").mousemove(function (a) {
   var mouseX = (a.pageX * -1) / 20;
   var mouseY = (a.pageY * -1) / 25;
@@ -20,12 +18,14 @@ $("body").mousemove(function (a) {
   }
   $("#background-image1").css(
       "background-position",
-      (mouseX - initMouseX) + "px " + (mouseY-((top-1546)/25)-initMouseY) + "px"
+      (mouseX - initMouseX) + "px " + (mouseY-((top-746)/25.0567261)-initMouseY) + "px"
     );
   $("#background-image2").css(
       "background-position",
-      (mouseX - initMouseX) + "px " + (mouseY-((top-1546)/25)-initMouseY) + "px"
+      (mouseX - initMouseX) + "px " + (mouseY-((top-746)/25.0567261)-initMouseY) + "px"
     );
+
+    console.log(top);
 });
 
 function checkOverlay() {
@@ -33,7 +33,6 @@ function checkOverlay() {
   if ( top < firstBottom) {
     first.style.height = firstHeight - firstBottom + top + 'px';
   }
-  console.log(firstBottom);
 }
 
 $(function () {
