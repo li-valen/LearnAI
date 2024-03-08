@@ -1,11 +1,13 @@
 var footer = document.querySelector('.footer');
 var first = document.querySelector('.first');
+var second = document.querySelector('.second');
 var firstBottom = first.getBoundingClientRect().bottom;
 var firstHeight = firstBottom - first.getBoundingClientRect().top;
 var initMouse = true;
+var init = true;
 var initMouseX;
 var initMouseY;
-var initTop;
+var initTop = footer.getBoundingClientRect().top;
 var scrollY;
 
 $("body").mousemove(function (a) {
@@ -33,6 +35,13 @@ function checkOverlay() {
   var top = footer.getBoundingClientRect().top;
   if ( top < firstBottom) {
     first.style.height = firstHeight - firstBottom + top + 'px';
+  }
+  if(top < -100 && init){
+    first.style.position = "sticky";
+    second.style.position = "sticky";
+    second.style.top = 3000;
+    console.log(initTop);
+    init = false;
   }
 }
 
