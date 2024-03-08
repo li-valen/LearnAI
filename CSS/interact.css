@@ -1,5 +1,6 @@
 html {
     background-color: white;
+    overflow-y: hidden;
 }
 
 .interact-section-title {
@@ -62,7 +63,49 @@ button:nth-child(0) {
     border-radius: 5px;
 }
 
+#close {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-22em); /*remeber to translate*/
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 h1 {
     color: black;
 }
+
+
+.center {
+    opacity: 1;
+    background-color: black;
+    transform: translate(12.7em,-58.5em); /* has to be a way to make this better */
+    max-width: 80em;
+    max-height: 50em;
+
+}
+
+#imagedetection{
+    color: white;
+    text-align: center;
+    transform: translateY(-3em);
+    vertical-align: top;
+}
+
+.hide {
+    display: none;
+}
+
+
+
