@@ -8,13 +8,13 @@ body {
 }
 .first, .second {
   top: -39px;
-  left: -10px;
+  left: -100px;
   position: fixed;
-  width: 200vh;
+  width: 220vh;
   height: 200vh;
   overflow:hidden;
   background-repeat: no-repeat;
-  background-size: 110%, 110%;
+  background-size: 100%, 100%;
 }
 
 .first {
