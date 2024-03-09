@@ -36,6 +36,10 @@ function checkOverlay() {
   if ( top < firstBottom) {
     first.style.height = firstHeight - firstBottom + top + 'px';
   }
+  if( top < -100){
+    first.style.position = "relative";
+    second.style.position = "relative";
+  }
 }
 
 $(function () {
