@@ -36,13 +36,6 @@ function checkOverlay() {
   if ( top < firstBottom) {
     first.style.height = firstHeight - firstBottom + top + 'px';
   }
-  if(top < -100 && init){
-    first.style.position = "sticky";
-    second.style.position = "sticky";
-    second.style.top = 3000;
-    console.log(initTop);
-    init = false;
-  }
 }
 
 $(function () {
