@@ -8,8 +8,8 @@ $('#imageDetectionButton').on('click', function () {
     $(this).fadeOut(500);
 })
 
-$('#stockClose').on('click', function () {
-    $('.stockCenter').fadeOut(500);
+$('#close').on('click', function () {
+    $('.center').fadeOut(500);
     $('#imageDetectionButton').fadeIn(500);
 })
 
@@ -20,7 +20,7 @@ $('#stockPredictionButton').on('click', function () {
 })
 
 $('#stockClose').on('click', function () {
-    $('.center').fadeOut(500);
+    $('.stockCenter').fadeOut(500);
     $('#stockPredictionButton').fadeIn(500);
 })
 
