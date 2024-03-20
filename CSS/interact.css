@@ -191,7 +191,7 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-  transform: translateY(-30em);
+  transform: translateY(-35em);
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -212,6 +212,12 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
+
+
+
+
+
+
 @keyframes fade {
   from {opacity: .6} 
   to {opacity: 1}
@@ -227,13 +233,58 @@ img {vertical-align: middle;}
 
 
 
-
-
-
-
-
-
 /*Stock Prediction*/
+.stockCenter {
+  opacity: 1;
+    background-color: rgb(0, 0, 0);
+    transform: translate(12.7em,-58.5em); /* has to be a way to make this better */
+    max-width: 80em;
+    max-height: 50em;
+}
+
+#stockPrediction{
+  color: white;
+  text-align: center;
+  transform: translateY(-3em);
+  vertical-align: bottom;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+#stockImage {
+  transform: translateY(-35em);
+}
+
+
+
+
+
+#stockClose {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(37.23em,21em); /*remeber to translate*/
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h1 {
+  color: black;
+}
 
 
 
@@ -241,6 +292,48 @@ img {vertical-align: middle;}
 
 
 
+
+
+/* Stable Diffusion */
+.diffusionCenter {
+  opacity: 1;
+    background-color: rgb(0, 0, 0);
+    transform: translate(12.7em,-58.5em); /* has to be a way to make this better */
+    max-width: 80em;
+    max-height: 50em;
+}
+
+
+
+#stableDiffusion{
+  color: white;
+  text-align: center;
+  transform: translateY(-3em);
+  vertical-align: bottom;
+}
+
+#diffusionClose {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(37.23em,21em); /*remeber to translate*/
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h1 {
+  color: black;
+}
 
 
 
