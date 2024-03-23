@@ -75,17 +75,8 @@
     <h1 id="imagedetection">Object Detection</h1>
     <h2 id="test">See how it works!!</h2>
     
-    <div id="video-container">
-
-      <video id="vid"></video>
-      <canvas id="canvas" width="640" height="480"></canvas>
-    </div>
-    <br />
-    <div id="button-container">
-      <button id="but" autoplay>
-        Open Webcam
-      </button>
-    </div>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="500"></canvas>
     
     
 
@@ -129,6 +120,6 @@
 <script src="Scripts/general.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/yolo"></script>
 <script src="Scripts/interact.js"></script>
 </html>
