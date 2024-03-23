@@ -1,6 +1,3 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray(".comparisonSection").forEach(section => {
 	let tl = gsap.timeline({
