@@ -335,8 +335,37 @@ h1 {
   color: black;
 }
 
+#vid {
+  align-items: center;
 
+}
 
+#video-container {
+  transform: translate(20em, -40em);
+}
 
+#button-container {
+  /* padding-left: 36.5em; */
+  transform: translateY(-65em);
+}
+
+#but {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(37.23em,21em); /*remeber to translate*/
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 

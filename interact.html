@@ -75,19 +75,18 @@
     <h1 id="imagedetection">Object Detection</h1>
     <h2 id="test">See how it works!!</h2>
     
-    <div>
-        <video id="vid"></video>
+    <div id="video-container">
+
+      <video id="vid"></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
     </div>
     <br />
-    <button id="but" autoplay>
-        Open WebCam
-    </button>
-    <button id="close-cam">
-      Close WebCam
-    </button>
+    <div id="button-container">
+      <button id="but" autoplay>
+        Open Webcam
+      </button>
+    </div>
     
-
-
     
 
     <button id="close">Close</button>
@@ -128,5 +127,8 @@
 </body>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="Scripts/general.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
 <script src="Scripts/interact.js"></script>
 </html>
