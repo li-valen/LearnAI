@@ -5,11 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2 {
-  font-weight: 400;
-  max-width: none;
-}
-
 .comparisonSection {
   position: relative;
   padding-bottom: 56.25%; /* to maintain aspect ratio (responsive!) */
@@ -32,4 +27,31 @@ h1, h2 {
   height: 100%;
   position: absolute;
   top: 0;
+}
+
+.button {
+  z-index: 100;
+  padding: 8px 8px;
+  background-color: #ffffff;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 100em;
+  position: fixed;
+  top: 35px;
+  left: auto;
+  right: 40px;
+  border: .2666666667vw solid rgba(255, 253, 245, .25);
+  box-shadow: 0 2px 5px rgba(30,30,30,.16);
+}
+
+.button-top,
+.button-middle,
+.button-bottom {
+  background-color: #000000;
+  transition: 0.5s;
+  width: 15px;
+  height: 2px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+  display: block;
 }
