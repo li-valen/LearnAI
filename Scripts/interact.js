@@ -66,7 +66,7 @@ async function detectObjects(video, model) {
     close()
 
     function close() {
-      let closeButton_ = document.getElementById("close");
+      let closeButton_ = document.getElementById("stockClose");
       closeButton_.addEventListener("click", () => {
         video.srcObject.getTracks().forEach(function(track) {
           track.stop();
@@ -74,6 +74,10 @@ async function detectObjects(video, model) {
         video.srcObject = null;
     });
     }
+
+
+    
+
     
 
 
@@ -118,3 +122,60 @@ $('#diffusionClose').on('click', function () {
 
 
 
+
+// IMAGE CLASSIFICATION
+async function classifyImage() {
+  // Get the input image file
+  const inputElement = document.getElementById('imageInput');
+  const inputImageFile = inputElement.files[0];
+  if (!inputImageFile) {
+      alert('Please select an image.');
+      return;
+  }
+
+  // Load the MobileNet model
+  const model = await mobilenet.load();
+
+  // Read the input image file as an image element
+  const reader = new FileReader();
+  reader.onload = async (event) => {
+      const img = new Image();
+      img.onload = async () => {
+          // Convert the image to a TensorFlow.js tensor
+          const imageTensor = tf.browser.fromPixels(img).toFloat().expandDims();
+          
+          // Pre-process the image (normalize pixel values to [0, 1] and resize to 224x224)
+          const preprocessedImageTensor = tf.image.resizeBilinear(imageTensor, [224, 224]).div(255);
+
+          // Perform image classification
+          const predictions = await model.classify(preprocessedImageTensor);
+
+          // Display the classification results
+          displayResults(predictions);
+
+          // Dispose tensors to release memory
+          imageTensor.dispose();
+          preprocessedImageTensor.dispose();
+      };
+      img.src = event.target.result;
+  };
+  reader.readAsDataURL(inputImageFile);
+}
+
+function displayResults(predictions) {
+  // Get the output text element
+  const outputTextElement = document.getElementById('outputText');
+  
+  // Clear previous results
+  outputTextElement.innerHTML = '';
+
+  // Display the classification results
+  predictions.forEach(prediction => {
+      const { className, probability } = prediction;
+      const probabilityPercentage = (probability * 100).toFixed(2);
+      const resultText = `${className}: ${probabilityPercentage}%`;
+      const resultElement = document.createElement('div');
+      resultElement.textContent = resultText;
+      outputTextElement.appendChild(resultElement);
+  });
+}

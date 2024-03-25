@@ -67,7 +67,7 @@ button:nth-child(0) {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translate(-3em,21em); /*remeber to translate*/
+    transform: translate(37em,21em); /*remeber to translate*/
     padding: 10px 20px;
     background-color: #ffffff;
     border: none;
@@ -268,7 +268,7 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
-  transform: translate(37.23em,21em); /*remeber to translate*/
+  transform: translate(-2.23em,21em); /*remeber to translate*/
   padding: 10px 20px;
   background-color: #ffffff;
   border: none;
@@ -342,3 +342,60 @@ h1 {
 #canvas {
   transform: translate(18em, -72em);
 }
+
+/* Image Classicification*/
+
+.container {
+  text-align: center;
+  transform: translateY(-27em);
+}
+#inputImage {
+  max-width: 400px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+#outputText {
+  font-size: 18px;
+  color: rgb(255, 0, 0);
+  margin-top: 16px;
+}
+
+#classify {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(5em, -8em);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#imageInput {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(-20em, -8em);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+

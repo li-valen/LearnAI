@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Image with TensorFlow.js</title>
-    <!-- Load TensorFlow.js -->
+    <title>Image Classification with EfficientNet</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/efficientnet"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,49 +20,94 @@
         .container {
             text-align: center;
         }
-        #textInput {
-            padding: 8px;
-            font-size: 16px;
+        #inputImage {
+            max-width: 400px;
             margin-bottom: 16px;
         }
-        #outputImage {
-            max-width: 400px;
+        #outputText {
+            font-size: 18px;
+            margin-top: 16px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Text to Image with TensorFlow.js</h2>
-        <input type="text" id="textInput" placeholder="Enter text">
-        <button onclick="generateImage()">Generate Image</button>
-        <div id="imageContainer"></div>
+        <h2>Image Classification with EfficientNet</h2>
+        <input type="file" id="inputImage">
+        <button onclick="classifyImage()">Classify Image</button>
+        <div id="outputText"></div>
     </div>
 
     <script>
-        async function generateImage() {
-            // Get user input text
-            const userInput = document.getElementById('textInput').value;
+        async function classifyImage() {
+            // Get the input image file
+            const inputElement = document.getElementById('inputImage');
+            const inputImageFile = inputElement.files[0];
+            if (!inputImageFile) {
+                alert('Please select an image.');
+                return;
+            }
 
-            // Load the text-to-image synthesis model
-            const model = await tf.loadGraphModel('http://localhost:3000/model.json');
+            // Load the EfficientNet model
+            const model = await tf.loadGraphModel('https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/classification/2/default/1');
 
-            // Generate image based on user input text
-            const imageTensor = await model.executeAsync({ text: [userInput] });
+            // Read the input image file as an image element
+            const reader = new FileReader();
+            reader.onload = async (event) => {
+                const img = new Image();
+                img.onload = async () => {
+                    // Convert the image to a TensorFlow.js tensor
+                    const imageTensor = tf.browser.fromPixels(img).toFloat().expandDims();
 
-            // Convert image tensor to canvas
-            const canvas = await tf.browser.toPixels(imageTensor);
-            const imageUrl = canvas.toDataURL(); // Convert canvas to data URL
+                    // Pre-process the image (resize to 224x224 and normalize pixel values to [-1, 1])
+                    const preprocessedImageTensor = tf.image.resizeBilinear(imageTensor, [224, 224]).sub(127.5).div(127.5);
 
-            // Create a new image element
-            const imageElement = document.createElement('img');
-            imageElement.src = imageUrl;
+                    // Perform image classification
+                    const predictions = await model.predict(preprocessedImageTensor);
 
-            // Clear previous image if any
-            const imageContainer = document.getElementById('imageContainer');
-            imageContainer.innerHTML = '';
+                    // Decode the prediction results
+                    const decodedPredictions = await decodePredictions(predictions);
 
-            // Append the new image to the image container
-            imageContainer.appendChild(imageElement);
+                    // Display the classification results
+                    displayResults(decodedPredictions);
+
+                    // Dispose tensors to release memory
+                    imageTensor.dispose();
+                    preprocessedImageTensor.dispose();
+                };
+                img.src = event.target.result;
+            };
+            reader.readAsDataURL(inputImageFile);
+        }
+
+        async function decodePredictions(predictions) {
+            // Decode the prediction results
+            const labelsResponse = await fetch('https://storage.googleapis.com/download.tensorflow.org/data/imagenet_class_index.json');
+            const labels = await labelsResponse.json();
+            const decodedPredictions = Array.from(predictions[0])
+                .map((score, i) => ({ label: labels[i.toString()][1], score }));
+
+            // Sort the predictions by score in descending order
+            decodedPredictions.sort((a, b) => b.score - a.score);
+
+            return decodedPredictions;
+        }
+
+        function displayResults(predictions) {
+            // Get the output text element
+            const outputTextElement = document.getElementById('outputText');
+            
+            // Clear previous results
+            outputTextElement.innerHTML = '';
+
+            // Display the top 5 classification results
+            for (let i = 0; i < 5; i++) {
+                const { label, score } = predictions[i];
+                const resultText = `${label}: ${score.toFixed(4)}`;
+                const resultElement = document.createElement('div');
+                resultElement.textContent = resultText;
+                outputTextElement.appendChild(resultElement);
+            }
         }
     </script>
 </body>
