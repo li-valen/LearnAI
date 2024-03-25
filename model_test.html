@@ -1,85 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Object Detection with TensorFlow.js</title>
-  <!-- Load TensorFlow.js and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image with TensorFlow.js</title>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        #textInput {
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        #outputImage {
+            max-width: 400px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Object Detection on Live Camera Feed</h1>
-  <video id="video" width="640" height="480" autoplay></video>
-  <canvas id="canvas" width="640" height="480"></canvas>
+    <div class="container">
+        <h2>Text to Image with TensorFlow.js</h2>
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button onclick="generateImage()">Generate Image</button>
+        <div id="imageContainer"></div>
+    </div>
 
-  <script>
-    // Load the COCO-SSD model
-    async function loadModel() {
-      const model = await cocoSsd.load();
-      return model;
-    }
+    <script>
+        async function generateImage() {
+            // Get user input text
+            const userInput = document.getElementById('textInput').value;
 
-    // Function to perform object detection on each frame of the video
-    async function detectObjects(video, model) {
-      // Get the video element and canvas element
-      const videoElement = document.getElementById('video');
-      const canvas = document.getElementById('canvas');
-      const ctx = canvas.getContext('2d');
+            // Load the text-to-image synthesis model
+            const model = await tf.loadGraphModel('http://localhost:3000/model.json');
 
-      // Set canvas size to match video size
-      canvas.width = videoElement.width;
-      canvas.height = videoElement.height;
+            // Generate image based on user input text
+            const imageTensor = await model.executeAsync({ text: [userInput] });
 
-      // Perform object detection on each frame
-      async function detectFrame() {
-        const predictions = await model.detect(videoElement);
+            // Convert image tensor to canvas
+            const canvas = await tf.browser.toPixels(imageTensor);
+            const imageUrl = canvas.toDataURL(); // Convert canvas to data URL
 
-        // Clear previous drawings
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Create a new image element
+            const imageElement = document.createElement('img');
+            imageElement.src = imageUrl;
 
-        // Draw bounding boxes around detected objects
-        predictions.forEach(prediction => {
-          ctx.beginPath();
-          ctx.rect(...prediction.bbox);
-          ctx.lineWidth = 2;
-          ctx.strokeStyle = 'red';
-          ctx.fillStyle = 'red';
-          ctx.stroke();
-          ctx.fillText(`${prediction.class} (${Math.round(prediction.score * 100)}%)`, prediction.bbox[0], prediction.bbox[1] > 10 ? prediction.bbox[1] - 5 : 10);
-        });
+            // Clear previous image if any
+            const imageContainer = document.getElementById('imageContainer');
+            imageContainer.innerHTML = '';
 
-        requestAnimationFrame(detectFrame);
-      }
-
-      // Start object detection
-      detectFrame();
-    }
-
-    // Main function
-    async function main() {
-      // Load the model
-      const model = await loadModel();
-
-      // Get the video element
-      const video = document.getElementById('video');
-
-      // Get webcam stream
-      navigator.mediaDevices.getUserMedia({ video: true })
-        .then(function(stream) {
-          // Once the webcam stream is obtained, set it as the video source
-          video.srcObject = stream;
-
-          // Once the video stream is loaded, start object detection
-          video.onloadedmetadata = function(e) {
-            detectObjects(video, model);
-          };
-        })
-        .catch(function(err) {
-          console.log("Error accessing webcam: " + err);
-        });
-    }
-
-    // Start the main function
-    main();
-  </script>
+            // Append the new image to the image container
+            imageContainer.appendChild(imageElement);
+        }
+    </script>
 </body>
 </html>
