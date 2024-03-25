@@ -67,12 +67,19 @@ body {
   position: absolute;
   border-radius: 1em;
   margin-left: 190vh;
+  opacity: 0;
 }
 
 .menu{
   background-color: white;
+  width: 65%;
 }
 
 .chatBox{
   z-index: 2;
+  width: 40%;
+}
+
+.moveLeft{
+  display: none;
 }
