@@ -336,11 +336,21 @@ h1 {
 }
 
 #video {
-  transform: translate(18em, -40em);
+  transform: translate(7em, -41em);
 }
 
 #canvas {
-  transform: translate(18em, -72em);
+  transform: translate(20em, -71.5em);
+
+}
+
+#openCamera {
+  transform: translate(41em, -47.5em);
+}
+
+#closeCamera {
+  transform: translate(42em, -47.5em);
+  
 }
 
 /* Image Classicification*/
