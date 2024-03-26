@@ -75,7 +75,6 @@ function stopCamera() {
 }
 
 
-$('#startCamera').on("click", startCamera())
     
 
 
