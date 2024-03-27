@@ -1,92 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Object Detection with TensorFlow.js</title>
-  <!-- Load TensorFlow.js and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection with MobileNet SSD</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
 </head>
 <body>
-  <h1>Object Detection on Live Camera Feed</h1>
-  <button onclick="startCamera()">Open Camera</button>
-  <button onclick="stopCamera()">Close Camera</button>
-  <video id="video" width="640" height="480"></video>
-  <canvas id="canvas" width="640" height="480"></canvas>
+    <h1>Object Detection with MobileNet SSD</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <button onclick="startObjectDetection()">Start Object Detection</button>
+    <button onclick="stopObjectDetection()">Stop Object Detection</button>
 
-  <script>
-    let videoStream;
+    <script>
+        let videoElement;
+        let canvasElement;
+        let context;
+        let model;
+        let isObjectDetectionRunning = false;
 
-    // Load the COCO-SSD model
-    async function loadModel() {
-      const model = await cocoSsd.load();
-      return model;
-    }
+        async function startObjectDetection() {
+            if (isObjectDetectionRunning) return;
 
-    // Function to perform object detection on each frame of the video
-    async function detectObjects(video, model) {
-      // Get the video element and canvas element
-      const videoElement = document.getElementById('video');
-      const canvas = document.getElementById('canvas');
-      const ctx = canvas.getContext('2d');
+            videoElement = document.getElementById('video');
+            canvasElement = document.getElementById('canvas');
+            context = canvasElement.getContext('2d');
 
-      // Set canvas size to match video size
-      canvas.width = videoElement.width;
-      canvas.height = videoElement.height;
+            model = await cocoSsd.load();
 
-      // Perform object detection on each frame
-      async function detectFrame() {
-        const predictions = await model.detect(videoElement);
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    videoElement.srcObject = stream;
+                    videoElement.onloadedmetadata = detectObjects;
+                })
+                .catch(function(err) {
+                    console.log("Error accessing webcam: " + err);
+                });
 
-        // Clear previous drawings
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+            isObjectDetectionRunning = true;
+        }
 
-        // Draw bounding boxes around detected objects
-        predictions.forEach(prediction => {
-          ctx.beginPath();
-          ctx.rect(...prediction.bbox);
-          ctx.lineWidth = 2;
-          ctx.strokeStyle = 'red';
-          ctx.fillStyle = 'red';
-          ctx.stroke();
-          ctx.fillText(`${prediction.class} (${Math.round(prediction.score * 100)}%)`, prediction.bbox[0], prediction.bbox[1] > 10 ? prediction.bbox[1] - 5 : 10);
-        });
+        function stopObjectDetection() {
+            if (!isObjectDetectionRunning) return;
 
-        requestAnimationFrame(detectFrame);
-      }
+            const stream = videoElement.srcObject;
+            const tracks = stream.getTracks();
+            tracks.forEach(track => track.stop());
 
-      // Start object detection
-      detectFrame();
-    }
+            isObjectDetectionRunning = false;
+        }
 
-    // Function to start the camera
-    async function startCamera() {
-      // Get the video element
-      const video = document.getElementById('video');
+        async function detectObjects() {
+            if (!isObjectDetectionRunning) return;
 
-      try {
-        // Get webcam stream
-        videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
+            context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
 
-        // Once the webcam stream is obtained, set it as the video source
-        video.srcObject = videoStream;
+            const predictions = await model.detect(videoElement);
 
-        // Once the video stream is loaded, start object detection
-        video.onloadedmetadata = async function(e) {
-          const model = await loadModel();
-          detectObjects(video, model);
-        };
-      } catch (err) {
-        console.log("Error accessing webcam: " + err);
-      }
-    }
+            for (let i = 0; i < predictions.length; i++) {
+                const [x, y, width, height] = predictions[i].bbox;
+                const label = predictions[i].class;
+                const score = predictions[i].score;
 
-    // Function to stop the camera
-    function stopCamera() {
-      if (videoStream) {
-        const tracks = videoStream.getTracks();
-        tracks.forEach(track => track.stop());
-      }
-    }
-  </script>
+                // Draw bounding box
+                context.beginPath();
+                context.rect(x, y, width, height);
+                context.lineWidth = 2;
+                context.strokeStyle = 'red';
+                context.fillStyle = 'red';
+                context.stroke();
+                context.font = '16px Arial';
+                context.fillText(`${label} (${(score * 100).toFixed(2)}%)`, x, y - 5);
+            }
+
+            requestAnimationFrame(detectObjects);
+        }
+    </script>
 </body>
 </html>
