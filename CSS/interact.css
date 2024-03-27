@@ -1,9 +1,11 @@
-html {
-    background-color: white;
+body {
+  background-image: url("../Images/sectionOneImage.jpeg");
+  background-repeat: none;
+  background-size: cover;
 }
 
+
 .interact-section-title {
-    background-color: none;
     display: grid;
     text-align: center;
 }
@@ -237,7 +239,7 @@ h1 {
 }
 
 #video {
-  transform: translate(7em, -41em);
+  transform: translate(19.7em, -42em);
 }
 
 #canvas {
@@ -245,13 +247,6 @@ h1 {
 
 }
 
-.startCamera {
-  transform: translate(41em, -50.5em);
-}
-
-.closeCamera {
-  transform: translate(42em, -50.5em);
-}
 
 /* Image Classicification*/
 
@@ -319,3 +314,43 @@ h1 {
   transform: translate(-4.6em, -18em);
   color: green;
 }
+
+#openid {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(20em, -13em);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+#closeid {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translate(50.5em, -12.8em)
+}
+
