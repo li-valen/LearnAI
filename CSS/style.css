@@ -1,68 +1,41 @@
-* {
-    box-sizing: border-box;
-}
-
-
-html {
-    scroll-behavior: smooth;
-    overflow-y: hidden;
-}
-
-
 body {
-    background-color: rgb(0, 0, 0);
-}
-
-.background-image {
-    text-align: center;
-    top: 50%;
-    transform: translateY(30%);
-}
-
-/* Title */
-.js-title {
-    font-size: 50px;
-    color: white;
-    padding-left: 6rem;
-    transform: translateY(-5.5em);
-    z-index: 100;
+  background-color: rgb(125, 3, 231);
+  background-size: cover;
+  opacity: 1;
 }
 
 
-h1 {
-    transform: translateY(-50%);
-    z-index: 100;
+
+.container {
+  display: grid;
 }
 
-/* Second Title */
-.second-title {
-    color: white;
-    font-size: 25px;
-    padding-left: 6rem;
-    transform: translateY(-16.2em);
-    z-index: 100;
+.inner-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  margin-top: 160px;
+  margin-left: 100px; 
 }
 
 
-/* Paragraph */ 
-p {
-    font-size: 20px;
-    color: white;
-    max-width: 27em;
-    display: flex;
-    text-align: left;
-    padding-left: 6rem;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    transform: translateY(-21.4em);
+.inner-container h1 {
+  font-size: 90px;
+  column-gap: -15px;
+  margin-bottom: 20px;
 }
 
-/* Button */
-.discover-button {
-    padding-left: 6rem;
-    transform: translateY(35px);
-
+.inner-container h2 {
+  margin: 0;
+  font-size: 30px;
 }
+
+.inner-container h4 {
+  font-size: 20px;
+  width: clamp(10em, 25em, 25em);
+}
+
 
 /* CSS */
 .js-discover-button {
@@ -115,9 +88,6 @@ p {
   }
   
 
-.homepage-visuals {
-  transform: translateY(-8%);
-}
 
 
 
