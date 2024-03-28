@@ -1,48 +1,68 @@
 html {
-  scroll-snap-type: y mandatory;
 }
 
 body {
- display: grid;
- background-color: rgb(0, 0, 0);
-
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.background-image {
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  transform: translateY(17em);
-}
 
-.title {
-  font-size: 90px;
-  color: rgb(255, 255, 255);
-  transform: translateY(-3em);
-}
-
-#quote {
-  text-align: center;
+.section-one {
   color: white;
-  max-width: 20em;
-  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
 }
 
-.quote_class {
-  transform: translateY(-25em);
+#title {
+  color: black;
+  font-size: 130px;
+}
+
+.quote {
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  margin-top: -90px;
+  text-align: center; /* Center the text horizontally */
+  max-width: 25em; /* Set maximum width */
+  margin-left: auto; /* Center the quote horizontally */
+  margin-right: auto; /* Center the quote horizontally */
+}
+
+.scroll-down {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-self: center;
+  bottom: -120px;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
 }
 
 section {
   display: grid;/* Set the width of each section to the viewport width */
-  height: 100vh; /* Set the height of each section to the viewport height */
-  text-align: center;
-  place-items: center;
-  align-content: center;
+  height: 100%; /* Set the height of each section to the viewport height */
+  width: 97.5vw;
+  overflow-x: hidden;
   padding: 20px;
   scroll-snap-align: start;
 }
 
 /* Optional: Style each section differently */
 
+/* 
 section:nth-child(even) {
   background-color: #348afe;
 }
@@ -167,7 +187,7 @@ logos {
 }
 
 
-
+*/
 
 
 

@@ -1,82 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Detection with MobileNet SSD</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Center Title with Quote and Scroll Arrow</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2em;
+    text-align: center; /* Center the text horizontally */
+  }
+  .quote {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center; /* Center the text horizontally */
+    max-width: 25em; /* Set maximum width */
+    margin-left: auto; /* Center the quote horizontally */
+    margin-right: auto; /* Center the quote horizontally */
+  }
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+  }
+</style>
 </head>
 <body>
-    <h1>Object Detection with MobileNet SSD</h1>
-    <video id="video" width="640" height="480" autoplay></video>
-    <canvas id="canvas" width="640" height="480"></canvas>
-    <button onclick="startObjectDetection()">Start Object Detection</button>
-    <button onclick="stopObjectDetection()">Stop Object Detection</button>
 
-    <script>
-        let videoElement;
-        let canvasElement;
-        let context;
-        let model;
-        let isObjectDetectionRunning = false;
+<div>
+  <h1>Title</h1>
+  <p class="quote">"The greatest benefit of artificial intelligence will be that it will help us unlock the most profound mysteries of the universe." - Neil deGrasse Tyson</p>
+</div>
 
-        async function startObjectDetection() {
-            if (isObjectDetectionRunning) return;
+<div class="scroll-down">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M12 24l-12-18h24z" fill="none" opacity=".87"/>
+    <path d="M12 17.25l-7.5-7.5 1.5-1.5 6 6 6-6 1.5 1.5-7.5 7.5z"/>
+  </svg>
+</div>
 
-            videoElement = document.getElementById('video');
-            canvasElement = document.getElementById('canvas');
-            context = canvasElement.getContext('2d');
-
-            model = await cocoSsd.load();
-
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function(stream) {
-                    videoElement.srcObject = stream;
-                    videoElement.onloadedmetadata = detectObjects;
-                })
-                .catch(function(err) {
-                    console.log("Error accessing webcam: " + err);
-                });
-
-            isObjectDetectionRunning = true;
-        }
-
-        function stopObjectDetection() {
-            if (!isObjectDetectionRunning) return;
-
-            const stream = videoElement.srcObject;
-            const tracks = stream.getTracks();
-            tracks.forEach(track => track.stop());
-
-            isObjectDetectionRunning = false;
-        }
-
-        async function detectObjects() {
-            if (!isObjectDetectionRunning) return;
-
-            context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
-
-            const predictions = await model.detect(videoElement);
-
-            for (let i = 0; i < predictions.length; i++) {
-                const [x, y, width, height] = predictions[i].bbox;
-                const label = predictions[i].class;
-                const score = predictions[i].score;
-
-                // Draw bounding box
-                context.beginPath();
-                context.rect(x, y, width, height);
-                context.lineWidth = 2;
-                context.strokeStyle = 'red';
-                context.fillStyle = 'red';
-                context.stroke();
-                context.font = '16px Arial';
-                context.fillText(`${label} (${(score * 100).toFixed(2)}%)`, x, y - 5);
-            }
-
-            requestAnimationFrame(detectObjects);
-        }
-    </script>
 </body>
 </html>
