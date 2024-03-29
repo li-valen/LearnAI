@@ -34,3 +34,18 @@ gsap.to(whatP2, {
     },
     scale: 1, 
     duration: 2});
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    start: "top top",
+    scrub: 2, 
+    end: "+=3000",
+    pin: true,
+    snap: {snapTo: 1 / (sections.length - 1), directional: false},
+  }
+});
