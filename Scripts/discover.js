@@ -1,51 +1,72 @@
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-let whatTitle = document.getElementById("what-title");
-let whatP1 = document.getElementById("what-p-1");
-let whatP2 = document.getElementById("what-p-2");
-
-gsap.set(whatTitle, {opacity: 0});
-gsap.to(whatTitle, {
-    scrollTrigger: {
-        trigger: whatTitle,
-        start: "top center",
-        toggleActions: "play play restart play"
-    },
-    opacity: 1, 
-    duration: 2});
+// var tl = gsap.timeline({delay: 1});
+// const text = gsap.utils.toArray('')
 
 
-gsap.set(whatP1, {scale: 0.5});
-gsap.to(whatP1, {
-    scrollTrigger: {
-        trigger: whatP1,
-        start: "top center",
-        toggleActions: "play play restart play"
-    },
-    scale: 1, 
-    duration: 2});
+// //WHAT
+// tl.fromTo("#what-title", {opacity: 0, x: -1000}, 
+//   {scrollTrigger: {trigger: ".what-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: false},
+//   opacity:1,
+//   x:0, 
+//   duration: 1});
 
-gsap.set(whatP2, {scale: 0.5});
-gsap.to(whatP2, {
-    scrollTrigger: {
-        trigger: whatP1,
-        start: "top center",
-        toggleActions: "play play restart play"
-    },
-    scale: 1, 
-    duration: 2});
+// tl.fromTo("#what-p-1", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".what-image",start: "top center",end: "300px 100px",
+// toggleActions: "play pause restart play",markers: false},
+//   opacity:1,
+//   x:0, 
+//   duration: 2});
+  
 
-let sections = gsap.utils.toArray(".panel");
+// tl.fromTo("#what-p-2", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".what-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: false},
+//   opacity:1,
+//   x:0, 
+//   duration: 3});
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".container",
-    start: "top top",
-    scrub: 2, 
-    end: "+=3000",
-    pin: true,
-    snap: {snapTo: 1 / (sections.length - 1), directional: false},
-  }
-});
+// //BENEFITS
+// tl.fromTo("#benefits-title", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".benefits-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: true},
+//   opacity:1,
+//   x:0, 
+//   duration: 1});
+
+// tl.fromTo("#benefits-p-1", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".benefits-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: true},
+//   opacity:1,
+//   x:0, 
+//   duration: 2});
+
+// tl.fromTo("#benefits-p-2", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".benefits-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: true},
+//   opacity:1,
+//   x:0, 
+//   duration: 3});
+
+// //DRAWBACKS
+// tl.fromTo("#drawbacks-title", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".drawbacks-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: true},
+//   opacity:1,
+//   x:0, 
+//   duration: 1});
+
+// tl.fromTo("#drawbacks-p-1", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".drawbacks-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: true},
+//   opacity:1,
+//   x:0, 
+//   duration: 2});
+
+// tl.fromTo("#drawbacks-p-2", {opacity: 0, x: -1000}, 
+// {scrollTrigger: {trigger: ".drawbacks-image",start: "top center",end: "300px 100px",
+//   toggleActions: "play pause restart play",markers: true},
+//   opacity:1,
+//   x:0, 
+//   duration: 3});

@@ -1,34 +1,18 @@
-html{
-  overflow-x: hidden;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  overflow-y: hidden;
-  position: relative;
-  height: unset;
+  overflow-x: hidden;
 }
 
-section{
-  width: 17%;
-  height: 100%;
+.panel{
+  width: clamp(100vw, 100vw, 100vw);
+  height: clamp(100vh, 100vh, 100vh);
 }
+
 .quote {
   width: clamp(10em, 25em, 40em); /*clamp min, preffered, max*/ 
   text-align: center;
-}
-
-.container {
-	width: 600%;
-	height: 100vh;
-	display: flex;
-	flex-wrap: nowrap;
-  animation-delay: 0.75s;
-  animation: fade-in 2s;
 }
 
 .intro {
@@ -36,7 +20,7 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 750px;
+  height: 900px;
 }
 
 #title {
@@ -66,6 +50,7 @@ section{
   place-self: center;
   height: 20em;
   width: auto;
+  padding-right: 200px;
 }
 
 .text-container {
@@ -74,7 +59,7 @@ section{
   align-items: flex-end;
   justify-content: center;
   height: 830px;
-  margin-right: clamp(30px, 100px, 200px);
+  margin-right: clamp(30px, 200px, 200px);
   grid-area: col-2start;
 }
 
@@ -87,33 +72,67 @@ section{
   font-size: 50px;
 }
 
-.what-container-benefits {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media (max-width: 1440px) {
+  .what-container img {
+    padding-right: 5px;
+  }
+
+  .text-container {
+    margin-right: 120px;
+  }
 }
 
-.what-container-benefits img {
-  justify-items: center;
-  place-self: center;
-  height: 20em;
-  width: auto;
+
+@media (max-width: 1024px) {
+  .body {
+    overflow-x: hidden;
+  }
+
+  .what-container img {
+    padding-right: 0px;
+  }
+
+  .text-container {
+    margin-right: 250px;
+  }
+
+  .text-container h3 {
+    max-width: 18em;
+  }
 }
 
-.text-container-benefits {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 830px;
-  margin-left: clamp(30px, 100px, 200px);
+
+@media (max-width: 768px) {
+  .what-container{
+    display: grid;
+    grid-template-columns: 0;
+  }
+
+  .what-container img {
+    height: 200px;
+    width: auto;
+    grid-area: col3start;
+    align-self: last baseline;
+    justify-self: center;
+    padding-bottom: 20px;
+  }
+
+  .text-container {
+    align-items: center;
+    margin: 0;
+  }
+
+  .paragraph-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
-.text-container-benefits h3 {
-  width: clamp(10em, 25em, 40em);
-  align-self: center;
-}
-
-.text-container-benefits h1 {
-  align-self: center;
-  font-size: 50px;
+/* Media Query for phones */
+@media (max-width: 425px) {
+  section {
+    width:fit-content;
+    height: fit-content;
+  }
 }
