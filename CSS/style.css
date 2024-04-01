@@ -1,10 +1,14 @@
-body {
-  background-color: rgb(125, 3, 231);
-  background-size: cover;
-  opacity: 1;
+#video-background {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
-
-
 
 .container {
   display: grid;
@@ -15,23 +19,26 @@ body {
   flex-direction: column;
   align-items: flex-start;
   align-content: center;
-  margin-top: 160px;
-  margin-left: 100px; 
+  margin-top: 250px;
+  margin-left: 170px; 
 }
 
 
 .inner-container h1 {
+  color: #ffffff;
   font-size: 90px;
   column-gap: -15px;
   margin-bottom: 20px;
 }
 
 .inner-container h2 {
+  color: white;
   margin: 0;
   font-size: 30px;
 }
 
 .inner-container h4 {
+  color: white;
   font-size: 20px;
   width: clamp(10em, 25em, 25em);
 }
