@@ -3,7 +3,6 @@ body {
   background-color: #111;
   color: white;
   -webkit-overflow-scrolling: touch;
-  font-family: "Signika Negative", sans-serif, Arial;
   overflow-x: hidden;
   margin: 0px;
 }
@@ -29,3 +28,12 @@ body {
   height: 100%;
   position: absolute;
 }
+
+.container {
+  overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+

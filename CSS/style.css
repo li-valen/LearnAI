@@ -1,3 +1,33 @@
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+
 #video-background {
   width: 100vw;
   height: 100vh;
@@ -10,16 +40,12 @@
   z-index: -1;
 }
 
-.container {
-  display: grid;
-}
-
 .inner-container{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-content: center;
-  margin-top: 250px;
+  margin-top: 190px;
   margin-left: 170px; 
 }
 
@@ -46,56 +72,54 @@
 
 /* CSS */
 .js-discover-button {
-    align-items: center;
-    background-color: #fff;
-    border: 2px solid #000;
-    box-sizing: border-box;
-    color: #000;
-    cursor: pointer;
-    display: inline-flex;
-    fill: #000;
-    font-family: Inter,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: -.8px;
-    line-height: 24px;
-    min-width: 140px;
-    outline: 0;
-    padding: 0 17px;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .js-discover-button:focus {
-    color: #171e29;
-  }
-  
-  .js-discover-button:hover {
-    border-color: #6a00ff;
-    color: #6a00ff;
-    fill: #6a00ff;
-  }
-  
-  .js-discover-button:active {
-    border-color: #6a00ff;
-    color: #6a00ff;
-    fill: #6a00ff;
-  }
-  
-  @media (min-width: 768px) {
-    .js-discover-button {
-      min-width: 170px;
-    }
-  }
-  
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.js-discover-button:focus {
+  color: #171e29;
+}
 
+.js-discover-button:hover {
+  border-color: #006aff;
+  color: #006aff;
+  fill: #006aff;
+}
 
+.js-discover-button:active {
+  border-color: #0091ff;
+  color: #0091ff;
+  fill: #0091ff;
+}
 
-
+@media (min-width: 768px) {
+  .js-discover-button {
+    min-width: 170px;
+  }
+}
+  
+@media (max-width: 2560px) {
+  
+}

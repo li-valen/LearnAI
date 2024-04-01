@@ -1,5 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: "+=3500",
+  }
+});
+
 gsap.utils.toArray(".comparisonSection").forEach(section => {
 	let tl = gsap.timeline({
 			scrollTrigger: {
@@ -18,3 +33,6 @@ gsap.utils.toArray(".comparisonSection").forEach(section => {
 	  // ...and the image the opposite way (at the same time)
 	  .fromTo(section.querySelector(".afterImage img"), {xPercent: -100, x: 0}, {xPercent: 0}, 0);
 });
+
+
+
