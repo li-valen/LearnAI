@@ -58,12 +58,13 @@
 }
 
 li {
-  margin: 100px 0 0 0px;
+  margin: 100px 0 0 0;
   padding: 0 0 0 0px;
   list-style: none;
   display: block;
   font-size: xx-large;
 }
+
 a {
   color: #000000;
   font-weight: 1000;
