@@ -1,20 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
-let sections = gsap.utils.toArray(".panel");
-
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".container",
-    pin: true,
-    scrub: 1,
-    snap: 1 / (sections.length - 1),
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    end: "+=3500",
-  }
-});
-
 gsap.utils.toArray(".comparisonSection").forEach(section => {
 	let tl = gsap.timeline({
 			scrollTrigger: {
@@ -35,4 +19,72 @@ gsap.utils.toArray(".comparisonSection").forEach(section => {
 });
 
 
+$(document).ready(function() {
+	ScrollTrigger.defaults({scrub: 1});
+  
+	let tl = gsap.timeline();
+	tl.to(".comparisionSection", {
+		scrollTrigger: {
+			trigger: ".comparisionSection",
+			start: "top bottom",
+			end: "bottom bottom",
+		},
+	});
+  
+	ScrollTrigger.create({
+		trigger: ".comparisionSection",
+		start: "top 10%"
+	});
 
+	ScrollTrigger.create({
+		trigger: "#hero",
+		start: "top top",
+		pin: true,
+		pinSpacing: false
+	});
+  
+	ScrollTrigger.create({
+		trigger: ".comparisionSection",
+		end: "+=75%",
+		pin: true,
+		pinSpacing: true,
+	});
+  
+	ScrollTrigger.create({
+		trigger: "#sec2",
+		start: "top top",
+		pin: true,
+		pinSpacing: false
+	});
+  
+	tl.from(["#sec3", "#sec4"], {
+		scrollTrigger: {
+			trigger: "#sec3",
+			start: "top 80%",
+			end: "bottom bottom",
+		},
+	});
+  
+	ScrollTrigger.create({
+		trigger: ".horizontal-scroll-wrapper",
+		start: "top 10%"
+	});
+  
+	//creates the fake horizontal scrolling effect
+	const sections = gsap.utils.toArray(".horizontal-scroll-container section");
+	const container = document.querySelector(".horizontal-scroll-container");
+	let horizontalScrollTween = gsap.to(sections, {
+		xPercent: -100 * (sections.length - 1),
+		ease: "none",
+		scrollTrigger: {
+			trigger: ".horizontal-scroll-wrapper",
+			start: "top top",
+			end: "+=3000",
+			pin: true,
+			snap: {snapTo: 1 / (sections.length - 1), directional: false},
+		}
+	});
+  
+  });
+  
+  

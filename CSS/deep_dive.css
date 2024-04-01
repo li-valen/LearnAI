@@ -29,11 +29,79 @@ body {
   position: absolute;
 }
 
-.container {
-  overscroll-behavior: none;
-  width: 600%;
+#hero {
+  position: relative;
+  padding: 0 0px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--dark-bg-color);
+}
+
+.down-arrow {
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  animation: move-down 2s ease-in-out infinite;
+}
+
+@keyframes move-down {
+  from {
+      transform: translate(0, -10px) rotate(45deg);
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  to {
+      transform: translate(0, 10px) rotate(45deg);
+      opacity: 0;
+  }
+}
+
+
+#sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-bg-color);
+}
+.horizontal-scroll-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.horizontal-scroll-container {
+  width: 300%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
+  background-color: var(--dark-bg-color);
 }
 
+.horizontal-scroll-container section {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-bg-color);
+  padding: 20vw 10vw;
+}
+
+@media screen and (max-width: 750px) {
+  #hero {
+      padding: 0 0px;
+  }
+}
+
+:root {
+    color: white;
+    font-family: 'Merriweather', serif;
+    --dark-bg-color: #262626;
+    --light-bg-color: #eeeeee;
+    --dark-secondary-color: #444444;
+    --light-secondary-color: white;
+}
