@@ -3,6 +3,8 @@ body {
   background-repeat: none;
   background-size: cover;
   margin: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 
