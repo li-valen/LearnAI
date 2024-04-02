@@ -1,8 +1,13 @@
 body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.section {
   background-image: url("../Images/sectionOneImage.jpeg");
   background-repeat: none;
   background-size: cover;
-  margin: 0px;
+  overflow-y: hidden;
 }
 
 
