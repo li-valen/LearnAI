@@ -1,3 +1,5 @@
+
+
 body{
   overflow-x: hidden;
   overflow-y: hidden;
@@ -176,7 +178,7 @@ img {
 
 @media (max-width: 428px) {
   .inner-container {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 
