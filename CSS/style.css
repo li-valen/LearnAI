@@ -29,14 +29,12 @@ img {
 
 
 #video-background {
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
   position: fixed;
-  left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -121,5 +119,16 @@ img {
 }
   
 @media (max-width: 2560px) {
-  
+  .inner-container {
+    margin-top: 170px;
+  }
 }
+
+@media only screen and (max-width: 680px) {
+  #video-background {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+}  
