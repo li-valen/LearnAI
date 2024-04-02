@@ -155,6 +155,13 @@ img {
   }
 }
 
+@media (max-width: 433px) {
+  .inner-container {
+    padding-left: 10px;
+  }
+  
+}
+
 @media (max-width: 428px) {
   .inner-container {
     padding-left: 0.5em;
