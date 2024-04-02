@@ -149,26 +149,38 @@ img {
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
+  .inner-container h4{
+    max-width: 15em;
+  }
+}
+
+@media (max-width: 428px) {
+  .inner-container h4 {
+    width: 10em;
+  }
 }
 
 @media (max-width: 425px) {
   .inner-container h4{
     width: 15em;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .inner-container {
     margin-top: 220px;
-    padding-left: 1em;
+    padding-left: 0.5em;
   }
   
   .inner-container h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .inner-container h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
+
+
 
   .js-discover-button {
     min-width: 20px;
@@ -176,14 +188,9 @@ img {
 }
 
 
-@media (max-width: 428px) {
-  .inner-container {
-    padding-left: 10px;
-  }
-  .inner-container h4 {
-    
-  }
-}
+
+
+
 
 @media (max-width: 377px) {
   .inner-container {
