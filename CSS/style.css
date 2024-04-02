@@ -118,7 +118,6 @@ img {
   }
 }
   
-<<<<<<< HEAD
 @media (max-width: 2560px) {
   .inner-container {
     margin-top: 170px;
@@ -133,7 +132,6 @@ img {
     margin: 0 auto;
   }
 }  
-=======
 @media (max-width: 650px) {
   .inner-container {
     padding-left: 3em;
@@ -194,4 +192,3 @@ img {
     min-width: 20px;
   }
 }
->>>>>>> 0a98998c7551ef7040d1e20dbb7c8428a29d543c
