@@ -1,10 +1,14 @@
 body {
   height: 100%;
-  background-color: #111;
+  background-color: #000000;
   color: white;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   margin: 0px;
+}
+
+h1{
+  margin-block-start: 0;
 }
 
 .comparisonSection {
@@ -31,9 +35,6 @@ body {
 
 #hero {
   position: relative;
-  padding: 0 0px;
-  width: 100vw;
-  height: 100vh;
   text-align: center;
   background-color: var(--dark-bg-color);
 }
@@ -60,7 +61,6 @@ body {
   }
 }
 
-
 #sec2 {
   display: flex;
   justify-content: center;
@@ -69,8 +69,8 @@ body {
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--light-bg-color);
 }
+
 .horizontal-scroll-wrapper {
   position: relative;
   z-index: 2;
@@ -91,12 +91,6 @@ body {
   padding: 20vw 10vw;
 }
 
-@media screen and (max-width: 750px) {
-  #hero {
-      padding: 0 0px;
-  }
-}
-
 :root {
     color: white;
     font-family: 'Merriweather', serif;
@@ -105,3 +99,4 @@ body {
     --dark-secondary-color: #444444;
     --light-secondary-color: white;
 }
+

@@ -131,8 +131,31 @@ body {
 
 /* Media Query for phones */
 @media (max-width: 425px) {
-  section {
-    width:fit-content;
-    height: fit-content;
+  .what-container {
+    overflow-x: hidden;
+  
   }
+
+  .what-container img {
+    padding-right: 0;
+    margin-left: -5em;
+  }
+
+
+  .text-container {
+    margin-left: -4em;
+  }
+
+
+
+  .text-container h1{
+    font-size: 40px;
+  }
+
+  .text-container h3 {
+    font-size: 10px;
+  }
+
+
 }
+
