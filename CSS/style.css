@@ -156,9 +156,15 @@ img {
 }
 
 @media (max-width: 428px) {
-  .inner-container h4 {
-    width: 10em;
+  .inner-container {
+    padding-left: 0.5em;
   }
+
+  .inner-container h4 {
+    width: 15em;
+  }
+
+  
 }
 
 @media (max-width: 425px) {
