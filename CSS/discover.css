@@ -133,6 +133,26 @@ body {
   }
 }
 
+@media (max-width: 433px) {
+  .intro #title{
+    font-size: 70px;
+  }
+
+  .intro .quote {
+    width: 15em;
+  }
+}
+
+@media (max-width: 428px) {
+  .intro #title{
+    font-size: 70px;
+  }
+
+  .intro .quote {
+    width: 15em;
+  }
+}
+
 /* Media Query for phones */
 @media (max-width: 425px) {
   .intro #title{
@@ -166,3 +186,34 @@ body {
 
 }
 
+@media (max-width: 375px) {
+  .paragraph-container {
+    gap: 1px;
+  }
+
+
+  .text-container {
+    margin-left: 3px;
+  }
+
+  .what-container img {
+    margin-left: 10px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .intro .quote {
+    font-size: 18px;
+    width: 15em;
+  }
+
+  .what-container {
+    margin-left: -20px;
+  }
+
+  .paragraph-container {
+    flex-direction: column;
+  }
+
+}
