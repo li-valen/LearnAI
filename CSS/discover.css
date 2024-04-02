@@ -133,6 +133,29 @@ body {
   }
 }
 
+@media (max-width: 440px) {
+  .intro #title{
+    font-size: 70px;
+  }
+
+  .intro .quote {
+    width: 15em;
+  }
+
+  .paragraph-container {
+    flex-direction: column;
+    padding-bottom: 90px;
+  }
+
+  .paragraph-container h3 {
+    font-size: 17px;
+  }
+
+  .what-container img {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 433px) {
   .intro #title{
     font-size: 70px;
@@ -161,16 +184,16 @@ body {
 
   .intro .quote {
     width: 15em;
+
   }
 
   .what-container img {
     padding-right: 0;
-    margin-left: -5em;
   }
 
 
   .text-container {
-    margin-left: -4em;
+    margin-left: 0;
   }
 
 
@@ -180,7 +203,7 @@ body {
   }
 
   .text-container h3 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
 
@@ -209,7 +232,7 @@ body {
   }
 
   .what-container {
-    margin-left: -20px;
+    margin-left: -30px;
   }
 
   .paragraph-container {
