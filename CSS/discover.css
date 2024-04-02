@@ -85,6 +85,9 @@ section:nth-child(3) {
 }
 
 @media (max-width: 1440px) {
+  .what-container {
+    overflow-x: hidden;
+  }
   .what-container img {
     padding-right: 5px;
   }
