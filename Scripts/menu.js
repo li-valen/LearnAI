@@ -10,8 +10,8 @@ function menuSlide() {
 	width = positionInfo.width * -1;
 	element.style.right = width + "px";
 	if(count == 0){
-		gsap.to(".menu", {xPercent: -160, duration: 2, opacity: 1}); // Slide out box 1 to right
-		gsap.to(".chatBox", {xPercent: -100, duration: 2, opacity: 1}); // Slide out box 2 to right with a delay
+		gsap.to(".menu", {xPercent: -160, duration: 2, opacity: 1, display:"block"}); // Slide out box 1 to right
+		gsap.to(".chatBox", {xPercent: -100, duration: 2, opacity: 1, display:"block"}); // Slide out box 2 to right with a delay
     gsap.to("li", {opacity: 1, duration: 1, ease: "power2.in"});
 		count = 1;
 	} else if(count == 1){
@@ -19,8 +19,8 @@ function menuSlide() {
 		gsap.to(".chatBox", {xPercent: -360, duration: 2}); // Slide in box 2 from right with a delay
     gsap.to("li", {opacity: 0, duration: 0.5, ease: "power2.inOut"});
 		count = 0;
-		gsap.to(".menu", {xPercent: 0, duration: 0, delay: 3}); // Slide in box 1 from right
-		gsap.to(".chatBox", {xPercent: 0, duration: 0, delay: 3}); // Slide in box 2 from right with a delay
+		gsap.to(".menu", {xPercent: 0, duration: 0, delay: 3, display:"none"}); // Slide in box 1 from right
+		gsap.to(".chatBox", {xPercent: 0, duration: 0, delay: 3, display:"none"}); // Slide in box 2 from right with a delay
 	}
 }
 

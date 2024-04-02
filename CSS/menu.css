@@ -45,6 +45,7 @@
   border-radius: 0.5em;
   text-align: center;
   justify-content: center;
+  display: none;
   font-family: "Poppins", sans-serif;
 }
 
@@ -55,6 +56,7 @@
   height: 100%;
   position: fixed;
   border-radius: 0.5em;
+  display: none;
 }
 
 li {
