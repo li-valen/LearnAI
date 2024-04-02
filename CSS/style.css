@@ -176,6 +176,9 @@ img {
   .inner-container {
     padding-left: 5px;
   }
+  .inner-container h4 {
+    
+  }
 }
 
 @media (max-width: 377px) {
