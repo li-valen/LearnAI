@@ -147,7 +147,7 @@ img {
 
 @media (max-width: 425px) {
   .inner-container {
-    padding-left: 1em;
+    padding-left: 40px;
   }
 
   .inner-container h4{
