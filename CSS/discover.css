@@ -135,9 +135,12 @@ body {
 
 /* Media Query for phones */
 @media (max-width: 425px) {
-  .what-container {
-    overflow-x: hidden;
-  
+  .intro #title{
+    font-size: 70px;
+  }
+
+  .intro .quote {
+    width: 15em;
   }
 
   .what-container img {
