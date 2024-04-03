@@ -12,8 +12,8 @@ text_container.forEach(container=> {
             start: "top top",
             end: "bottom bottom",
             toggleActions: "play play restart play"
-        }
-
+        },
+        duration: 1
     })
 });
 
@@ -24,7 +24,7 @@ images.forEach(image=> {
     gsap.fromTo(image, {opacity: 0}, {
         opacity: 1,
         scrollTrigger: {
-            trigger: image,
+            trigger: text_container,
             start: "top top",
             end: "bottom bottom",
             toggleActions: "play play restart play"
