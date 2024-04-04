@@ -5,6 +5,16 @@ body {
   overflow-x: hidden;
 }
 
+#discover-vid-background {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .panel{
   width: clamp(100vw, 100vw, 100vw);
   height: clamp(100vh, 100vh, 100vh);
@@ -27,6 +37,29 @@ body {
   font-size: 90px;
   margin: 0;
 }
+
+.ai-text {
+  color: blueviolet;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(5, 32, 210); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .07em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(0, 17, 255, 0.979); }
+}
+
 
 .scroll-down {
   display: flex;
@@ -92,15 +125,21 @@ body {
   font-size: 50px;
 }
 
-section:nth-child(odd) {
+section:nth-child(0) {
   background-color: rgb(0, 85, 222);
+  opacity: 0.4;
 }
 
-section:nth-child(even) {
-  background-color: rgb(0, 52, 131);
+section:nth-child(2) {
+  background-color: rgb(35, 41, 49);
 }
 
 section:nth-child(3) {
+  background-color: rgb(0, 52, 131);
+}
+
+section:nth-child(4) {
+  background-color: rgb(0, 52, 131);
   overflow-y: hidden;
 }
 
