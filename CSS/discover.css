@@ -48,10 +48,29 @@ body {
   grid-area: 2;
   justify-self: center;
   place-self: center;
-  height: 20em;
-  width: auto;
+  /* height: 20em;
+  width: auto; */
   padding-right: 200px;
 }
+
+
+.benefits-image {
+  height: 40em;
+  width: auto;
+}
+
+.what-image {
+  height: 30em;
+  width: auto;
+}
+
+.drawbacks-image {
+  height: 30em;
+  width: auto;
+  padding-left: 100px;
+}
+
+
 
 .text-container {
   display: flex;
@@ -84,7 +103,7 @@ section:nth-child(3) {
   overflow-y: hidden;
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .what-container {
     overflow-x: hidden;
   }
@@ -187,7 +206,7 @@ section:nth-child(3) {
   }
 }
 
-/* Media Query for phones */
+
 @media (max-width: 425px) {
   .intro #title{
     font-size: 70px;
@@ -250,4 +269,4 @@ section:nth-child(3) {
     flex-direction: column;
   }
 
-}
+} */
