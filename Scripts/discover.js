@@ -13,7 +13,8 @@ text_container.forEach(container=> {
             end: "bottom bottom",
             toggleActions: "play play restart play"
         },
-        duration: 1
+        duration: 1.5,
+        delay: 1
     })
 });
 

@@ -55,6 +55,7 @@ body {
 
 
 .benefits-image {
+  padding-left: 50px;
   height: 40em;
   width: auto;
 }
@@ -65,9 +66,9 @@ body {
 }
 
 .drawbacks-image {
-  height: 30em;
+  height: 25em;
   width: auto;
-  padding-left: 100px;
+  padding-left: 40px;
 }
 
 
@@ -78,7 +79,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   height: 830px;
-  margin-right: clamp(30px, 200px, 200px);
+  margin-right: 70px;
   grid-area: col-2start;
 }
 
