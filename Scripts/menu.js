@@ -15,6 +15,8 @@ function menuSlide() {
 		gsap.to(".chatBox", {height: "0px", duration: 0.8, ease: "power2.in"}); // Slide in box 2 from right with a delay
     	gsap.to("li", {opacity: 0, duration: 0.8, ease: "power2.out"});
 		count = 0;
+		gsap.to(".menu", {delay: 0.8, display:"none"}); // Slide in box 1 from right
+		gsap.to(".chatBox", {delay: 0.8, display:"none"}); // Slide in box 2 from right with a delay
 	}
 }
 
