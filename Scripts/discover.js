@@ -1,3 +1,21 @@
+$('.intro').style.display = none;
+
+window.addEventListener('load', function() {
+    $('.intro').fadeIn(100);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const text_container = gsap.utils.toArray(".text-container");

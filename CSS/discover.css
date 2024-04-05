@@ -5,6 +5,34 @@ body {
   overflow-x: hidden;
 }
 
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 #discover-vid-background {
   object-fit: cover;
   width: 100vw;
@@ -46,7 +74,7 @@ body {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .07em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
+    typing 9.5s steps(30, end),
     blink-caret .75s step-end infinite;
 }
 /* The typing effect */
@@ -125,22 +153,16 @@ body {
   font-size: 50px;
 }
 
-section:nth-child(0) {
-  background-color: rgb(0, 85, 222);
-  opacity: 0.4;
-}
-
-section:nth-child(2) {
-  background-color: rgb(35, 41, 49);
-}
-
 section:nth-child(3) {
-  background-color: rgb(0, 52, 131);
+  background-color: aqua;
 }
 
 section:nth-child(4) {
-  background-color: rgb(0, 52, 131);
-  overflow-y: hidden;
+  background-color: rgb(66, 82, 82);
+}
+
+section:nth-child(5) {
+  background-color: aqua;
 }
 
 /* @media (max-width: 1440px) {
