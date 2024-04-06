@@ -80,38 +80,6 @@ function stopCamera() {
 
 
 
-$('#objectDetectionButton').on('click', function () {
-    $('.center').fadeIn(500);
-    $(this).fadeOut(500);
-})
-
-$('#close').on('click', function () {
-    $('.center').fadeOut(500);
-    $('.but').fadeOut(500);
-    $('#objectDetectionButton').fadeIn(500);
-})
-
-// Stock Prediction Button
-$('#stockPredictionButton').on('click', function () {
-    $('.stockCenter').fadeIn(500);
-    $(this).fadeOut(500);
-})
-
-$('#stockClose').on('click', function () {
-    $('.stockCenter').fadeOut(500);
-    $('#stockPredictionButton').fadeIn(500);
-})
-
-$('#stableDiffusionButton').on('click', function () {
-  $('.diffusionCenter').fadeIn(500);
-  $(this).fadeOut(500);
-})
-
-$('#diffusionClose').on('click', function () {
-  $('.diffusionCenter').fadeOut(500);
-  $('#stableDiffusionButton').fadeIn(500);
-})
-
 
 
 
