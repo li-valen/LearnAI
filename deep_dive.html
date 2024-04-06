@@ -13,65 +13,91 @@
 </head>
 
 <body>
-  
-  <div class = "menuSection" id="menuSect">
-    <div class="chatBox" id="box2">
-      <iframe id=CRHDJKARCJ loading="eager" src="https://embed.pickaxeproject.com/axe?id=Chat_Bot_8HRGT&mode=embed_gold&host=beta&theme=dark&opacity=100&font_header=Real+Head+Pro&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=08090B&c_ff=08090B&c_fbd=FFFFFF&c_bb=FFFFFF&c_bt=000000&c_t=FFFFFF&s_ffo=100&s_bbo=100&s_f=minimalist&s_b=filled&s_t=2&s_to=1&s_r=2" width="100%" height="100%" onMouseOver="this.style.boxShadow='0px 6px 6px -3px rgba(0,0,0,0.1)'" onMouseOut="this.style.boxShadow='none'" style="border:1px solid rgba(0, 0, 0, 1);transition:.3s;border-radius:4px;" frameBorder="0"></iframe>    </div>
-    <div class="menu" id="box1">
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="deep_dive.html">Deep Dive</a></li>
-      <li><a href="interact.html" id="current" >Interact</a></li>
-      <li><a href="testing.html">Testing</a></li>
+
+  <div class="loader">
+    <img src="Images/preloader-icon.gif" alt="">
+  </div>
+
+  <!-- MENU -->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="deep_dive.html">Deep Dive</a></li>
+            <li><a href="interact.html">Interact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
-  <button class="button" id="animation">
-    <div class="button-top"></div>
-    <div class="button-middle"></div>
-    <div class="button-bottom"></div>
-  </button>
+  <section class="panel">
+    <div class ="intro">
+    <h1 id="title">Deep Dive into <span class="ai-text">AI</span></h1>
+    <h1 class="quote">"<span class="ai-text">AI</span> is more than ChatGPT. Its a mathematically complex set of networks that make thousands of calculations per second." - Daniel Bourke</h1>
+      <div class="scroll-down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 24l-12-18h24z" fill="none" opacity=".87"/>
+        <path d="M12 17.25l-7.5-7.5 1.5-1.5 6 6 6-6 1.5 1.5-7.5 7.5z"/>
+        </svg>
+      </div>
+    </div>
 
-
-  <section class="comparisonSection">
-  <div class="comparisonImage beforeImage">
-    <img src="Images\Website-1800-x-940-Photoroom-Photoroom-Photoroom (2).png" alt="before">
-  </div>
-  <div class="comparisonImage afterImage">
-    <img src="Images\Website-1800-x-940-Photoroom-Photoroom-Photoroom.png" alt="after">
-  </div>
+    <video id="deep-dive-vid-background" src="Images/120848-724673614.mp4" autoplay loop muted type="video/mp4"></video>
   </section>
 
-<div class="horizontal-scroll-wrapper">
-    <div class="horizontal-scroll-container">
-        <section id="sec3">
-            <div class="horizontal-content">
-                <h1>Whats Behind AI?</h1>
-                <p>Behind AI lies a complex framework of computational algorithms and data structures, primarily driven by machine learning techniques such as neural networks. Neural networks mimic the structure and function of the human brain, composed of interconnected nodes organized in layers. Through layers of processing, these networks learn from data patterns to make predictions or decisions without explicit programming. They rely heavily on vast datasets for training and fine-tuning, enabling them to recognize patterns, derive insights, and adapt to new information. Interdisciplinary collaboration across computer science, mathematics, and cognitive psychology further fuels the development of neural networks, advancing their application across diverse domains.</p>
-            </div>        
-        </section>
 
-        <section id="sec4">
-            <div class="horizontal-content">
-                <h1 class="anim">Image Classification</h1>
-                <p class="anim">An image classification model is built upon a convolutional neural network (CNN) trained on labeled image data, optimizing its parameters through algorithms like stochastic gradient descent. Validation ensures its generalization, while evaluation on a separate test set measures its performance before deployment. Techniques like fine-tuning and regularization enhance accuracy and prevent overfitting, culminating in a reliable classification system.</p>
-            </div>
-        </section>
-        
-        <section id="sec5">
-            <div class="horizontal-content">
-                <h1 class="anim">Object Detection</h1>
-                <p class="anim">Object detection models use specialized layers added to convolutional neural networks (CNNs) to find and classify objects in images. During training, they learn to draw boxes around objects and label them using optimization methods like stochastic gradient descent. After training, the model is tested to see how well it can find and classify objects. Once it works well, it's turned into a usable format for real-world applications. Techniques like transfer learning help improve its accuracy, ensuring it can find objects accurately and quickly in different situations.</p>
-                <a href="asl.html" class="asl-btn anim">Interact with AI!</a>
-            </div>
-        </section>
-    </div>
-</div>
+  
+
+
+  <div class="horizontal-scroll-wrapper">
+      <div class="horizontal-scroll-container">
+          <section id="sec3">
+              <div class="horizontal-content">
+                <div class="text">
+                  <h1>Whats Behind AI?</h1>
+                  <h3>Behind AI lies a complex framework of computational algorithms and data structures, primarily driven by machine learning techniques such as neural networks. Neural networks mimic the structure and function of the human brain, composed of interconnected nodes organized in layers. Through layers of processing, these networks learn from data patterns to make predictions or decisions without explicit programming. They rely heavily on vast datasets for training and fine-tuning, enabling them to recognize patterns, derive insights, and adapt to new information. Interdisciplinary collaboration across computer science, mathematics, and cognitive psychology further fuels the development of neural networks, advancing their application across diverse domains.</h3>
+                </div>
+                  <img src="Images/neural-network-3816319_1280.png" alt="">
+              </div>        
+          </section>
+
+          <section id="sec4">
+              <div class="horizontal-content">
+                <div class="text">
+                  <h1 class="anim">Image Classification</h1>
+                  <h3 class="anim">An image classification model is built upon a convolutional neural network (CNN) trained on labeled image data, optimizing its parameters through algorithms like stochastic gradient descent. Validation ensures its generalization, while evaluation on a separate test set measures its performance before deployment. Techniques like fine-tuning and regularization enhance accuracy and prevent overfitting, culminating in a reliable classification system.</h3>
+                </div>
+              </div>
+
+              <img src="Images/cnn(1).jpeg" alt="">
+          </section>
+          
+          <section id="sec5">
+              <div class="horizontal-content">
+                <div class="text">
+                  <h1 class="anim">Object Detection</h1>
+                  <h3 class="anim">Object detection models use specialized layers added to convolutional neural networks (CNNs) to find and classify objects in images. During training, they learn to draw boxes around objects and label them using optimization methods like stochastic gradient descent. After training, the model is tested to see how well it can find and classify objects. Once it works well, it's turned into a usable format for real-world applications. Techniques like transfer learning help improve its accuracy, ensuring it can find objects accurately and quickly in different situations.</h3>
+                  <a href="interact.html" class="asl-btn anim">Interact with AI!</a>
+                </div>
+                  
+              </div>
+
+              <img src="Images/object-detection-nn.png" alt="">
+          </section>
+      </div>
+  </div>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="Scripts/deep_dive.js"></script>
+<script src="Scripts/pre-loader.js"></script>
 <script src="Scripts/menu.js"></script>
 </html>

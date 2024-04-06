@@ -1,3 +1,12 @@
+:root {
+  color: white;
+  font-family: 'Merriweather', serif;
+  --dark-bg-color: #262626;
+  --light-bg-color: #eeeeee;
+  --dark-secondary-color: #444444;
+  --light-secondary-color: white;
+}
+
 body {
   height: 100%;
   background-color: #000000;
@@ -7,31 +16,89 @@ body {
   margin: 0px;
 }
 
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#deep-dive-vid-background {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.panel{
+  width: clamp(100vw, 100vw, 100vw);
+  height: clamp(100vh, 100vh, 100vh);
+}
+
+.quote {
+  color: rgb(0, 187, 255);
+  width: clamp(10em, 25em, 40em); /*clamp min, preffered, max*/ 
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+#title {
+  color: rgb(0, 187, 255);
+  font-size: 90px;
+  margin: 0;
+}
+
+.ai-text {
+  color: blueviolet;
+}
+
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  color: white;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+
+
 h1{
   margin-block-start: 0;
 }
 
-.comparisonSection {
-  position: relative;
-  padding-bottom: 56.25%; /* to maintain aspect ratio (responsive!) */
-}
-.comparisonImage {
-  width: 100%;
-  height: 100%;
-}
-.afterImage {
-  position: absolute;
-  overflow: hidden;
-  transform: translate(100%, 0px);
-}
-.afterImage img {
-  transform: translate(-100%, 0px);
-}
-.comparisonImage img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
+
 
 #hero {
   position: relative;
@@ -91,12 +158,20 @@ h1{
   padding: 20vw 10vw;
 }
 
-:root {
-    color: white;
-    font-family: 'Merriweather', serif;
-    --dark-bg-color: #262626;
-    --light-bg-color: #eeeeee;
-    --dark-secondary-color: #444444;
-    --light-secondary-color: white;
+
+.horizontal-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 240px;
+  grid-area: col-2start;
+}
+
+.text h3 {
+  max-width: 40em;
+}
