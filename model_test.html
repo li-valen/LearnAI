@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Center Title with Quote and Scroll Arrow</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Ensure full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  h1 {
-    font-size: 2em;
-    text-align: center; /* Center the text horizontally */
-  }
-  .quote {
-    font-size: 30px;
-    font-style: italic;
-    margin-top: 20px;
-    text-align: center; /* Center the text horizontally */
-    max-width: 25em; /* Set maximum width */
-    margin-left: auto; /* Center the quote horizontally */
-    margin-right: auto; /* Center the quote horizontally */
-  }
-  .scroll-down {
-    position: absolute;
-    bottom: 20px;
-    animation: bounce 1s infinite alternate;
-  }
-  @keyframes bounce {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(10px); }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div>
-  <h1>Title</h1>
-  <p class="quote">"The greatest benefit of artificial intelligence will be that it will help us unlock the most profound mysteries of the universe." - Neil deGrasse Tyson</p>
-</div>
-
-<div class="scroll-down">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path d="M12 24l-12-18h24z" fill="none" opacity=".87"/>
-    <path d="M12 17.25l-7.5-7.5 1.5-1.5 6 6 6-6 1.5 1.5-7.5 7.5z"/>
-  </svg>
-</div>
-
+    <div id="btnMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+      </div>
+      <aside class="nav-hide">
+        <div class="secContent">
+          <ul class="secMainNavi">
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="trees_directory.html">Trees Directory</a></li>
+            <li><a href="#" style="text-decoration: line-through">Home</a></li>
+            <li><a href="identify.html">Identify a Tree</a></li>
+            <li><a href="tree_location.html">Locate A Tree</a></li>
+          </ul>
+        </div>
+      </aside>
 </body>
 </html>

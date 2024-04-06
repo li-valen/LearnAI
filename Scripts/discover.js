@@ -1,53 +1,114 @@
-$('.intro').style.display = none;
-
-window.addEventListener('load', function() {
-    $('.intro').fadeIn(100);
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
-const text_container = gsap.utils.toArray(".text-container");
+gsap.set(".what-image", {x:-1000, opacity:0});
+gsap.set("#what-title", {x:-1000, opacity:0});
+gsap.set("#what-p-1", {x:-1000, opacity:0});
+gsap.set("#what-p-2", {x:-1000, opacity:0});
 
-text_container.forEach(container=> {
-    gsap.fromTo(container, {x: -1000, opacity: 0}, {
-        x: 0, 
-        opacity: 1, 
-        scrollTrigger: {
-            trigger: container,
-            scrub: true,
-            start: "top top",
-            end: "bottom bottom",
-            toggleActions: "play play restart play"
-        },
-        duration: 1.5,
-        delay: 1
-    })
-});
+gsap.to(".what-image", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".what-image",
+    },
+    opacity: 1
+})
+gsap.to("#what-title", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".what-image",
+    },
+    opacity: 1,
+    delay: 0.5
+})
+gsap.to("#what-p-1", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".what-image",
+    },
+    opacity: 1,
+    delay: 0.7
+})
+gsap.to("#what-p-2", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".what-image",
+    },
+    opacity: 1,
+    delay: 0.9
+})
 
-const images = gsap.utils.toArray("#image");
 
 
-images.forEach(image=> {
-    gsap.fromTo(image, {opacity: 0}, {
-        opacity: 1,
-        scrollTrigger: {
-            trigger: text_container,
-            start: "top top",
-            end: "bottom bottom",
-            toggleActions: "play play restart play"
-        },
-        duration: 1
-    })
+gsap.set(".benefits-image", {x:-1000, opacity:0});
+gsap.set("#benefits-title", {x:-1000, opacity:0});
+gsap.set("#benefits-p-1", {x:-1000, opacity:0});
+gsap.set("#benefits-p-2", {x:-1000, opacity:0});
+
+gsap.to(".benefits-image", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".benefits-image",
+    },
+    opacity: 1
+})
+gsap.to("#benefits-title", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".benefits-image",
+    },
+    opacity: 1,
+    delay: 0.5
+})
+gsap.to("#benefits-p-1", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".benefits-image",
+    },
+    opacity: 1,
+    delay: 0.7
+})
+gsap.to("#benefits-p-2", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".benefits-image",
+    },
+    opacity: 1,
+    delay: 0.9
+})
+
+gsap.set(".drawbacks-image", {x:-1000, opacity:0});
+gsap.set("#drawbacks-title", {x:-1000, opacity:0});
+gsap.set("#drawbacks-p-1", {x:-1000, opacity:0});
+gsap.set("#drawbacks-p-2", {x:-1000, opacity:0});
+
+gsap.to(".drawbacks-image", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".drawbacks-image",
+    },
+    opacity: 1
+})
+gsap.to("#drawbacks-title", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".drawbacks-image",
+    },
+    opacity: 1,
+    delay: 0.5
+})
+gsap.to("#drawbacks-p-1", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".drawbacks-image",
+    },
+    opacity: 1,
+    delay: 0.7
+})
+gsap.to("#drawbacks-p-2", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".drawbacks-image",
+    },
+    opacity: 1,
+    delay: 0.9
 })
