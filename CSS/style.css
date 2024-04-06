@@ -73,6 +73,10 @@ img {
   width: clamp(10em, 25em, 25em);
 }
 
+.ai-text {
+  color:blueviolet;
+}
+
 
 /* CSS */
 .js-discover-button {
