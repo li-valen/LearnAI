@@ -1,6 +1,35 @@
 body {
   margin: 0;
+  background-color: rgb(255, 255, 255);
 }
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 
 
@@ -54,6 +83,8 @@ body {
 
 .video-holder {
   display: grid;
+  padding-left: 40px;
+  margin-top: -400px;
 }
 
 .video .canvas{
@@ -61,7 +92,12 @@ body {
   grid-row: 1;
 }
 
-.canvas {
-  z-index: 100;
+.video {
+  place-self: center;
+
 }
 
+.canvas {
+  place-self: center;
+  margin-top: -500px;
+}

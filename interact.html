@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/interact.css">
+
     <title>Interact</title>
 
 </head>
 <body>
 
-
+  <div class="loader">
+    <img id="pre-loader" src="Images/preloader-icon.gif" alt="">
+  </div>
 
 
 
@@ -52,9 +55,9 @@
     <div class="canvas">
       <canvas id="canvas" width="640" height="500"></canvas>
     </div>
-    
   </div>
     
+  <canvas id="myCanvas" width="200" height="100"></canvas>
 
 
 
@@ -73,4 +76,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/yolo"></script>
 <script src="Scripts/interact.js"></script>
+<script src="Scripts/pre-loader.js"></script>
 </html>

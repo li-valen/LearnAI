@@ -42,12 +42,17 @@ async function detectObjects(video, model) {
 
   // Start object detection
   detectFrame();
+
+
 }
 
 // Function to start the camera
 async function startCamera() {
+  $(".video").fadeIn(500);
+
   // Get the video element
   const video = document.getElementById('video');
+
 
   try {
     // Get webcam stream
@@ -72,6 +77,10 @@ function stopCamera() {
     const tracks = videoStream.getTracks();
     tracks.forEach(track => track.stop());
   }
+
+  $(".video").fadeOut(500);
+  document.getElementById('videoContainer').style.display = 'none';
+
 }
 
 
