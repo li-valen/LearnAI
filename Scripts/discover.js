@@ -112,3 +112,18 @@ gsap.to("#drawbacks-p-2", {
     opacity: 1,
     delay: 0.9
 })
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  yPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".smooth",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+  }
+});
+

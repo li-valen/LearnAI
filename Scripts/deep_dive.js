@@ -25,11 +25,9 @@ $(document).ready(function() {
   
 	let tl = gsap.timeline();
 	ScrollTrigger.create({
-		trigger: ".comparisionSection",
-		start: "top center",
-		end: "+=75%",
-		pin: true,
-		pinSpacing: false
+		trigger: ".intro",
+		start: "top top",
+		pin: true
 	});
   
 	tl.from(["#sec3", "#sec4"], {
