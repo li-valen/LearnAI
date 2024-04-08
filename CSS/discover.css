@@ -44,8 +44,8 @@ img {
 }
 
 .panel{
-  width: clamp(100vw, 100vw, 100vw);
-  height: clamp(100vh, 100vh, 100vh);
+  width: 100vw;
+  height: 100vh;
 }
 
 .quote {
@@ -148,19 +148,11 @@ section:nth-child(6) {
   background-color: aqua;
 }
 
-/* @media (max-width: 1440px) {
-  .what-container {
-    overflow-x: hidden;
-  }
-  .what-container img {
-    padding-right: 5px;
-  }
-
-  .text-container {
-    margin-right: 120px;
+@media (max-width: 1440px) {
+  .paragraph-container h3 {
+    font-size: 15px;
   }
 }
-
 
 @media (max-width: 1024px) {
   .body {
@@ -178,140 +170,11 @@ section:nth-child(6) {
   .text-container h3 {
     max-width: 18em;
   }
-}
-
-
-@media (max-width: 768px) {
-  .what-container{
-    display: grid;
-    grid-template-columns: 0;
-  }
 
   .what-container img {
-    height: 200px;
+    height: 20em;
     width: auto;
-    grid-area: col3start;
-    align-self: last baseline;
-    justify-self: center;
-    padding-bottom: 20px;
+    padding-right: 50px;
   }
-
-  .text-container {
-    align-items: center;
-    margin: 0;
-  }
-
-  .paragraph-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 440px) {
-  .intro #title{
-    font-size: 70px;
-  }
-
-  .intro .quote {
-    width: 15em;
-  }
-
-  .paragraph-container {
-    flex-direction: column;
-    padding-bottom: 90px;
-  }
-
-  .paragraph-container h3 {
-    font-size: 17px;
-  }
-
-  .what-container img {
-    margin-right: 30px;
-  }
-}
-
-@media (max-width: 433px) {
-  .intro #title{
-    font-size: 70px;
-  }
-
-  .intro .quote {
-    width: 15em;
-  }
-}
-
-@media (max-width: 428px) {
-  .intro #title{
-    font-size: 70px;
-  }
-
-  .intro .quote {
-    width: 15em;
-  }
-}
-
-
-@media (max-width: 425px) {
-  .intro #title{
-    font-size: 70px;
-  }
-
-  .intro .quote {
-    width: 15em;
-
-  }
-
-  .what-container img {
-    padding-right: 0;
-  }
-
-
-  .text-container {
-    margin-left: 0;
-  }
-
-
-
-  .text-container h1{
-    font-size: 40px;
-  }
-
-  .text-container h3 {
-    font-size: 15px;
-  }
-
 
 }
-
-@media (max-width: 375px) {
-  .paragraph-container {
-    gap: 1px;
-  }
-
-
-  .text-container {
-    margin-left: 3px;
-  }
-
-  .what-container img {
-    margin-left: 10px;
-  }
-}
-
-
-@media (max-width: 320px) {
-  .intro .quote {
-    font-size: 18px;
-    width: 15em;
-  }
-
-  .what-container {
-    margin-left: -30px;
-  }
-
-  .paragraph-container {
-    flex-direction: column;
-  }
-
-} */
