@@ -217,6 +217,23 @@ body {
   transition: color 0.4s ease;
 }
 
+
+
+
+@media (max-width: 445px) {
+  .menu-wrap .menu > div {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+
+@media (max-width: 436px) {
+  .menu-wrap .menu > div {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+
 @media (max-width: 425px) {
   .menu-wrap .menu > div {
     width: 250vw;
