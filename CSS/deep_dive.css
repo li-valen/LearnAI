@@ -250,3 +250,17 @@ h1{
 a {
   text-decoration: none;
 }
+
+
+@media screen and (min-width: 960px) and (max-width: 1368px){ 
+  .horizontal-content  h1 {
+    font-size: 1px;
+  }
+  .horizontal-content h3 {
+    font-size: 1px;
+  }
+  .horizontal-content > a {
+    font-size: 1px;
+  }
+
+}
