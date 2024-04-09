@@ -205,29 +205,7 @@ section:nth-child(6) {
 
 
 
-@media (min-width: 452px) {
-  .intro.ai-text{
-    font-size: 50px;
-  }
-
-  #title {
-    font-size: 50px;
-  }
-
-  .quote {
-    max-width: 15em;
-  }
-
-  .what-container img {
-    display: none;
-  }
-
-  .text-container {
-    margin-right: 48px;
-  }
-}
-
-@media (min-width: 471px) {
+@media (max-width: 471px) {
   .intro.ai-text{
     font-size: 50px;
   }
@@ -274,7 +252,7 @@ section:nth-child(6) {
   }
 }
 
-@media (max-width: 433px) {
+@media (max-width: 436px) {
   .intro.ai-text{
     font-size: 50px;
   }
