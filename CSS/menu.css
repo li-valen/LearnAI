@@ -222,28 +222,28 @@ body {
 
 @media (max-width: 445px) {
   .menu-wrap .menu > div {
-    width: 300vw;
-    height: 300vw;
+    width: 400vw;
+    height: 400vh;
   }
 }
 
 @media (max-width: 436px) {
   .menu-wrap .menu > div {
-    width: 300vw;
-    height: 300vw;
+    width: 400vw;
+    height: 400vh;
   }
 }
 
 @media (max-width: 425px) {
   .menu-wrap .menu > div {
-    width: 250vw;
-    height: 250vw;
+    width: 400vw;
+    height: 400vh;
   }
 }
 
 @media (max-width: 320px) {
   .menu-wrap .menu > div {
-    width: 300vw;
-    height: 300vw;
+    width: 400vw;
+    height: 400vh;
   }
 }
