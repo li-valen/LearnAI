@@ -50,7 +50,7 @@ img {
 }
 
 .quote {
-  color: rgb(0, 187, 255);
+  color: rgb(255, 255, 255);
   width: clamp(10em, 25em, 40em); /*clamp min, preffered, max*/ 
   text-align: center;
 }
@@ -64,7 +64,7 @@ img {
 }
 
 #title {
-  color: rgb(0, 187, 255);
+  color: rgb(255, 255, 255);
   font-size: 90px;
   margin: 0;
 }
@@ -138,15 +138,15 @@ img {
 }
 
 section:nth-child(4) {
-  background-color:  rgb(0, 187, 255);;
+  background-color:  blueviolet;
 }
 
 section:nth-child(5) {
-  background-color: rgb(66, 82, 82);
+  background-color:blueviolet;
 }
 
 section:nth-child(6) {
-  background-color: aqua;
+  background-color: blueviolet;
 }
 
 @media (max-width: 1440px) {
