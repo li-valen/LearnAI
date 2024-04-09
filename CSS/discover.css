@@ -204,6 +204,51 @@ section:nth-child(6) {
 }
 
 
+@media (max-width: 445px) {
+  .intro.ai-text{
+    font-size: 50px;
+  }
+
+  #title {
+    font-size: 50px;
+  }
+
+  .quote {
+    max-width: 15em;
+  }
+
+  .what-container img {
+    display: none;
+  }
+
+  .text-container {
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 433px) {
+  .intro.ai-text{
+    font-size: 50px;
+  }
+
+  #title {
+    font-size: 50px;
+  }
+
+  .quote {
+    max-width: 15em;
+  }
+
+  .what-container img {
+    display: none;
+  }
+
+  .text-container {
+    margin-right: 48px;
+  }
+}
+
+
 @media (max-width: 425px) {
   .intro.ai-text{
     font-size: 50px;
