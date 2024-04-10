@@ -5,7 +5,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  overflow-x: hidden;
   overflow-y: hidden;
 }
 
@@ -385,6 +384,16 @@ img {
 }
 
 @media (max-width: 423px) {
+  body {
+    background-image: 
+    url('/Images/processor-2217771.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
+
   .video-holder {
     margin-left: -370px;
   }
@@ -435,6 +444,16 @@ img {
 
 
 @media (max-width: 425px) {
+  body {
+    background-image: 
+    url('/Images/processor-2217771.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
+
   .grid {
     flex-direction: column;
     margin-left: 220px;
@@ -479,6 +498,16 @@ img {
 }
 
 @media (max-width: 375px) {
+  body {
+    background-image: 
+    url('/Images/processor-2217771.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
+
   .grid{
     margin-left: 280px;
   }
@@ -497,6 +526,16 @@ img {
 }
 
 @media (max-width: 320px) {
+  body {
+    background-image: 
+    url('/Images/processor-2217771.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
+  
   .grid {
     margin-left: 295px;
   }
