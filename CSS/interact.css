@@ -1,18 +1,17 @@
-html {
-  box-shadow: inset 0 0 0 1000px #a600ffa3;
-}
-
-
 body {
-  margin: 100px;
-  background-image: url('/Images/processor-2217771.jpg');
+  background-image: 
+  linear-gradient(
+    rgba(49, 4, 247, 0.576),
+    rgba(135, 0, 231, 0.649)
+  ),
+  url('/Images/processor-2217771.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
 
 
 .loader{
@@ -42,15 +41,11 @@ img {
   }
 }
 
-
-
-
-
 .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 12em;
+  margin-top: 240px;
 }
 
 
@@ -294,17 +289,113 @@ img {
 
 
 
+@media (max-width: 1440px) {
+  .text-container h2 {
+    text-align: center;
+    width: 30em;
+  }
+
+  .grid {
+    display: flex;
+
+    gap: 20px;
+    padding-left: 385px;
+
+  }
+
+  .grid .ic {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+
+  .grid .od-button-container {
+    padding-right: 40px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    padding-left: 180px;
+  }
+}
+
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+  }
+
+
+  .grid {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid {
+    flex-direction: column;
+    margin-left: 220px;
+  }
+
+  .grid .ic {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-left: -92px;
   }
 
   .text-container {
-    padding-top: 40px;
+    margin-top: 400px;
+    margin-left: 250px;
   }
 
   .text-container h2 {
-    text-align: center;
+    width: 15em;
+  }
+
+  .text-container p {
+    width: 28em;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid{
+    margin-left: 280px;
+  }
+
+  .grid .ic {
+    justify-content: center;
+    margin-left: 13px;
+  } 
+
+  .text-container {
+    margin-top: 500px;
+    margin-left: 310px;
+  }
+
+
+}
+
+@media (max-width: 320px) {
+  .grid {
+    margin-left: 295px;
+  }
+
+
+
+  .text-container {
+    margin-top: 630px;
+    margin-left: 350px;
+  }
+
+  .text-container h2 {
+    font-size: 30px;
+  }
+
+  .text-container p {
+    width: 22em;
+    font-size: 25px;
   }
 }

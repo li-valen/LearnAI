@@ -33,45 +33,47 @@
   </div>
 
 
-
-  <div class="text-container">
-    <h1>Interact</h1>
-    <h2>"Artificial intelligence is the future, and the future is here now." - Dave Waters</h2>
-    <p>Unfortunetly, these models are huge and carry a lot of weight and parameters to be able to detect, they do take a while to classify/detect. This is one of the things that professional machine learnning engineers are trying to solve, developing things like liquid neural networks. Please wait for a few moments for the classification/detection and then enjoy!!!</p>
-  </div>
-
-
-
-
-  <div class="grid">
-    <div class="ic">
-      <input type="file" id="fileInput">
-      <button id="classify" onclick="classifyImage()">Classify Image</button>
-      <div id="output"></div>
+  <div class="everything-container">
+    <div class="text-container">
+      <h1>Interact</h1>
+      <h2>"Artificial intelligence is the future, and the future is here now." - Dave Waters</h2>
+      <p>Unfortunetly, these models are huge and carry a lot of weight and parameters to be able to detect, they do take a while to classify/detect. This is one of the things that professional machine learnning engineers are trying to solve, developing things like liquid neural networks. Please wait for a few moments for the classification/detection and then enjoy!!!</p>
     </div>
-     
-
-      <div class="od">
-        <div class="od-button-container">
-          <button id="openid" onclick="startCamera()">Open Camera</button>
-          <button id="closeid" onclick="stopCamera()">Close Camera</button> 
-        </div>
+  
+  
+  
+  
+    <div class="grid">
+      <div class="ic">
+        <input type="file" id="fileInput">
+        <button id="classify" onclick="classifyImage()">Classify Image</button>
+        <div id="output"></div>
       </div>
-
-
-
-  </div>
-    
-  <div class="video-holder">
-    <div class="video">
-      <video id="video" width="640" height="480" autoplay></video>
+       
+  
+        <div class="od">
+          <div class="od-button-container">
+            <button id="openid" onclick="startCamera()">Open Camera</button>
+            <button id="closeid" onclick="stopCamera()">Close Camera</button> 
+          </div>
+        </div>
+  
+  
+  
     </div>
-    <div class="canvas">
-      <canvas id="canvas" width="640" height="500"></canvas>
+      
+    <div class="video-holder">
+      <div class="video">
+        <video id="video" width="640" height="480" autoplay></video>
+      </div>
+      <div class="canvas">
+        <canvas id="canvas" width="640" height="500"></canvas>
+      </div>
     </div>
+      
+    <canvas id="myCanvas" width="200" height="100"></canvas>
   </div>
-    
-  <canvas id="myCanvas" width="200" height="100"></canvas>
+  
 
 
 
