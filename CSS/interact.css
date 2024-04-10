@@ -1,9 +1,5 @@
 body {
   background-image: 
-  linear-gradient(
-    rgba(255, 255, 255, 0.576),
-    rgba(107, 11, 176, 0.649)
-  ),
   url('/Images/processor-2217771.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,6 +8,9 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+
+
 
 
 .loader{
