@@ -1,5 +1,10 @@
+html {
+  box-shadow: inset 0 0 0 1000px #a600ffa3;
+}
+
+
 body {
-  margin: 0;
+  margin: 100px;
   background-image: url('/Images/processor-2217771.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -45,7 +50,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20em;
+  margin-top: 12em;
 }
 
 
@@ -55,6 +60,8 @@ img {
 
 .text-container p {
   padding-top: 20px;
+  width: 40em;
+  text-align: center;
 }
 
 
@@ -240,7 +247,8 @@ img {
   fill: #0091ff;
 }
 
-#fileInput {
+
+#fileInput{
   align-items: center;
   background-color: #fff;
   border: 2px solid #000;
@@ -258,7 +266,7 @@ img {
   line-height: 24px;
   min-width: 140px;
   outline: 0;
-  padding: 0 17px;
+  padding: 10px 17px;
   text-align: center;
   text-decoration: none;
   transition: all .3s;
@@ -266,6 +274,7 @@ img {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 
 #fileInput:focus {
   color: #171e29;
@@ -281,4 +290,21 @@ img {
   border-color: #0091ff;
   color: #0091ff;
   fill: #0091ff;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .text-container {
+    padding-top: 40px;
+  }
+
+  .text-container h2 {
+    text-align: center;
+  }
 }
