@@ -1,8 +1,8 @@
 body {
   background-image: 
   linear-gradient(
-    rgba(49, 4, 247, 0.576),
-    rgba(135, 0, 231, 0.649)
+    rgba(255, 255, 255, 0.576),
+    rgba(107, 11, 176, 0.649)
   ),
   url('/Images/processor-2217771.jpg');
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@ img {
 .video-holder {
   display: grid;
   padding-left: 40px;
-  margin-top: -400px;
+  margin-top: -570px;
 }
 
 .video .canvas{
@@ -103,7 +103,6 @@ img {
 
 .video {
   place-self: center;
-
 }
 
 .canvas {
@@ -332,10 +331,130 @@ img {
   }
 }
 
+@media (max-width: 436px) {
+  .grid {
+    flex-direction: column;
+    margin-left: 220px;
+  }
+
+  .video-holder {
+    margin-left: -370px;
+  }
+
+  .video {
+    width: 100px;
+    height: 140px;
+
+  }
+
+  .canvas {
+    height: 100px;
+    width: 140px;
+    transform: translate(20px,156px);
+  }
+
+
+  .grid {
+    flex-direction: column;
+    margin-left: 220px;
+  }
+
+  #output {
+    transform: translate(-240px, 250px);
+  }
+
+  .grid .ic {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-left: -92px;
+  }
+
+  .text-container {
+    margin-top: 400px;
+    margin-left: 250px;
+  }
+
+  .text-container h2 {
+    width: 15em;
+  }
+
+  .text-container p {
+    width: 28em;
+  }
+}
+
+@media (max-width: 423px) {
+  .video-holder {
+    margin-left: -370px;
+  }
+
+  .video {
+    width: 100px;
+    height: 140px;
+
+  }
+
+  .canvas {
+    height: 100px;
+    width: 140px;
+    transform: translate(20px,156px);
+  }
+
+
+  .grid {
+    flex-direction: column;
+    margin-left: 220px;
+  }
+
+  #output {
+    transform: translate(-240px, 250px);
+  }
+
+  .grid .ic {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: -92px;
+  }
+
+  .text-container {
+    margin-top: 400px;
+    margin-left: 250px;
+  }
+
+  .text-container h2 {
+    width: 15em;
+  }
+
+  .text-container p {
+    width: 28em;
+  }
+}
+
+
+
 @media (max-width: 425px) {
   .grid {
     flex-direction: column;
     margin-left: 220px;
+  }
+
+  .video-holder {
+    margin-left: -370px;
+  }
+
+  .video {
+    width: 100px;
+    height: 140px;
+
+  }
+
+  .canvas {
+    height: 100px;
+    width: 140px;
+    transform: translate(20px,156px);
   }
 
   .grid .ic {
