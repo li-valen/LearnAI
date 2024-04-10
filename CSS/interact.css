@@ -1,6 +1,10 @@
 body {
   background-image: 
-  url('/Images/processor-2217771.jpg');
+  linear-gradient(
+    rgba(124, 15, 241, 0.503),
+    rgba(179, 32, 220, 0.564)
+  ),
+  url("/Images/processor-2217771.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -535,7 +539,7 @@ img {
     background-position: center;
     overflow-y: hidden;
   }
-  
+
   .grid {
     margin-left: 295px;
   }
