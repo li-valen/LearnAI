@@ -48,17 +48,24 @@ img {
   align-items: center;
   margin-top: 240px;
   color: white;
+
 }
 
 
 .text-container h1 {
   font-size: 90px;
+  animation: fadeIn 2s ease-in;
+}
+
+.text-container h2 {
+  animation: fadeIn 2.5s ease-in;
 }
 
 .text-container p {
   padding-top: 20px;
   width: 40em;
   text-align: center;
+  animation: fadeIn 2.7s ease-in;
 }
 
 
@@ -540,4 +547,18 @@ img {
 
 #outputProb {
   color: white;
+}
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  } 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
