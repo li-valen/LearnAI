@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.685);
   overflow-x: hidden;
 }
 
@@ -137,6 +137,9 @@ img {
   font-size: 50px;
 }
 
+a {
+  color: aliceblue;
+}
 section:nth-child(4) {
   background-color:  blueviolet;
 }
