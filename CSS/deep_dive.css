@@ -90,7 +90,7 @@ img {
   color: rgb(0, 187, 255);
   font-size: 90px;
   margin: 0;
-  animation: moveInAnimation 1s ease-out 0s;
+  animation: moveInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

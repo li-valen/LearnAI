@@ -53,6 +53,9 @@ img {
   color: rgb(255, 255, 255);
   width: clamp(10em, 25em, 40em); /*clamp min, preffered, max*/ 
   text-align: center;
+  animation: moveInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .intro {
@@ -67,16 +70,22 @@ img {
   color: rgb(255, 255, 255);
   font-size: 90px;
   margin: 0;
+  animation: moveInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .ai-text {
-  color: blueviolet;
+  color:     rgb(0, 170, 255);
+  animation: moveInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .scroll-down {
   display: flex;
   justify-content: center;
-  color: white;
+  color: rgb(255, 252, 252);
   animation: bounce 1s infinite alternate;
 }
 @keyframes bounce {
@@ -126,6 +135,7 @@ img {
   height: 830px;
   margin-right: 100px;
   grid-area: col-2start;
+  color: white;
 }
 
 .text-container h3 {
@@ -141,15 +151,24 @@ a {
   color: aliceblue;
 }
 section:nth-child(4) {
-  background-color:  blueviolet;
+  background:    linear-gradient(
+    rgb(0, 170, 255),
+    rgb(0, 0, 0)
+  );
 }
 
 section:nth-child(5) {
-  background-color:blueviolet;
+  background:    linear-gradient(
+    rgb(0, 0, 0),
+    rgb(0, 170, 255)
+  );
 }
 
 section:nth-child(6) {
-  background-color: blueviolet;
+  background:   linear-gradient(
+    rgb(0, 170, 255),
+    rgb(0, 0, 0)
+  );
 }
 
 @media (max-width: 1440px) {
@@ -319,5 +338,16 @@ section:nth-child(6) {
 
   .text-container {
     padding-left: 30px;
+  }
+}
+
+
+
+@keyframes moveInAnimation {
+  0% {
+    transform: translateX(-12em);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

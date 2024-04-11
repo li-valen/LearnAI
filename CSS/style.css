@@ -58,18 +58,27 @@ img {
   font-size: 90px;
   column-gap: -15px;
   margin-bottom: 20px;
+  animation: moveInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .inner-container h2 {
   color: white;
   margin: 0;
   font-size: 30px;
+  animation: moveInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .inner-container h4 {
   color: white;
   font-size: 20px;
   width: clamp(10em, 25em, 25em);
+  animation: moveInAnimation ease 2.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .ai-text {
@@ -103,6 +112,9 @@ img {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  animation: moveInAnimation ease 2.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .js-discover-button:focus {
@@ -234,3 +246,12 @@ img {
 
 
 
+
+@keyframes moveInAnimation {
+  0% {
+    transform: translateX(-12em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
