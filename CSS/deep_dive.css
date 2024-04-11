@@ -112,6 +112,7 @@ h1 {
 }
 
 .down-arrow {
+  margin-top: 20px;
   width: 30px;
   height: 30px;
   border-bottom: 2px solid white;

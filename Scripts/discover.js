@@ -1,5 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+// sets x and certain position and then moves it to a certain position
 gsap.set(".what-image", {x:-1000, opacity:0});
 gsap.set("#what-title", {x:-1000, opacity:0});
 gsap.set("#what-p-1", {x:-1000, opacity:0});

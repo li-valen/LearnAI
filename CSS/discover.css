@@ -85,7 +85,7 @@ img {
 .scroll-down {
   display: flex;
   justify-content: center;
-  color: rgb(255, 252, 252);
+  color: rgb(255, 255, 255);
   animation: bounce 1s infinite alternate;
 }
 @keyframes bounce {

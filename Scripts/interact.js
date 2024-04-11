@@ -66,7 +66,7 @@ async function startCamera() {
     // Get webcam stream
     videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
 
-    // Once the webcam stream is obtained, set it as the video source
+    // Once we get the webcam, set it as the video source
     video.srcObject = videoStream;
 
     // Once the video stream is loaded, start object detection
@@ -109,7 +109,7 @@ async function classifyImage() {
       return;
   }
 
-  // Load the MobileNet model
+  // Load MobileNet model
   const model = await mobilenet.load();
 
   // Read the selected image file
