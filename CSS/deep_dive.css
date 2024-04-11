@@ -13,9 +13,19 @@ body {
   color: white;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
+
   margin: 0px;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
 .loader {
   position: fixed;
   top: 0;
@@ -63,19 +73,26 @@ img {
   color: rgb(0, 187, 255);
   width: clamp(10em, 25em, 40em); /*clamp min, preffered, max*/
   text-align: center;
+  animation: moveInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.intro {
+.intro_ {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 #title {
   color: rgb(0, 187, 255);
   font-size: 90px;
   margin: 0;
+  animation: moveInAnimation 1s ease-out 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .ai-text {
@@ -344,5 +361,14 @@ a {
     transform: translate(-280px,640px);
     height: 7em;
     width: auto;
+  }
+}
+
+@keyframes moveInAnimation {
+  0% {
+    transform: translateX(-12em);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
