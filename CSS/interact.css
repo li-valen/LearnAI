@@ -533,3 +533,11 @@ img {
   filter: blur(8px);
   transition: filter 0.5s ease;
 }
+
+#classificationResults {
+  color: white;
+}
+
+#outputProb {
+  color: white;
+}
