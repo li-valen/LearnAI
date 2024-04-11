@@ -154,13 +154,15 @@ h1 {
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
-  background-color: var(--dark-bg-color);
 }
 
 .horizontal-scroll-container section {
   height: 100vh;
   width: 100vw;
-  background-color: var(--dark-bg-color);
+  background:    linear-gradient(
+    rgb(0, 0, 0),
+    rgb(132, 0, 255)
+  );
   padding: 20vw 10vw;
 }
 
