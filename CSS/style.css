@@ -115,6 +115,8 @@ img {
   animation: moveInAnimation ease 2.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  border-radius: 10em;
+  border: 2px solid blueviolet;
 }
 
 .js-discover-button:focus {
