@@ -148,11 +148,12 @@ img {
   margin-right: 100px;
   grid-area: col-2start;
   color: white;
+  gap: 20px;
 }
 
 .text-container h3 {
   width: clamp(10em, 25em, 40em);
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .text-container h1 {
