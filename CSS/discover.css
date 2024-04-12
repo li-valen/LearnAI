@@ -83,6 +83,7 @@ img {
 }
 
 .fas {
+  margin-top: 20px;
   font-size: 2rem;
   animation: bounce 2s infinite;
   color: white;
