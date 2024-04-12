@@ -11,6 +11,13 @@ body {
   overflow-y: hidden;
 }
 
+button{
+  border-radius: 10em;
+}
+
+input{
+  border-radius: 10em;
+}
 .loader{
   position: fixed;
   top: 0;
@@ -246,6 +253,7 @@ body {
   color: #0091ff;
   fill: #0091ff;
 }
+
 
 
 #fileInput{
