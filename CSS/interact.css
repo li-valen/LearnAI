@@ -11,10 +11,6 @@ body {
   overflow-y: hidden;
 }
 
-
-
-
-
 .loader{
   position: fixed;
   top: 0;
@@ -47,14 +43,15 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 240px;
-  color: rgb(0, 187, 255);
+  color: white;
 
 }
 
 .question {
   position: absolute;
   cursor: pointer;
-  right: -32%;
+  bottom: 0%;
+  left: 2%;
 }
 
 .text-container h1 {
@@ -98,11 +95,6 @@ body {
 .od h3 {
   padding-top: 20px;
 }
-
-
-
-
-
 
 .video-holder {
   display: grid;
@@ -542,7 +534,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: blur(8px);
+  filter: blur(10px);
   transition: filter 0.5s ease;
 }
 
