@@ -284,6 +284,10 @@ a {
 }
 
 @media (max-width: 425px) {
+  .intro_ {
+    margin-top: -200px;
+  }
+
   #title {
     margin-top: 500px;
     font-size: 40px;
@@ -304,7 +308,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 678px) {
   #title {
     margin-top: 500px;
     font-size: 36px;
@@ -332,6 +336,10 @@ a {
 }
 
 @media (max-width: 375px) {
+  .intro_ {
+    margin-top: 200px;
+  }
+  
   #title {
     margin-top: 40px;
     font-size: 30px;
