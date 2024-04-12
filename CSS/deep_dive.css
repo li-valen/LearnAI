@@ -191,6 +191,8 @@ h1 {
 .nn-image {
   height: 20em;
   width: auto;
+  border-radius: 20px;
+  border-style: dashed;
 }
 
 .text h3 {
