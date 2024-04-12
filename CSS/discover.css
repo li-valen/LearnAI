@@ -108,15 +108,16 @@ img {
   place-self: center;
   /* height: 20em;
   width: auto; */
-  padding-right: 200px;
+  margin-right: 200px;
 
 }
 
 
 .history-image {
-  padding-left: 50px;
+  margin-left: 50px;
   height: 40em;
   width: auto;
+  
 }
 
 .what-image {
@@ -127,7 +128,13 @@ img {
 .future-image {
   height: 25em;
   width: auto;
-  padding-left: 40px;
+  margin-left: 40px;
+}
+
+#image {
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: white;
 }
 
 
