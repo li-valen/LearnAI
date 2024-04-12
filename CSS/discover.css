@@ -109,10 +109,11 @@ img {
   /* height: 20em;
   width: auto; */
   padding-right: 200px;
+
 }
 
 
-.benefits-image {
+.history-image {
   padding-left: 50px;
   height: 40em;
   width: auto;
@@ -123,7 +124,7 @@ img {
   width: auto;
 }
 
-.drawbacks-image {
+.future-image {
   height: 25em;
   width: auto;
   padding-left: 40px;
@@ -144,6 +145,7 @@ img {
 
 .text-container h3 {
   width: clamp(10em, 25em, 40em);
+  padding-top: 10px;
 }
 
 .text-container h1 {
@@ -220,7 +222,7 @@ section:nth-child(6) {
     font-size: 40px;
   }
 
-  .what-container .benefits-image {
+  .what-container .history-image {
     height: 30em;
   }
 

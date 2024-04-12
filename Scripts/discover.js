@@ -42,75 +42,75 @@ gsap.to("#what-p-2", {
 
 
 
-gsap.set(".benefits-image", {x:-1000, opacity:0});
-gsap.set("#benefits-title", {x:-1000, opacity:0});
-gsap.set("#benefits-p-1", {x:-1000, opacity:0});
-gsap.set("#benefits-p-2", {x:-1000, opacity:0});
+gsap.set(".history-image", {x:-1000, opacity:0});
+gsap.set("#history-title", {x:-1000, opacity:0});
+gsap.set("#history-p-1", {x:-1000, opacity:0});
+gsap.set("#history-p-2", {x:-1000, opacity:0});
 
-gsap.to(".benefits-image", {
+gsap.to(".history-image", {
     x: 0,
     scrollTrigger: {
-        trigger: ".benefits-image",
+        trigger: ".history-image",
     },
     opacity: 1
 })
-gsap.to("#benefits-title", {
+gsap.to("#history-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".benefits-image",
+        trigger: ".history-image",
     },
     opacity: 1,
     delay: 0.5
 })
-gsap.to("#benefits-p-1", {
+gsap.to("#history-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".benefits-image",
+        trigger: ".history-image",
     },
     opacity: 1,
     delay: 0.7
 })
-gsap.to("#benefits-p-2", {
+gsap.to("#history-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".benefits-image",
+        trigger: ".history-image",
     },
     opacity: 1,
     delay: 0.9
 })
 
-gsap.set(".drawbacks-image", {x:-1000, opacity:0});
-gsap.set("#drawbacks-title", {x:-1000, opacity:0});
-gsap.set("#drawbacks-p-1", {x:-1000, opacity:0});
-gsap.set("#drawbacks-p-2", {x:-1000, opacity:0});
+gsap.set(".future-image", {x:-1000, opacity:0});
+gsap.set("#future-title", {x:-1000, opacity:0});
+gsap.set("#future-p-1", {x:-1000, opacity:0});
+gsap.set("#future-p-2", {x:-1000, opacity:0});
 
-gsap.to(".drawbacks-image", {
+gsap.to(".future-image", {
     x: 0,
     scrollTrigger: {
-        trigger: ".drawbacks-image",
+        trigger: ".future-image",
     },
     opacity: 1
 })
-gsap.to("#drawbacks-title", {
+gsap.to("#future-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".drawbacks-image",
+        trigger: ".future-image",
     },
     opacity: 1,
     delay: 0.5
 })
-gsap.to("#drawbacks-p-1", {
+gsap.to("#future-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".drawbacks-image",
+        trigger: ".future-image",
     },
     opacity: 1,
     delay: 0.7
 })
-gsap.to("#drawbacks-p-2", {
+gsap.to("#future-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".drawbacks-image",
+        trigger: ".future-image",
     },
     opacity: 1,
     delay: 0.9
