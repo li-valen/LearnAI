@@ -82,15 +82,19 @@ img {
   animation-fill-mode: forwards;
 }
 
-.scroll-down {
-  display: flex;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  animation: bounce 1s infinite alternate;
+.fas {
+  margin-top: 20px;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: white;
 }
+
 @keyframes bounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(10px); }
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {transform: translateY(-20px)}
+  60% {transform: translateY(-10px)}
 }
 
 .what-container {
