@@ -27,7 +27,7 @@ body {
   align-items: center;
 }
 
-img {
+#pre-loader {
   height: 200px;
   width: auto;
 }
@@ -47,10 +47,15 @@ img {
   flex-direction: column;
   align-items: center;
   margin-top: 240px;
-  color: white;
+  color: rgb(0, 187, 255);
 
 }
 
+.question {
+  position: absolute;
+  cursor: pointer;
+  right: -32%;
+}
 
 .text-container h1 {
   font-size: 90px;
