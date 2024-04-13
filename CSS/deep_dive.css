@@ -168,6 +168,8 @@ h1 {
   height: 20em;
   width: auto;
   justify-self: center;
+  align-items: left;
+  margin-left: 30px;
 }
 
 .text {
@@ -186,6 +188,7 @@ h1 {
 .od-image {
   border-radius: 20px;
   border-style: dashed;
+  margin-right: 200px;
 }
 
 .nn-image {
