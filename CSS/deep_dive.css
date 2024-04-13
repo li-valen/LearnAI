@@ -7,6 +7,9 @@
   --light-secondary-color: white;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   height: 100%;
