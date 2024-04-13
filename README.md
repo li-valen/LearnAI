@@ -1,5 +1,4 @@
 # LearnAI
-The purpose of LearnAI is to teach adults and kids what AI truly is. It is to unconfuse people and inform them of what is likely to become the future. LearnAI is filled many explanations and interactive activities
-for people to get a hands on experience and see the power of AI. 
+LearnAI is a website dedicated to revolutionizing perceptions of Artificial Intelligence. Unlike conventional resources focused solely on homework assistance, LearnAI endeavors to dispel the negative stigma surrounding AI education. Leveraging advanced machine learning technology, our interactive experience enables users to immerse themselves in diverse AI forms. In today's educational landscape, AI is often relegated to mere academic shortcuts, fostering misunderstanding and hindering its true potential. LearnAI seeks to shatter these misconceptions by providing users of all ages with comprehensive insights into AI's complexities and brilliance. Through deep explanations, vivid diagrams, and hands-on interactivity, our website offers a transformative journey from AI's historical roots to its present applications and future possibilities. By reshaping the narrative around AI, LearnAI aims to inspire curiosity, understanding, and appreciation for this transformative technology, fostering a new era of innovation and progress. 
 
 
