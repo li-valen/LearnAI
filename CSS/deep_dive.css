@@ -325,14 +325,15 @@ a {
   .text h3 {
     width: 17em;
     padding-right: 10px;
+    font-size: 15px;
   }
 
   .horizontal-content img {
-    transform: translate(-306px,560px);
+    transform: translate(-306px,460px);
   }
 
   .horizontal-content .od-image{
-    transform: translate(-280px,640px);
+    transform: translate(-280px,540px);
     height: 7em;
     width: auto;
   }
