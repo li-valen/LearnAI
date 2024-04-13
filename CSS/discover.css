@@ -197,10 +197,6 @@ section:nth-child(6) {
     overflow-x: hidden;
   }
 
-  .what-container img {
-    padding-left: 20px;
-  }
-
   .text-container {
     padding-right: 20px;
   }
@@ -212,7 +208,6 @@ section:nth-child(6) {
   .what-container img {
     height: 20em;
     width: auto;
-    padding-right: 50px;
   }
 }
 
@@ -240,7 +235,6 @@ section:nth-child(6) {
   .what-container img {
     height: 15em;
     width: auto;
-    padding-right: 50px;
     flex-direction: column;
   }
 
