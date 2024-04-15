@@ -129,6 +129,7 @@ img {
 .what-image {
   height: 30em;
   width: auto;
+  margin-left: 50px;
 }
 
 .future-image {
@@ -172,24 +173,29 @@ img {
   font-style: italic;
 }
 section:nth-child(4) {
-  background:    linear-gradient(
+  /* background:    linear-gradient(
     rgb(0, 170, 255),
     rgb(0, 0, 0)
-  );
+  ); */
+
+  background: black;
 }
 
 section:nth-child(5) {
-  background:    linear-gradient(
+  /* background:    linear-gradient(
     rgb(0, 0, 0),
     rgb(0, 170, 255)
-  );
+  ); */
+
+  background: black;
 }
 
 section:nth-child(6) {
-  background:   linear-gradient(
+  /* background:   linear-gradient(
     rgb(0, 170, 255),
     rgb(0, 0, 0)
-  );
+  ); */
+  background: black;
 }
 
 @media (max-width: 1440px) {
