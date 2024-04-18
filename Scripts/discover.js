@@ -1,5 +1,29 @@
 gsap.registerPlugin(ScrollTrigger);
 
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".main-container",
+    pin: true,
+    scrub: true,
+    end: "+=500%",
+    markers: true
+  }
+});
+
+let panels = gsap.utils.toArray(".hidden");
+
+panels.forEach((hidden, i) => {
+  if (!i) {
+    tl.set({}, {}, 0.5)
+  } else {
+    tl.to(hidden, {
+      yPercent: -100,
+      ease: "none"
+    }, "+=1")
+  }
+})
+
+
 
 
 // sets x and certain position and then moves it to a certain position
