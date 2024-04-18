@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+let panels = gsap.utils.toArray(".hidden");
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -6,10 +7,10 @@ let tl = gsap.timeline({
     pin: true,
     scrub: true,
     end: "+=500%",
+    snap: {snapTo: 1 / (4), directional: true},
   }
 });
 
-let panels = gsap.utils.toArray(".hidden");
 
 panels.forEach((hidden, i) => {
   if (!i) {
