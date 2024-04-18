@@ -151,7 +151,6 @@ gsap.to("#future-p-2", {
     scrollTrigger: {
         trigger: ".third",
         toggleActions: "pause play restart restart",
-        markers: true
     },
     opacity: 1,
     delay: 0.9
