@@ -7,7 +7,10 @@ let tl = gsap.timeline({
     pin: true,
     scrub: true,
     end: "+=500%",
-    snap: {snapTo: 1 / (4), directional: true},
+    snap: {snapTo: 1 / (4), 
+        directional: true, 
+        duration: 5,
+        delay: 0.1},
   }
 });
 
