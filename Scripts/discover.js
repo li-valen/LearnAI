@@ -10,7 +10,7 @@ let tl = gsap.timeline({
     snap: {snapTo: 1 / (4), 
         directional: true, 
         duration: 5,
-        delay: 0.1},
+        delay: 0.1}
   }
 });
 
@@ -39,32 +39,37 @@ gsap.to(".what-image", {
     x: 0,
     scrollTrigger: {
         trigger: ".what-image",
+        start: "top, bottom",
+        toggleActions: "pause play restart restart"
     },
-    opacity: 1
+    opacity: 1,
 })
 gsap.to("#what-title", {
     x: 0,
     scrollTrigger: {
         trigger: ".what-image",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
-    delay: 0.5
+    delay: 0.5,
 })
 gsap.to("#what-p-1", {
     x: 0,
     scrollTrigger: {
         trigger: ".what-image",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
-    delay: 0.7
+    delay: 0.7,
 })
 gsap.to("#what-p-2", {
     x: 0,
     scrollTrigger: {
         trigger: ".what-image",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
-    delay: 0.9
+    delay: 0.9,
 })
 
 
@@ -77,14 +82,16 @@ gsap.set("#history-p-2", {x:-1000, opacity:0});
 gsap.to(".history-image", {
     x: 0,
     scrollTrigger: {
-        trigger: ".history-image",
+        trigger: ".second",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1
 })
 gsap.to("#history-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".history-image",
+        trigger: ".second",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
     delay: 0.5
@@ -92,18 +99,20 @@ gsap.to("#history-title", {
 gsap.to("#history-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".history-image",
+        trigger: ".second",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
-    delay: 0.7
+    delay: 0.7,
 })
 gsap.to("#history-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".history-image",
+        trigger: ".second",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
-    delay: 0.9
+    delay: 0.9,
 })
 
 gsap.set(".future-image", {x:-1000, opacity:0});
@@ -114,14 +123,16 @@ gsap.set("#future-p-2", {x:-1000, opacity:0});
 gsap.to(".future-image", {
     x: 0,
     scrollTrigger: {
-        trigger: ".future-image",
+        trigger: ".third",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1
 })
 gsap.to("#future-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".future-image",
+        trigger: ".third",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
     delay: 0.5
@@ -129,7 +140,8 @@ gsap.to("#future-title", {
 gsap.to("#future-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".future-image",
+        trigger: ".third",
+        toggleActions: "pause play restart restart"
     },
     opacity: 1,
     delay: 0.7
@@ -137,7 +149,9 @@ gsap.to("#future-p-1", {
 gsap.to("#future-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".future-image",
+        trigger: ".third",
+        toggleActions: "pause play restart restart",
+        markers: true
     },
     opacity: 1,
     delay: 0.9
