@@ -6,7 +6,6 @@ let tl = gsap.timeline({
     pin: true,
     scrub: true,
     end: "+=500%",
-    markers: true
   }
 });
 
