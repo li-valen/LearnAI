@@ -6,7 +6,7 @@ let tl = gsap.timeline({
     trigger: ".main-container",
     pin: true,
     scrub: true,
-    end: "+=500%",
+    end: "+=200%",
     snap: {snapTo: 1 / (4), 
         directional: true, 
         duration: 5,
@@ -39,16 +39,21 @@ gsap.to(".what-image", {
     x: 0,
     scrollTrigger: {
         trigger: ".what-image",
-        start: "top, bottom",
-        toggleActions: "pause play restart restart"
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#first_",
+        start: "top+=100% bottom",
+        end: "top+=100% bottom"
     },
     opacity: 1,
 })
 gsap.to("#what-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".what-image",
-        toggleActions: "pause play restart restart"
+        trigger: "#first_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#first_",
+        start: "top+=160% bottom",
+        end: "top+=160% bottom",
     },
     opacity: 1,
     delay: 0.5,
@@ -56,8 +61,11 @@ gsap.to("#what-title", {
 gsap.to("#what-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".what-image",
-        toggleActions: "pause play restart restart"
+        trigger: "#first_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#first_",
+        start: "top+=160% bottom",
+        end: "top+=160% bottom",
     },
     opacity: 1,
     delay: 0.7,
@@ -65,8 +73,11 @@ gsap.to("#what-p-1", {
 gsap.to("#what-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".what-image",
-        toggleActions: "pause play restart restart"
+        trigger: "#first_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#first_",
+        start: "top+=160% bottom",
+        end: "top+=160% bottom",
     },
     opacity: 1,
     delay: 0.9,
@@ -82,16 +93,22 @@ gsap.set("#history-p-2", {x:-1000, opacity:0});
 gsap.to(".history-image", {
     x: 0,
     scrollTrigger: {
-        trigger: ".second",
-        toggleActions: "pause play restart restart"
+        trigger: "#second_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#second_",
+        start: "top+=130% bottom",
+        end: "top+=130% bottom",
     },
     opacity: 1
 })
 gsap.to("#history-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".second",
-        toggleActions: "pause play restart restart"
+        trigger: "#second_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#second_",
+        start: "top+=130% bottom",
+        end: "top+=130% bottom",
     },
     opacity: 1,
     delay: 0.5
@@ -99,8 +116,11 @@ gsap.to("#history-title", {
 gsap.to("#history-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".second",
-        toggleActions: "pause play restart restart"
+        trigger: "#second_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#second_",
+        start: "top+=130% bottom",
+        end: "top+=130% bottom"
     },
     opacity: 1,
     delay: 0.7,
@@ -108,8 +128,11 @@ gsap.to("#history-p-1", {
 gsap.to("#history-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".second",
-        toggleActions: "pause play restart restart"
+        trigger: "#second_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#second_",
+        start: "top+=130% bottom",
+        end: "top+=130% bottom",
     },
     opacity: 1,
     delay: 0.9,
@@ -123,16 +146,22 @@ gsap.set("#future-p-2", {x:-1000, opacity:0});
 gsap.to(".future-image", {
     x: 0,
     scrollTrigger: {
-        trigger: ".third",
-        toggleActions: "pause play restart restart"
+        trigger: "#third_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#third_",
+        start: "top+=180% bottom",
+        end: "top+=180% bottom",
     },
     opacity: 1
 })
 gsap.to("#future-title", {
     x: 0,
     scrollTrigger: {
-        trigger: ".third",
-        toggleActions: "pause play restart restart"
+        trigger: "#third_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#third_",
+        start: "top+=180% bottom",
+        end: "top+=180% bottom",
     },
     opacity: 1,
     delay: 0.5
@@ -140,8 +169,11 @@ gsap.to("#future-title", {
 gsap.to("#future-p-1", {
     x: 0,
     scrollTrigger: {
-        trigger: ".third",
-        toggleActions: "pause play restart restart"
+        trigger: "#third_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#third_",
+        start: "top+=180% bottom",
+        end: "top+=180% bottom",
     },
     opacity: 1,
     delay: 0.7
@@ -149,8 +181,11 @@ gsap.to("#future-p-1", {
 gsap.to("#future-p-2", {
     x: 0,
     scrollTrigger: {
-        trigger: ".third",
-        toggleActions: "pause play restart restart",
+        trigger: "#third_",
+        toggleActions: "play play restart restart",
+        pinnedContainer: "#third_",
+        start: "top+=180% bottom",
+        end: "top+=180% bottom",
     },
     opacity: 1,
     delay: 0.9
