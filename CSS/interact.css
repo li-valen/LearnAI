@@ -71,18 +71,23 @@ input{
 
 .text-container h1 {
   font-size: 90px;
+  text-shadow: 12px 12px 12px black;
   animation: fadeIn 2s ease-in;
 }
 
 .text-container h2 {
   animation: fadeIn 2.5s ease-in;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .text-container p {
   padding-top: 20px;
+  font-size: 20px;
   width: 40em;
   text-align: center;
   animation: fadeIn 2.7s ease-in;
+  text-shadow: 2px 2px 2px black;
 }
 
 

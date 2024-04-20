@@ -18,12 +18,12 @@
 body {
   font-family: Arial, sans-serif;
   color: rgb(0, 0, 0);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.685);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.785);
   overflow-x: hidden;
 }
 
 .first{
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.685);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.785);
 }
 
 .loader{
@@ -77,6 +77,7 @@ img {
   animation: moveInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  text-shadow: 2px 2px 2px black;
 }
 
 .intro {
@@ -89,6 +90,7 @@ img {
 
 #title {
   color: rgb(255, 255, 255);
+  text-shadow: 12px 12px 12px black;
   font-size: 90px;
   margin: 0;
   animation: moveInAnimation ease 3s;
@@ -97,7 +99,7 @@ img {
 }
 
 .ai-text {
-  color:     rgb(0, 170, 255);
+  color:            rgb(0, 119, 255);
   animation: moveInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -138,24 +140,27 @@ img {
   margin-left: 50px;
   height: 40em;
   width: auto;
+  box-shadow: inset 0 0 5px 2px black;
   
 }
 
 .what-image {
   height: 30em;
   width: auto;
+  text-shadow: 12px 12px 12px black;
 }
 
 .future-image {
   height: 25em;
   width: auto;
   margin-left: 40px;
+  text-shadow: 12px 12px 12px black;
 }
 
 #image {
   border-radius: 20px;
-  border-style: dashed;
-  border-color: white;
+  border-color: white; 
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 
@@ -173,13 +178,16 @@ img {
 }
 
 .text-container h3 {
-  width: clamp(10em, 25em, 40em);
-  padding-top: 20px;
+  font-size: 20px;
+  width: clamp(10em, 30em, 40em);
+  padding-top: 30px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .text-container h1 {
   align-self: center;
   font-size: 50px;
+  text-shadow: 5px 5px 5px black;
 }
 
 #explore {
@@ -189,22 +197,22 @@ img {
 
 .second {
   background:    linear-gradient(
-    rgb(0, 170, 255),
-    rgb(0, 0, 0)
+    rgb(20, 99, 189),
+    rgb(1, 8, 17)
   );
 }
 
 .third {
   background:    linear-gradient(
-    rgb(0, 0, 0),
-    rgb(0, 170, 255)
+    rgb(20, 99, 189),
+    rgb(1, 8, 17)
   );
 }
 
 .fourth {
-  background:   linear-gradient(
-    rgb(0, 170, 255),
-    rgb(0, 0, 0)
+  background:    linear-gradient(
+    rgb(20, 99, 189),
+    rgb(1, 8, 17)
   );
 }
 

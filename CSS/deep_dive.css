@@ -1,9 +1,9 @@
 :root {
   color: white;
   font-family: 'Merriweather', serif;
-  --dark-bg-color: #6822ff;
+  --dark-bg-color:     rgb(0, 119, 255),;
   --light-bg-color: #eeeeee;
-  --dark-secondary-color: #444444;
+  --dark-secondary-color:     rgb(0, 119, 255),;
   --light-secondary-color: white;
 }
 
@@ -73,10 +73,11 @@ img {
 }
 
 .quote {
-  color: rgb(0, 187, 255);
+  color: white;
   width: clamp(10em, 25em, 40em); /*clamp min, preffered, max*/
   text-align: center;
   animation: moveInAnimation ease 3s;
+  text-shadow: 2px 2px 2px black;
 }
 
 .intro_ {
@@ -88,20 +89,23 @@ img {
 }
 
 #title {
-  color: rgb(0, 187, 255);
+  color: white;
   font-size: 90px;
   margin: 0;
+  text-shadow: 12px 12px 12px black;
   animation: moveInAnimation ease 3s;
 }
 
 .ai-text {
-  color: blueviolet;
+  color:     rgb(0, 119, 255);
 }
 
 
 
-h1 {
+#section-title {
   margin-block-start: 0;
+  font-size: 40px;
+  text-shadow: 5px 5px 5px black;
 }
 
 #hero {
@@ -159,7 +163,7 @@ h1 {
 .horizontal-scroll-container section {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(rgb(0, 0, 0), rgb(132, 0, 255));
+  background: linear-gradient(    rgb(20, 99, 189),rgb(1, 8, 17));
   padding: 20vw 10vw;
 }
 
@@ -174,6 +178,7 @@ h1 {
   justify-self: center;
   align-items: left;
   margin-left: 30px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .text {
@@ -203,6 +208,7 @@ h1 {
 
 .text h3 {
   max-width: 40em;
+  text-shadow: 2px 2px 2px black;
 }
 
 .learn-more {

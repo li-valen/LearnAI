@@ -183,7 +183,7 @@ body {
 }
 
 .menu-wrap .menu > div {
-  background: rgb(59, 1, 113);
+  background:  rgb(1, 40, 84);
   opacity: 0.8;
   border-radius: 50%;
   width: 200vw;
@@ -215,6 +215,7 @@ body {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
+  text-shadow: 2px 2px 2px black;
 }
 
 

@@ -4,6 +4,16 @@ body{
   overflow-y: hidden;
 }
 
+h1{
+  text-shadow: 12px 12px 12px black;
+}
+h2{
+  text-shadow: 6px 6px 6px black;
+}
+h4{
+  text-shadow: 2px 2px 2px black;
+}
+
 .loader{
   position: fixed;
   top: 0;
@@ -51,6 +61,7 @@ img {
   align-content: center;
   margin-top: 190px;
   padding-left: 8em;
+  gap: 20px;
 }
 
 
@@ -88,6 +99,8 @@ img {
 
 
 /* CSS */
+
+
 .js-discover-button {
   align-items: center;
   background-color: #fff;
