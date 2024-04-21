@@ -17,12 +17,12 @@ let tl = gsap.timeline({
 
 panels.forEach((hidden, i) => {
   if (!i) {
-    tl.set({}, {}, 0.5)
+    tl.set({}, {}, 0.3)
   } else {
     tl.to(hidden, {
       yPercent: -100,
       ease: "none"
-    }, "+=1")
+    }, "+=0.1")
   }
 })
 
