@@ -4,6 +4,25 @@ body{
   overflow-y: hidden;
 }
 
+@font-face {
+  font-family: 'Prototype';
+  src: url('./Prototype.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'Ttl';
+  src: url('./good_times_rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aquire';
+  src: url('./AquireRegular.woff2') format('woff2'),
+      url('./AquireRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 h1{
   text-shadow: 12px 12px 12px black;
 }
