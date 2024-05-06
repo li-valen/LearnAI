@@ -11,8 +11,7 @@
 
 @font-face {
   font-family: 'Aquire';
-  src: url('./AquireRegular.woff2') format('woff2'),
-      url('./AquireRegular.woff') format('woff');
+  src: url('./Aquire-BW0ox.otf') format('otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
