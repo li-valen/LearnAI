@@ -125,7 +125,7 @@
     width: clamp(40em, 40em, 40em);
     text-shadow: 12px 12px 12px black;
     text-align: center;
-    font-family: 'Ttl', sans-serif;
+    font-family: 'Ttl';
     font-weight: 1000;
   }
   
