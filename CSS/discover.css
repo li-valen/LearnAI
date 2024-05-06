@@ -35,23 +35,11 @@
   height: 30px;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
-  animation: move-down 2s ease-in-out infinite;
   position: fixed;
   top: 60%;
   left: 50%;
 }
 
-@keyframes move-down {
-  from {
-    transform: translate(0, -10px) rotate(45deg);
-  }
-  50% {
-    transform: translate(0, 10px) rotate(45deg);
-  }
-  to {
-    transform: translate(0, -10px) rotate(45deg);
-  }
-}
 
 .disppear {
   animation: vanish 1s forwards;

@@ -91,6 +91,18 @@ let al = gsap.timeline({
 });
 al.to("#fade-out", {opacity: 0});
 
+  // Arrow Animation
+  gsap.to('.down-arrow',{
+    y: 12,
+    ease: "power1.inOut",
+    repeat: -1,
+    yoyo: true,
+    duration: 0.5
+  });
+  gsap.to('.down-arrow',{
+    rotate: "45deg"
+  });
+
 // Animations
 // Quote
 let tl = gsap.timeline({
