@@ -3,9 +3,19 @@
 <head>
   <link rel="icon" href="Images/ai-logo.png">
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LearnAI is a pioneering website dedicated to reshaping perceptions of Artificial Intelligence by providing comprehensive insights, interactive experiences, and transformative education, aiming to dispel misconceptions and inspire curiosity, understanding, and appreciation for this transformative technology.">
+  <meta name="keywords" content="Artifical Intelligence, AI, Learn">
+  <meta name="author" content="Valen Li and Rishab Das">
+  <link rel="canonical" href="https://mrrkdas.github.io/LearnAI">
   <link rel="stylesheet" href="CSS/discover.css">
   <link rel="stylesheet" href="CSS/menu.css">
+  <link rel="preload" href="node_modules/AquireRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b1dfec1069.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
   <title>Discover</title>
@@ -15,6 +25,24 @@
   <div class="loader">
     <img src="Images/preloader-icon.gif" alt="">
   </div>
+
+  <div class="timeline">
+    <div class="progress" id="progress"></div>
+    <button class="tl-button" id="btn1"></button>
+    <button class="tl-button" id="btn2"></button>
+    <button class="tl-button" id="btn3"></button>
+    <button class="tl-button" id="btn4"></button>
+    <button class="tl-button" id="btn5"></button>
+    <button class="tl-button" id="btn6"></button>
+    <button class="tl-button" id="btn7"></button>
+    <button class="tl-button" id="btn8"></button>
+    <button class="tl-button" id="btn9"></button>
+    <button class="tl-button" id="btn10"></button>
+    <button class="tl-button" id="btn11"></button>
+  </div>
+
+
+
 
   <!-- MENU -->
   <div class="menu-wrap">
@@ -33,87 +61,116 @@
       </div>
     </div>
   </div>
-
-  <div class="main-container">
-
-  <section class="hidden panel first" id="first_">
-    <div class ="intro">
-      <h1 id="title">Discover <span class="ai-text">AI</span></h1>
-      <h1 class="quote">"The greatest benefit of <span class="ai-text">artificial intelligence</span> will be that it will help us unlock the most profound mysteries of the universe." - Neil deGrasse Tyson</h1>
-      <div>
-        <i class="fas fa-chevron-down"></i>
-      </div>
-    </div>
-    <video id="discover-vid-background" src="Images/203987-923133879.mp4" autoplay loop muted type="video/mp4"></video>
-  </section>
-
-   
-  <section class="hidden panel second" id="second_">
-    <div class="what-container">
-        <div class="text-container">
-          <h1 id="what-title">What is AI?</h1>
-          <div class="paragraph-container">
-            <h3 id="what-p-1">
-              AI is a field of computer science that creates intelligent systems, capable of learning from data and making decisions without explicit programming. It spans various industries, revolutionizing how we live and work.
-            </h3>
-            <h3 id="what-p-2">
-              AI systems can analyze complex patterns, recognize speech and images, and even predict future outcomes. AI's potential spans across various industries, including healthcare, finance, transportation, and entertainment, revolutionizing how we live, work, and interact with technology.
-            </h3>
-          </div>
-          
-
-        </div>
-        <img id="image" class="what-image" src="Images/image_processing20210729-32645-tn0q8p.gif">
-    </div>
-  </section>
-
   
-  <section class="hidden panel third" id="third_">
-    <div class="what-container">
-      <div class="text-container">
-        <h1 id="history-title">History</h1>
-        <div class="paragraph-container">
-          <h3 id="history-p-1">  
-              John McCarthy, born in 1927, played a pivotal role in the history of artificial intelligence. In 1956, he coined the term "artificial intelligence," igniting a revolution in computer science. His contributions, including the development of the LISP programming language, laid the groundwork for countless advancements in AI research.
-          </h3>
-          <h3 id="history-p-2">
-            McCarthy's vision extended beyond terminology; he also introduced the concept of time-sharing systems, revolutionizing computer access. His belief in AI as a field capable of mimicking human intelligence inspired decades of research and innovation. Today, his legacy remains influential, shaping the trajectory of artificial intelligence since its inception.
-          </h3>
-        </div>
-      </div>
-        <img id="image" class="history-image" src="Images/discover-img-two.jpeg">
+  <main>
+  <div class="intro">
+    <h1>DISCOVER <span class="ai-text">AI</span></h1>
+    <div id="fade-out" class="down-arrow">
+    </div>
+    <video>
+      <source src="Images/Discover-Video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="quote">
+    "The greatest benefit of artificial intelligence will be that it will help us unlock the most profound mysteries of the universe." - Neil deGrasse Tyson
+  </div>
+
+  <div id="question">
+    So What is <span class="ai-text">AI</span>? 
+  </div>
+
+  <div id="sec1a">
+    <span class="ai-text">AI</span> is a field of computer science that creates intelligent systems, capable of learning from data and making decisions without explicit programming.
+  </div>
+
+  <div id="sec1b">
+    <span class="ai-text">AI</span> systems can analyze complex patterns, recognize speech and images, and even predict future outcomes. Revolutionizing how we live, work, and interact with technology.
+  </div>
+
+  <div id="sec2-title">
+    What are some Everday Uses?
+  </div>
+
+  <section class="gif" id="gif1">
+    <div id="sec2a-title">
+      <a href="https://assistant.google.com/"><img id="image" src="Images/open-uri20150123-11-1esa6b6.gif"></a>
+      Personal Assistants
+    </div>
+    <div id="sec2a-p">
+      Siri, Google Assistant, and Alexa help with tasks and queries through voice commands.
     </div>
   </section>
 
-
-  <section class="hidden panel fourth">
-    <div class="what-container">
-      <div class="text-container">
-        <h1 id="future-title">Future</h1>
-        <div class="paragraph-container">
-          <h3 id="future-p-1">
-            In the future, AI is expected to become increasingly integrated into our daily lives, from personalized healthcare diagnostics to autonomous transportation systems. As AI systems become more sophisticated and autonomous, they will likely play a crucial role in solving complex global challenges, such as climate change and resource management. 
-          </h3>
-          <h3 id="future-p-2">As AI continues to advance, ethics will be paramount. Balancing innovation with societal concerns like bias and privacy will require ongoing collaboration and regulation among stakeholders. Ensuring responsible deployment will be critical for maximizing AI's benefits while safeguarding against potential harms. <span><a id="explore" href="deep_dive.html">Explore the beauty that lies behind AI here!</a></span></h3>
-        </div>
-      </div>
-      <img id="image" class="future-image" src="Images/1_B4NL8NsOivEV0UUx8CdYZg (1).gif">
-    </div>  
+  <section class="gif" id="gif2">
+    <div id="sec2b-title">
+      <a href="https://www.google.com/maps"><img id="image" src="Images/98d87046410667.5852ee9d81ad7.gif"></a>
+      Navigation and Transportation
+    </div>
+  
+    <div id="sec2b-p">
+      Google Maps and Waze optimize routes, while <span class="ai-text">AI</span> contributes to the development of autonomous vehicles.
+    </div>
   </section>
 
+  <section class="gif" id="gif3">
+  <div id="sec2c-title">
+    <a href="https://translate.google.com/"><img id="image" src="Images/44a52caf835ad2d687e4d67ec8016632.gif"></a>
+
+    Language Translation
+  </div>
+  <div id="sec2c-p">
+    Google Translate enables seamless communication across languages.
+  </div>
+</section>
 
 
+  <div id="future-title">
+    What about the Future?
+  </div>
 
-  
-</div>
+  <div class="caption" id="sec3">
+    In the future, <span class="ai-text">AI</span> will be integral to daily life, aiding in personalized healthcare and autonomous transport. As <span class="ai-text">AI</span> advances, it'll play a crucial role in tackling global issues like climate change and resource management.
+  </div>
+
+  <div class="caption" id="sec4">
+    With <span class="ai-text">AI</span>-driven diagnostic systems improving accuracy in disease detection and predictive analytics enabling proactive interventions, the future of healthcare looks promising.
+  </div>
+
+
+  <div class="caption" id="sec5">
+    As <span class="ai-text">AI</span> continues to advance, ethics will be paramount. Ensuring responsible deployment will be critical for maximizing <span class="ai-text">AI's</span> benefits while safeguarding against potential harms.
+  </div>
+
+    <div id="deep-dive-title">
+      Take a Deep Dive Into <span class="ai-text">AI</span>
+    </div>
+    <div id="deep-dive-text">
+      Learn about Image Classification, Object Detection, and how <span class="ai-text">AI</span> WORKS!
+    </div>
+    <div class="deep-dive-button">
+        <a href="deep_dive.html" id="coolButton">Deep Dive</a>
+    </div>
+  </main>
+  <section>
+    <h1></h1>
+  </section>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 <script src="Scripts/discover.js"></script>
 <script src="Scripts/pre-loader.js"></script>
-<!-- <script src="Scripts/menu.js"></script> -->
-
 
 </html>

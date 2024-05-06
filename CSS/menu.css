@@ -1,8 +1,26 @@
-/* CORE STYLES */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
   --overlay-color: rgba(24, 39, 51 , 0.85);
   --menu-speed: 0.75s;
+}
+
+@font-face {
+  font-family: 'Prototype';
+  src: url('/node_modules/Prototype.woff') format('woff'),
+}
+
+@font-face{
+  font-family: 'Ttl';
+  src:url('/node_modules/good_times_rg.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Aquire';
+  src: url('/node_modules/AquireRegular.woff2') format('woff2'),
+      url('/node_modules/AquireRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -12,8 +30,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prototype', sans-serif;
   line-height: 1.4;
+  font-weight: normal;
+  text-shadow: 2px 2px 2px black;
 }
 
 .container {
@@ -73,7 +93,6 @@ body {
   opacity: 0.7;
 }
 
-/* MENU STYLES */
 .menu-wrap {
   position: fixed;
   z-index: 1;
@@ -107,7 +126,6 @@ body {
   justify-content: center;
 }
 
-/* Hamburger Line */
 .menu-wrap .hamburger > div {
   position: relative;
   flex: none;
@@ -120,7 +138,6 @@ body {
   transition: all 0.4s ease;
 }
 
-/* Hamburger Lines - Top & Bottom */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
   content: '';
@@ -132,29 +149,24 @@ body {
   background: inherit;
 }
 
-/* Moves Line Down */
 .menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
-/* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
 }
 
-/* Turns Lines Into X */
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
 }
 
-/* Rotate On Hover When Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
 
-/* Show Menu */
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
@@ -183,8 +195,8 @@ body {
 }
 
 .menu-wrap .menu > div {
-  background:  rgb(1, 40, 84);
-  opacity: 0.8;
+  background:  rgb(1, 40, 84, 0.9);
+  opacity: 1;
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -207,9 +219,18 @@ body {
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 3rem;
   padding: 1rem;
 }
+
+.menu-wrap .menu > div > div > ul > li:hover {
+  list-style: none;
+  color: #006aff;
+  opacity: 1;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
@@ -217,9 +238,6 @@ body {
   transition: color 0.4s ease;
   text-shadow: 2px 2px 2px black;
 }
-
-
-
 
 @media (max-width: 445px) {
   .menu-wrap .menu > div {

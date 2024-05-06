@@ -64,7 +64,6 @@ img {
   gap: 20px;
 }
 
-
 .inner-container h1 {
   color: #ffffff;
   font-size: 90px;
@@ -96,10 +95,6 @@ img {
 .ai-text {
   color:rgb(0, 132, 255);
 }
-
-
-/* CSS */
-
 
 .js-discover-button {
   align-items: center;
@@ -231,11 +226,6 @@ img {
   }
 }
 
-
-
-
-
-
 @media (max-width: 377px) {
   .inner-container {
     padding-left: 10px;
@@ -257,11 +247,6 @@ img {
     min-width: 20px;
   }
 }
-
-
-
-
-
 
 @keyframes moveInAnimation {
   0% {
