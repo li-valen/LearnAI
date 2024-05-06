@@ -6,18 +6,18 @@
 
 @font-face {
   font-family: 'Prototype';
-  src: url('/node_modules/Prototype.woff') format('woff'),
+  src: url('CSS/Prototype.woff') format('woff'),
 }
 
 @font-face{
   font-family: 'Ttl';
-  src:url('/node_modules/good_times_rg.woff') format('woff'),
+  src:url('CSS/good_times_rg.woff') format('woff'),
 }
 
 @font-face {
   font-family: 'Aquire';
-  src: url('/node_modules/AquireRegular.woff2') format('woff2'),
-      url('/node_modules/AquireRegular.woff') format('woff');
+  src: url('CSS/AquireRegular.woff2') format('woff2'),
+      url('CSS/AquireRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
