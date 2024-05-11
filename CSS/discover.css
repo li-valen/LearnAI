@@ -56,7 +56,7 @@
   border-right: 4px solid white;
   position: fixed;
   top: 60%;
-  left: 47.6%;
+  left: 50%;
 }
 
 .disppear {
@@ -168,6 +168,9 @@ section h1 {
   }
   #sec1a{
     width: auto;
+  }
+  .down-arrow{
+    left: 47.6%;
   }
 }
 
@@ -417,16 +420,15 @@ section h1 {
 }
 
 .deep-dive-button{
-  position: fixed;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  margin-top: 50px;
 }
 
 #deep-dive-title{
-  position: fixed;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%) translate(0px, 0.2031px) scale(2, 2);
@@ -441,7 +443,6 @@ section h1 {
 }
 
 #deep-dive-text{
-  position: fixed;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -450,14 +451,67 @@ section h1 {
   width: clamp(10em, 25em, 25em);
   text-shadow: 2px 2px 2px black;
   font-size: calc(0.5em + 1.5vw);
+  margin-top: 50px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
   #deep-dive-title{
-    width: auto;
+    width: clamp(10em, 10em, 10em);
   }
   #deep-dive-text{
-    width: auto;
+    width: clamp(15em, 15em, 15em);
+    font-size: 1.5em;
+  }
+  .deep-dive-button{
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 4em;
+    padding: 25%;
+  }
+  .caption{
+    font-size: 4vw;
+    max-width: 90%;
+  }
+  #coolButton {
+    padding: 3vw 4vw;
+  }
+  #sec1a{
+    font-size: 0.7em;
+  }
+  #sec1b{
+    font-size: 0.7em;
+  }
+  #gif1{
+    top: 10%;
+    left: 50%;
+  }
+  #gif2{
+    top: 40%;
+    left: 50%;
+  }
+  #gif3{
+    top: 70%;
+    left: 50%;
+  }
+  #sec2a-p{
+    font-size: 1em;
+  }
+  #sec2a-title{
+    font-size: 1.5em;
+  }
+  #sec2b-p{
+    font-size: 1em;
+  }
+  #sec2b-title{
+    font-size: 1.5em;
+  }
+  #sec2c-p{
+    font-size: 1em;
+  }
+  #sec2c-title{
+    font-size: 1.5em;
   }
 }
 
@@ -547,3 +601,10 @@ section h1 {
   left: 100%;
 }
 
+.deep-dive-sec {
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 40%;
+  left: 50%;
+}

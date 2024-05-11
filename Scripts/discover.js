@@ -462,7 +462,7 @@ tl.from("#quote", { scale: 0, autoAlpha: 0 })
 
 btn1.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 9150, // Position relative to Video
     ease: "power4.out",
     onComplete: function(){ 
@@ -476,7 +476,7 @@ btn1.onclick = function(){
 };
 btn2.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 13150,
     ease: "power4.out",
     onComplete: function(){ 
@@ -490,7 +490,7 @@ btn2.onclick = function(){
 };
 btn3.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 23500,
     ease: "power4.out",
     onComplete: function(){ 
@@ -504,7 +504,7 @@ btn3.onclick = function(){
 };
 btn4.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 27000,
     ease: "power4.out",
     onComplete: function(){ 
@@ -518,7 +518,7 @@ btn4.onclick = function(){
 };
 btn5.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 34000,
     ease: "power4.out",
     onComplete: function(){ 
@@ -532,7 +532,7 @@ btn5.onclick = function(){
 };
 btn6.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 40000,
     ease: "power4.out",
     onComplete: function(){ 
@@ -546,7 +546,7 @@ btn6.onclick = function(){
 };
 btn7.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 48000,
     ease: "power4.out",
     onComplete: function(){ 
@@ -560,7 +560,7 @@ btn7.onclick = function(){
 };
 btn8.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 55500,
     ease: "power4.out",
     onComplete: function(){ 
@@ -574,7 +574,7 @@ btn8.onclick = function(){
 };
 btn9.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 61500,
     ease: "power4.out",
     onComplete: function(){ 
@@ -588,7 +588,7 @@ btn9.onclick = function(){
 };
 btn10.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 66000,
     ease: "power4.out",
     onComplete: function(){ 
@@ -602,7 +602,7 @@ btn10.onclick = function(){
 };
 btn11.onclick = function(){
   gsap.to(window, {
-    duration: 3,
+    duration: 5,
     scrollTo: 71000,
     ease: "power4.out",
     onComplete: function(){ 

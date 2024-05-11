@@ -8,7 +8,7 @@ body{
   font-family: 'Prototype';
   src: url('./Prototype.woff') format('woff');
 }
-
+ 
 @font-face{
   font-family: 'Ttl';
   src: url('./good_times_rg.woff') format('woff');
@@ -175,14 +175,6 @@ img {
   }
 }
 
-@media only screen and (max-width: 680px) {
-  #video-background {
-    display: flex;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-  }
-}  
 @media (max-width: 650px) {
   .inner-container {
     padding-left: 3em;
