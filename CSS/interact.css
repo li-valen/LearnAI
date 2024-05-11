@@ -371,6 +371,7 @@ label, #classify {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
+  padding-bottom: 80px;
   width: 80%;
 }
 
@@ -423,11 +424,11 @@ label, #classify {
 #canvas{
   place-self: center;
   display: flex;
-  margin-top: -55%;
+  margin-top: -50%;
   height: auto;
   max-width: 100%;
   z-index: 100;
-  margin-left: 14%;
+  margin-left: 17.5%;
   color: #006aff;
 }
 
